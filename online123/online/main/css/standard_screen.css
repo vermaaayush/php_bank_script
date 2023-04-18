@@ -1,0 +1,430 @@
+/**********************************************************
+ *                                                        *
+ *  Copyright ©2005  Corillian Corporation                *
+ *                                                        *
+ *  All rights reserved.                                  *
+ *                                                        *
+ *  Highly Confidential.                                  *
+ *                                                        *
+ *  No portion of this code may be reproduced,            *
+ *  transmitted or distributed without the express        *
+ *  written permission of Corillian Corporation.          *
+ *                                                        *
+ **********************************************************/
+
+/**********************************************************
+ *                                                        *
+ *  HTML ENTITIES                                         *
+ *                                                        *
+ **********************************************************/
+body{
+	/* [disabled]min-width	:780px; */
+	/*
+	   Excluding custom IE width expression because it locks
+	   IE up with 100% CPU usage.  The lock occurs because we
+	   have a DOCTYPE declaration in the HTML.
+	width:expression(document.body.clientWidth < 760 ? "760px" : "100%" );
+	*/
+}
+
+/**********************************************************
+ *                                                        *
+ *  GENERAL                                               *
+ *                                                        *
+ **********************************************************/
+#bodycontainer {
+	width: 780px;
+	margin: 0 auto; 
+	text-align: left;
+}
+/*
+#outer_container {
+	width: 960px;
+	padding: 0;
+	background: white;
+	text-align: left; 
+	margin: auto; 
+	border:0px; 
+	padding: 0px 3px 3px 3px;
+	position: relative;
+    background-color: #BDBDBD;
+	}
+
+#container{
+		margin-top: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0px;
+		padding: 0px;
+		width: 960px;
+		background-color: white;
+	    border:1px solid #999999;
+}
+*/
+div.sectionDivider{
+	height: 25px;
+}
+
+/**********************************************************
+ *                                                        *
+ *  HEADER                                                *
+ *                                                        *
+ **********************************************************/
+
+div.favoritesContainer{
+	padding-top: 0px;
+	padding-bottom: 5px;
+}
+
+div.favoritesContainer select{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+div.secondaryNav{
+	font-size: 10px;
+	padding-top: 10px; /* ADDED TOP PADDING TO FIX THE HEADER LINKS JUSTIFIED TO THE TOP OF PAGE  */
+}
+
+div.secondaryNav a,
+div.secondaryNav a:visited,
+div.secondaryNav a:link,
+div.secondaryNav a:active, div.secondaryNav a:hover{
+color: #0b2a73;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px dotted #999999;
+    font-size: 14px;
+}
+
+div.secondaryNav a:hover{
+	color: red; 
+}
+
+/**********************************************************
+ *                                                        *
+ *  FOOTER                                                *
+ *                                                        *
+ **********************************************************/
+
+
+/**********************************************************
+ *                                                        *
+ *  ERRORS/VALIDATION                                     *
+ *                                                        *
+ **********************************************************/
+
+
+/**********************************************************
+ *                                                        *
+ *  NAVIGATION                                            *
+ *                                                        *
+ **********************************************************/
+
+div.navigationContainer{
+	padding-bottom: 0px;
+	padding-top: 4px;
+	font-size: 12px;
+	text-align: left;
+	font-family:Arial;
+	background-color:#0B2A73;
+	margin-bottom: 9px;
+}	
+
+div.navigationContainerLogin{
+	padding-bottom: 0px;
+	padding-top: 0px;
+	font-size: 12px;
+	text-align: left;
+	font-family:Arial;
+	background-color:#426785;
+}
+
+div.navigationContainer ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	display: inline;
+	font-family:Arial;
+}
+
+div.navigationContainer ul : hover{
+	background-color:#426785;
+}
+
+div.navigationContainer ul.navigationSubList{
+	display: block;
+	margin-top: 4px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #FFFFFF; /*#faf5df */
+	font-family:Arial;
+	border-top:7px solid #ececec; 
+	
+}
+
+div.navigationContainer li{
+	display: inline;
+	font-family:Arial;
+}
+
+div.navigationContainer a,
+div.navigationContainer a:visited,
+div.navigationContainer a:link,
+div.navigationContainer a:active {
+	color: white;
+	padding: 4px 8px 4px 7px;
+	margin: 0px 0px 0px -1px;
+	border-left: 1px solid #ffffff;
+	font-size: 13px;
+	font-weight: bold;
+	background-color: #426785;
+	font-family:Arial;
+}
+
+div.navigationContainer a.navigationActiveItem,
+div.navigationContainer a.navigationActiveItem:visited,
+div.navigationContainer a.navigationActiveItem:link,
+div.navigationContainer a.navigationActiveItem:active {
+    padding-top:5px;	/* MODIFIED FROM 0PX TO 4PX TO FIX THE MAIN NAVIGATION HEIGH REDUCTION ON SELECTED LINKS  */
+	background-color: #ececec;
+	color: #426785;
+	font-size: 13px;
+	font-family:Arial; 
+	font-weight: bold;
+}
+
+div.navigationContainer ul.navigationSubList a.navigationActiveItem,
+div.navigationContainer ul.navigationSubList a.navigationActiveItem:visited,
+div.navigationContainer ul.navigationSubList a.navigationActiveItem:link,
+div.navigationContainer ul.navigationSubList a.navigationActiveItem:active {
+	color: #8c8c8c;
+	font-size: 13px;
+	font-family:Arial; 
+	font-weight: bold;
+}
+
+div.navigationContainer ul.navigationSubList a,
+div.navigationContainer ul.navigationSubList a:visited,
+div.navigationContainer ul.navigationSubList a:link,
+div.navigationContainer ul.navigationSubList a:active{
+	color: #23537C;
+	font-size: 13px;
+	font-weight: normal;
+	font-family:Arial;
+	border: none;
+	border-left: 1px solid white;
+	padding-top: 4px;
+	padding-bottom: 6px;
+	padding-left: 15px;
+	padding-right: 18px;
+	background-color: #FFFFFF; /*#faf5df*/
+	font-family:Arial;
+}
+
+div.navigationContainer ul.navigationSubList a.Transfers,
+div.navigationContainer ul.navigationSubList a.Transfers:visited,
+div.navigationContainer ul.navigationSubList a.Transfers:link,
+div.navigationContainer ul.navigationSubList a.Transfers:active{
+	color: #23537C;
+	font-size: 13px;
+	font-weight: normal;
+	font-family:Arial;
+	border: none;
+	border-left: 1px solid white;
+	padding-top: 4px;
+	padding-bottom: 6px;
+	padding-left: 10px;
+	padding-right: 15px;
+	background-color: #FFFFFF; /*#faf5df*/
+	font-family:Arial;
+}
+
+
+div.navigationContainer ul.navigationSubList a.Transfers:hover{
+	background-color: #ffffff;
+	color: #426785;
+	font-family:Arial;
+}
+
+div.navigationContainer a:hover
+{
+	text-decoration: none;
+	color: #426785;
+	background-color: #ececec;
+	font-family:Arial;
+}
+
+div.navigationContainer ul.navigationSubList a:hover
+{
+	text-decoration: none;
+	background-color: #ffffff;
+	color: #426785;
+	font-family:Arial;
+}
+
+div.navigationContainer a.navigationActiveItem{
+	font-weight: bold !important;
+	text-decoration: none !important;
+	font-family:Arial;
+}
+
+
+/**********************************************************
+ *                                                        *
+ *  TABLES                                                *
+ *                                                        *
+ **********************************************************/
+
+
+/**********************************************************
+ *                                                        *
+ *  WORKSPACE                                             *
+ *                                                        *
+ **********************************************************/
+
+div.instructionsContainer,
+div.instructionsContainer td,
+div.instructionsContainer P
+{
+ 	margin-bottom: 1px;
+ 	font-family:Arial;
+ 	font-size:10pt;
+ 	color:#444444;  
+}
+
+div.instructionsContainerenroll,
+div.instructionsContainerenroll td,
+div.instructionsContainerenroll P
+{
+ 	font-family:Arial;
+ 	font-size:10pt;
+ 	color:#444444;  
+}
+
+div.instructionsContainer a, 
+div.instructionsContainer a:visited, 
+div.instructionsContainer a:link, 
+div.instructionsContainer a:active {
+	text-decoration: none;
+	font-size:10pt;
+	font-family:Arial; 
+	color: #426785;
+	font-weight : bold;
+}
+
+div.instructionsContainerenroll a, 
+div.instructionsContainerenroll a:visited, 
+div.instructionsContainerenroll a:link, 
+div.instructionsContainerenroll a:active {
+	text-decoration: none;
+	font-size:10pt;
+	font-family:Arial; 
+	color: #426785;
+	font-weight : bold;
+}
+
+div.instructionsContainer a:hover{
+	text-decoration: underline;
+	color: #426785;
+	font-size:10pt;
+	font-family:Arial;
+	font-weight : bold;
+}
+
+div.instructionsContainerenroll a:hover{
+	text-decoration: underline;
+	color: #426785;
+	font-size:10pt;
+	font-family:Arial;
+	font-weight : bold;
+}
+
+
+div.instructions
+{
+ 	margin-bottom: 25px;
+ 	font-family:Arial;
+ 	font-size:10pt;
+ 	color:#444444;  
+}
+
+div.instructionsATM
+{
+	line-height: 20px;
+ 	margin-bottom: 10px;
+ 	font-family:Arial;
+ 	font-size:10pt;
+ 	color:#444444;  
+}
+
+div.instructionsenroll
+{
+ 	font-family:Arial;
+ 	font-size:12px;
+ 	color:#414042  
+}
+
+div.instructionsenroll a, 
+div.instructionsenroll a:visited, 
+div.instructionsenroll a:link, 
+div.instructionsenroll a:active {
+	text-decoration: none;
+	font-size:10pt;
+	font-family:Arial; 
+	color: #c39970;
+	font-weight : bold;
+}
+
+div.instructions a, 
+div.instructions a:visited, 
+div.instructions a:link, 
+div.instructions a:active {
+	text-decoration: none;
+	font-size:12px;
+	font-family:Arial; 
+	color: #c39970;
+	font-weight : bold;
+}
+
+div.instructionsATM a, 
+div.instructionsATM a:visited, 
+div.instructionsATM a:link, 
+div.instructionsATM a:active {
+	text-decoration: none;
+	font-size:10pt;
+	font-family:Arial; 
+	color: #c39970;
+	font-weight : bold;
+}
+
+div.instructions a:hover{
+	text-decoration: underline;
+	color: #D96000;
+	font-size:10pt;
+	font-family:Arial;
+	font-weight : bold;
+}
+
+div.instructionsenroll a:hover{
+	text-decoration: underline;
+	color: #D96000;
+	font-size:10pt;
+	font-family:Arial;
+	font-weight : bold;
+}
+
+div.instructionsATM a:hover{
+	text-decoration: underline;
+	color: #D96000;
+	font-size:10pt;
+	font-family:Arial;
+	font-weight : bold;
+}
+
+div.instructionGray
+{
+	color: Gray;
+}

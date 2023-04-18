@@ -1,0 +1,349 @@
+/* ===================================***************==RESET CSSS==****************===============================================*/
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, input, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, ins{font-family:inherit;font-weight:inherit;font-style:inherit;font-size:100%;outline:0;padding:0;margin:0;border:0;}
+:focus{outline:0;}
+a{outline:0;text-decoration:none;color:#666;font-family:Arial, Helvetica, sans-serif;}
+body{background:white;line-height:1;color:black;}
+ol, ul{list-style:none;}
+table{border-spacing:0;}
+caption, th, td{font-weight:normal;}
+blockquote:before, blockquote:after, q:before, q:after{content:"";}
+blockquote, q{quotes:"" "";}
+input{border-width:0px;}
+option{background-color:#fff;}
+.marginTop5{margin-top:5px;}.marginTop10{margin-top:10px;}.marginTop15{margin-top:15px;}.marginTop20{margin-top:20px;}.marginTop25{margin-top:25px;}.marginLeft5{margin-left:5px;}.marginLeft10{margin-left:10px;}.marginLeft15{margin-left:15px;}.marginLeft20{margin-left:20px;}.marginLeft25{margin-left:25px;}.marginRight5{margin-right:5px;}.marginRight10{margin-right:10px;}.marginRight15{margin-right:15px;}.marginRight20{margin-right:20px;}.marginRight25{margin-right:25px;}.marginBottom5{margin-bottom:5px;}.marginBottom10{margin-bottom:10px;}.marginBottom15{margin-bottom:15px;}.marginBottom20{margin-bottom:20px;}.marginBottom25{margin-bottom:25px;}.paddingTop5{padding-top:5px;}.paddingTop10{padding-top:10px;}.paddingTop15{padding-top:15px;}.paddingTop20{padding-top:20px;}.paddingLeft5{padding-left:5px;}.paddingLeft10{padding-left:10px;}.paddingLeft15{padding-left:15px;}.paddingLeft20{padding-left:20px;}.paddingRight5{padding-right:5px;}.paddingRight10{padding-right:10px;}.paddingRight15{padding-right:15px;}.paddingRight20{padding-right:20px;}.paddingBottom5{padding-right:5px;}.paddingBottom10{padding-right:10px;}.paddingBottom15{padding-right:15px;}.paddingBottom20{padding-right:20px;}
+/*=================================TOOLKIT=================================*/
+.floatNone{float:none}
+.floatLeft{float:left}
+.floatRight{float:right}
+.clearLeft{clear:left}
+.clearRight{clear:right}
+.clearBoth{clear:both}
+.noBg{background:none!important}
+.noMargin{margin:0!important}
+.noPadding{padding:0!important}
+.noBorder{border:0!important}
+.show{display:block!important}
+.hide{display:none!important}
+.hideText{overflow:hidden;display:block;text-indent:-9999px}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:inline-block}
+.debug{border:1px dotted #f00}
+/*=================================Global=====================================*/
+html, body{overflow:hidden }
+#container{position:relative;width:979px;height:656px;background:url(../jpg/bg.jpg) no-repeat center 0 transparent;margin:0 auto;overflow:hidden;}
+#header{position:relative;width:979px;z-index:997; display:inline-block; }
+.shortHeader{height:74px !important }
+#header .wrap{position:fixed;left:0;top:0;width:960px;height:110px;background:url(../mainbg.html) no-repeat  }
+#sidebar{position:relative;float:left;margin-right:11px;width:365px;z-index:998 }
+#sidebar .wrap{position:fixed;left:0;top:79px;width:160px;}
+#main{float:right;width:565px; }
+#loginFooter{position:absolute;left:0;bottom:0;width:100%;background:url(../png/footerbg.png) repeat-x 0 0;height:67px;}
+#footer{ left:0;bottom:0;width:100%;height:54px;z-index:998 }
+#footer .wrap{position:fixed;left:0;top:597px;width:100%;height:55px; 0 bottom }
+#contentWrapper{ background:url(../png/contenttopbg.png) no-repeat center 0; width:941px; padding-top:15px; margin:0 auto;  }
+#content{ background:url(../png/contentbg.png) repeat-y center 0; font-family:arial; font-size:11px; line-height:15px;height:460px; position:relative; left:0; top:0;}
+#contentBottom{ display:block; background:url(../png/contentbottombg.png) no-repeat center 0; width:100%; height:16px;}
+/* =================================================================ALL SELECT WRAPPER CONFIGS======================================================================= */
+div.selectWrapper{ float:left;}
+div.selectSize31{position:relative;height:31px;background:url(../png/rowleftwing.png) no-repeat 0 0;padding-left:10px;}
+div.selectSize31 select.select{position:relative;font:11px/18px Arial;color:#868b94;height:31px;border:0 none;background:none;float:left; left:-5px;}
+div.selectSize31 select option{ background-color:#FFF; padding:3px 0;}
+div.selectSize31 .selectedItemRow{float:left;background:url(../png/rowrightwing.png) no-repeat right center;position:absolute;top:0;left:10px;height:31px;font:11px/31px Arial;color:#868B94;}
+div.selectSize25{position:relative;height:25px;background:url(../rowsmallleftwing.html) no-repeat 0 0;padding-left:10px;}
+div.selectSize25 select.select{position:relative;font:11px/25px Arial;color:#868b94;height:25px;border:0 none;background:none;float:left; left:-5px;}
+div.selectSize25 select option{ background-color:#FFF;}
+div.selectSize25 .selectedItemRow{float:left;background:url(../rowsmallrightwing.html) no-repeat right center;position:absolute;top:0;left:10px;height:25px;font:11px/25px Arial;color:#868B94;}
+/* === Contact Page Select Wrapper ===*/
+/*=width-170px=*/
+div.selectWidth175{width:165px;}
+div.selectWidth175 select.select{width:165px;}
+div.selectWidth175 .selectedItemRow{width:165px;}
+/*=width-210px=*/
+div.selectWidth210{width:200px;}
+div.selectWidth210 select.select{width:200px;}
+div.selectWidth210 .selectedItemRow{width:200px;}
+/*=width-250px=*/
+div.selectWidth250{width:240px;}
+div.selectWidth250 select.select{width:240px;}
+div.selectWidth250 .selectedItemRow{width:240px;}
+/*=width-430px=*/
+div.selectWidth430{width:420px;}
+div.selectWidth430 select.select{width:420px;}
+div.selectWidth430 .selectedItemRow{width:420px;}
+/* =================================================================ALL INPUT WRAPPER CONFIGS======================================================================= */
+div.inputWrapper{position:relative; }
+div.inputSize31{position:relative;height:31px;background:url(../png/rowleftwing.png) no-repeat 0 0;padding-left:10px;}
+div.inputSize31 input{height:11px;font:12px/12px Arial;color:#868B94;float:left;background:url(../png/rowinputrightwing.png) no-repeat right center; padding:10px 0; top:0; position:relative; left:0;}
+div.inputSize25{position:relative;height:25px;background:url(../rowsmallleftwing.html) no-repeat 0 0;padding-left:10px;}
+div.inputSize25 input{height:11px;font:11px/11px Arial;color:#868B94;float:left;background:url(../rowinputsmallrightwing.html) no-repeat right center; padding:7px 0;}
+div.InputGray{background:url(../rowleftwinggray.html) no-repeat 0 0;}
+div.InputGray input{background:url(../rowinputrightwinggray.html) no-repeat right center;}
+/* === Contact Page Select Wrapper ===*/
+/*=width-62px=*/
+div.inputWidth62{width:52px;}
+div.inputWidth62 input{width:52px;}
+/*=width-100px=*/
+div.inputWidth100{width:100px;}
+div.inputWidth100 input{width:100px;}
+/*=width-120px=*/
+div.inputWidth120{width:110px;}
+div.inputWidth120 input{width:110px;}
+div.inputWidth120 div.securityCode{width:110px;}
+/*=width-175px=*/
+div.inputWidth175{width:165px;}
+div.inputWidth175 input{width:165px;}
+/*=width-180px=*/
+div.inputWidth180{width:170px;}
+div.inputWidth180 input{width:170px;}
+/*=width-210px=*/
+div.inputWidth210{width:200px;}
+div.inputWidth210 input{width:200px;}
+/*=width-250px=*/
+div.inputWidth250{width:240px;}
+div.inputWidth250 input{width:240px;}
+/*=width-290px=*/
+div.inputWidth290{width:280px;}
+div.inputWidth290 input{width:280px;}
+/*=width-306px=*/
+div.inputWidth306{width:296px;}
+div.inputWidth306 input{width:296px;}
+/*=width-530px=*/
+div.inputWidth530{width:520px;}
+div.inputWidth530 input{width:520px;}
+/*=width-615px=*/
+div.inputWidth615{width:605px;}
+div.inputWidth615 input{width:605px;}
+/*=======textAreaWrapper==========*/
+div.textAreaWrapper{position:relative;}
+div.textAreaWrapper i{background:url(../inputallwingswhite.html) no-repeat 0 0;position:absolute;width:10px;height:10px;z-index:12;}
+div.textAreaWrapper i.leftTopWing{background-position:0 0;left:0;top:0px;}
+div.textAreaWrapper i.rightTopWing{background-position:right 0;right:2px;top:0px;}
+div.textAreaWrapper i.leftBottomWing{background-position:0 bottom;left:0;bottom:0px;}
+div.textAreaWrapper i.rightBottomWing{background-position:right bottom;right:2px;bottom:0px;}
+#content ul.list{padding-bottom:5px;overflow:hidden;}
+#content ul.list li{background:url(../jpg/contliststylebg.jpg) no-repeat 0 7px;padding:0 0 10px 10px;}
+/*-------------------------------------------------------------------------HEADER-------------------------------------------------------------------------*/
+#logo{left:13px;top:13px;width:184px;height:38px;overflow:hidden;display:block;margin:20px 0 0 20px; background:url(../png/esubelogo.png) no-repeat 0 0; text-indent:-9999px; float:left; }
+
+/*-------------------------------------------------------------------------LOGIN FOOTER-------------------------------------------------------------------------*/
+#tel{position:absolute;left:374px;bottom:26px;width:92px;height:18px;background:url(../tel.html);text-indent:-9999px }
+#customerServicesImage{ margin:15px 15px 0 15px; float:left; }
+#faq{height:24px;background:url(../png/faq.png) no-repeat 0 0; float:left; margin:25px 15px 0 15px; color:#fff; padding-left:30px; font:bold 11px/24px Arial;}
+#pwd{height:26px;color:#5B636D;background:url(../png/key.png) no-repeat 0 0; float:left; margin:35px 15px 0 0px; padding-left:30px; font:bold 11px/27px Arial;}
+#gbes{height:24px;background:url(../png/secicon.png) no-repeat 0 0; float:left; margin:25px 15px 0 15px; color:#fff; padding-left:30px; font:bold 11px/24px Arial;}
+#veriSign{position:absolute;right:22px;bottom:10px }
+/*-------------------------------------------------------------------------PAGE: Login Page-------------------------------------------------------------------------*/
+#loginHeader{ background:url(../png/headerbar.png) no-repeat 0 0; width:335px; height:31px; display:block; margin-left:16px; color:#fff; font:bold 12px/31px Arial; padding-left:15px;}
+#loginForm{position:relative;margin:0 0 0 0;  left:35px; width:329px;}
+#loginForm .redBar{position:absolute;left:-11px;top:15px;width:13px;height:426px;background:#e94666;content:'' }
+#loginForm .notice{float:left;margin:5px 0 10px 0;padding:10px 5px 15px 50px;width:255px;font-size:11px;line-height:16px;color:#5b636d; border-bottom:1px solid #E5E5E5; position:relative; }
+#loginForm .notice .vpad{z-index:28;position:absolute;top:12px;left:3px;cursor:pointer;width:40px;height:30px;background:url(../gif/keyboard.gif) no-repeat center center}
+#loginForm .noticemobile{float:left;margin:5px 0 10px 0;padding:10px 5px 15px 50px;width:255px;font-size:11px;line-height:16px;color:#5b636d; border-bottom:1px solid #E5E5E5; position:relative; }
+#loginForm .noticemobile .vpad{z-index:28;position:absolute;top:12px;left:3px;cursor:pointer;width:40px;height:30px;background:url(../gif/mobile.gif) no-repeat center center}
+#loginForm form{clear:both; display:inline-block;}
+#loginForm form p{position:relative;margin-bottom:31px }
+#loginForm label{color:#5b636d; font:14px/22px arial; padding:10px 0; display:block;} 
+#loginForm input{
+	color: #080707;
+	left: 0;
+	position: relative;
+}
+#loginForm input.error{border-color:#8c4745 }
+#loginForm .button .icon{background:url(../login.html) no-repeat;padding:4px 0px 0 24px }
+#loginForm a .icon{background:url(../login.html) no-repeat  }
+#loginForm a.forgotPass{padding:0 0 0 10px;background:url(../gif/leftnavarrow1.gif) no-repeat 0 center;font:11px/18px arial;color:#333; margin:0 0 5px 15px; display:inline-block; }
+#loginForm a.forgotPass:hover {color:#ed1c24;background:url(../gif/leftnavarrow2.gif) no-repeat 0 center;}
+#loginForm .warning{margin:20px 20px 10px 0px;padding:10px 0 0 30px;background:url(../png/warning.png) no-repeat 0 12px;color:#333; border-top:1px solid #E5E5E5; }
+#loginForm .warning em{color:#ED1C24; font-style:normal; font-weight:normal;  }
+#loginForm .warning + .warning{ margin:0 10px 0 0px;}
+.banners{margin:0 0 12px 0; width:544px; height:326px;}
+#loginForm .inputWrapper{ }
+#loginForm #txtUsername, #loginForm #txtPassword, #loginForm #txtSMSReply, #loginForm input[type="text"],#loginForm input[type="password"] { text-align:right; padding-right:10px; width:286px;  }
+/*END PAGE: DBS*/
+#loginForm form p.corp{margin-bottom:16px !important;}
+#loginForm .notice .vpad{z-index:28;position:absolute;top:12px;left:3px;cursor:pointer;width:40px;height:30px;background:url(../gif/keyboard.gif) no-repeat center center}
+#loginForm label[for="chkMobileSign"]{margin:0 0 10px 10px;font-size: 14px;align:left; float:left;}
+#loginForm label[for="bar"]{font-size: 12px;padding-left:20px;}
+#loginForm input[type="checkbox"]{padding:0px;border-bottom:none;border-top:none;border-left:none;border-right:none;height:13px;width:13px;align:left; float:left; margin:15px 0 0 0;}
+#loginForm p[for="displaySignText"]{padding:13px 10px 13px 10px !important;font-size: 14px;align:center;}
+#loginForm p[for="hashValue"]{padding:13px 10px 13px 10px !important;font-size: 14px;align:left;}
+#loginForm p[for="buttons"]{padding-right:20px;margin-left:5px;}
+#loginForm p[for="buttonlogin"]{padding-right:20px;margin-left:120px;}
+#loginForm p[for="progress"]{padding:13px 10px 13px 10px !important;font-size: 14px;align:center;}#loginForm a[for="buttons"] {margin-left:0px;align:right;}
+#loginForm a[for="buttonlogin"] {margin-left:15px;padding-left:20px;}
+#loginForm label[for="displaySignText"]{font-size: 14px;align:center;}
+#loginForm label[for="hashValue"]{padding:13px 10px 13px 10px !important;marging:13px 10px 13px 10px !important;font-size: 14px;align:left;}
+#loginForm  #submitButton{  display:block; background:url(../png/entrybutton.png) no-repeat 0 0; width:100px; height:41px; margin:30px 0 0 0; clear:both; float:left; color:#fff; font:bold 12px/41px arial; text-indent: 18px;  }
+#loginForm  #submitButton:hover{background:url(../png/entrybutton.png) no-repeat 0 bottom; }
+.notices{ padding-right:25px;}
+.notices ul li{ color:#5b636d; font:12px/18px Arial; text-align:justify;} 
+.notices b{}
+.notices em{ color:#ed1c24;}
+/*-------------------------------------------------------------------------COMMON ELEMENTS-------------------------------------------------------------------------*/
+.button{display:inline-block;padding-right:15px;height:42px;color:#fff }
+.button > span{display:block;padding:12px 10px 0 19px;height:30px;font-size:14px;font-weight:bold }
+.button > span > .icon{padding:4px 0 10px 25px }
+button.button > span{margin:-2px -3px 0 0 }
+.button.black{background:url(../buttonset.html) no-repeat right -90px  }
+.button.black > span{background:url(../buttonset.html) left -132px  }
+.button.red{background:url(../buttonset.html) no-repeat right 0px  }
+.button.red > span{background:url(../buttonset.html) left -42px  }
+.button.grey{background:url(../buttonset.html) no-repeat right -180px  }
+.button.grey > span{background:url(../buttonset.html) left -222px  }
+.button > span .icon{background: url(../buttonacc.html) no-repeat scroll 0 0 transparent;font-weight:bold;padding:0 0 10px 25px;}
+.button > span .loading{background: url(../loading.html) no-repeat scroll 0 0 transparent  !important;font-weight:bold;padding:0 0 10px 25px;}   
+#keyboard{position:absolute;left:246px;top:-56px;z-index:998; background:url(../png/keypadbg.png) no-repeat 0 0; }
+#keyboard.keyboardAlphabet {position:absolute;left:357px;top:140px;z-index:998; background:url(../png/keypad2bg.png) no-repeat 0 0;}
+#keyboard .top{position:relative;height:40px; }
+#keyboard .top h1{ background:url(../png/keypadbuttons.png) no-repeat -1px 0; width:154px; height:31px; text-indent:-9999px; position:absolute; top:6px; left:6px;}
+#keyboard .close{display:block;width:36px;height:31px;background:url(../png/keypadbuttons.png) no-repeat -160px 0;text-indent:-9999px; position:absolute; left:165px; top:6px; }
+#keyboard .close:hover{ background-position:-160px -40px;}
+#keyboard.keyboardAlphabet .close {right:11px; left:inherit;}
+#keyboard .keys{padding:10px 6px 0 6px; position:relative; }
+#keyboard.keyboardAlphabet .keys {padding-top:4px;}
+#keyboard .keys .tip{margin-bottom:20px;font:12px Tahoma, Verdana, sans-serif;color:#fff }
+#keyboard .left{float:left;margin:0 17px 15px 0;width:420px }
+#keyboard.keyboardAlphabet .left { margin-bottom:3px;}
+#keyboard .left input:active, #keyboard .right input:active{position:relative;bottom:-2px }
+#keyboard .left .backspace{padding-left:11px;width:55px;height:26px;background:#fff url(../backspace.html) no-repeat 8px center;color:#767070 }
+#content #keyboard.keyboardAlphabet .left .backspace{padding-left: 0;position: absolute;right: 200px;width: 31px;background:url(../png/keypadbuttons.png) no-repeat -148px -84px; width:47px; text-indent:-9000px;}
+#keyboard.keyboardAlphabet .keys {width:419px;}
+#keyboard .right .backspace{padding-left:11px;width:55px;height:26px;background:#fff url(../backspace.html) no-repeat 8px center;color:#767070 }
+#keyboard .left .caps{padding-left:15px;width:85px;height:26px;background:#fff url(../caps.html) no-repeat 6px center;font-size:11px;color:#767070 }
+#keyboard .left .change{width:145px;height:26px;font-size:11px;color:#767070;text-align:center }
+#keyboard .right .zero{margin-left:35px }
+#keyboard .right{ width:175px; height:68px; margin:5px 0 0 0px; position:relative; left:12px; }
+#keyboard.keyboardAlphabet .right {width:131px; height:136px;}
+#keyboard .right input[type='button']{ background:url(../png/keypadbuttons.png) no-repeat -1px -40px; width:30px; height:30px; float:left; font:bold 12px/30px Arial; color:#fff; margin:0 5px 5px 0}
+#keyboard .right input[type='button']:hover{ background-position:-71px -40px;}
+#keyboard .options{ position:absolute; height:30px; clear:both; bottom:5px; }
+#keyboard.keyboardAlphabet .options {bottom:0px; position:static; top:-13px; display:inline-block; float:left; width:450px; margin-top:2px; margin-left:13px; *margin-left:8px;}
+#keyboard .options label{margin-right:15px;font:bold 12px Tahoma, Verdana, sans-serif;color:#fff;width: auto !important;}
+#keyboard .options input{margin-right:3px;vertical-align:middle }
+#keyboard .options .changeButton{background:url(../png/keypadbuttons.png) no-repeat 0px -84px; width:79px; height:30px;text-indent:-9999px; position:absolute; left:0px; top:0;}
+#keyboard .options .changeButton:hover{background-position:0px -121px; }
+#content .keyboardAlphabet .options .changeButton { position:static; float:left;}
+#keyboard .options .hideButton{background:url(../png/keypadbuttons.png) no-repeat -83px -84px; width:61px; height:30px;text-indent:-9999px;position:absolute; left:84px; top:0; z-index:0}
+#keyboard .options .hoverButton{background:url(../png/keypadbuttons.png) no-repeat -83px -121px; }
+#content .keyboardAlphabet .options .hideButton {position:static; float:left; left:0px;}
+#keyboard .options .backspace{ background:url(../png/keypadbuttons.png) no-repeat -148px -84px; width:48px; height:30px; text-indent:-9999px;position:absolute; left:148px; top:0;}
+#keyboard .options .backspace:hover{ background-position: -148px -121px; }
+#keyboard.keyboardAlphabet .options .backspace {position:absolute; top:0px;}
+#keyboard.keyboardAlphabet .options .backspace.delete {left: 404px;top: 4px;}
+#keyboard.keyboardAlphabet .options .backspace.numberDelete {left: 518px;top: 109px;}
+.hideRadio{opacity: 0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter: alpha(opacity=0); width:61px; height:30px; position:absolute; left:84px; top:0; z-index:9; cursor:pointer;}
+#keyboard.keyboardAlphabet .hideRadio {top:146px;}
+#keyboard.numPad{width:211px; height:197px;}
+#keyboard.numPad.keyboardAlphabet{width:598px; height:250px;}
+#keyboard.numPad .left{display: none; }
+#keyboard.numPad.keyboardAlphabet .left{display: block; width:419px; margin-left:13px;}
+#keyboard.keyboardAlphabet .left input[type='button']{ background:url(../png/keypadbuttons.png) no-repeat -1px -40px; width:30px; height:30px; float:left; font:bold 12px/30px Arial; color:#fff; margin:0 5px 5px 0}
+#keyboard.keyboardAlphabet .left input[type='button']:hover{ background-position:-71px -40px;}
+#content #keyboard.keyboardAlphabet .left .caps.spec {background: url("../png/bupperorlower.png") no-repeat scroll 0 0 transparent;padding: 0;position: absolute;top: 39px;width: 82px; right:186px;}
+#content #keyboard.keyboardAlphabet .left .caps.spec:hover {background-position:0px 0px ;}
+#content #keyboard.keyboardAlphabet .left .change.spec {background: url("../png/keyboardimg.png") no-repeat scroll 0 0 transparent;padding: 0;position: absolute;top:74px;width: 118px; right:186px;}
+#content #keyboard.keyboardAlphabet .left .change.spec:hover {background-position:0px 0px ;}
+
+#keyboard.numPad .right{float:left; margin:5px 0 0 0;}
+#keyboard.numPad.keyboardAlphabet .right {margin:0px;}
+#keyboard.numPad .keys{width:199px; height:128px;}
+#keyboard.numPad.keyboardAlphabet .keys {height:178px; width:631px;}
+.withChar{width:560px;height:195px;}
+.withOutChar{width:210px;height:195px;}
+
+/*-------------------------------------------------------------------------FORMS-------------------------------------------------------------------------*/
+input[type="text"], select, textarea{font:12px Calibri, CalibriAlt, Tahoma, Verdana, Arial, sans-serif;color:#333333 }
+button{font:14px Calibri, CalibriAlt,  Tahoma, Verdana, Arial, sans-serif }
+
+/*-------------------------------------------------------------------------PAGE: Finish-------------------------------------------------------------------------*/
+#alertMessage h1{margin-bottom:5px;font-size:16px;color:#fff }
+#alertOk{font-size:19px;color:#fff09c;padding-left: 8px;margin-top: 8px;}
+#alertMessage .button span{padding-top:10px;padding-bottom:5px;font-size: 18px;font-weight: normal;}
+#alertMessage .button.red:hover{background:url(../buttonhover.html) no-repeat right 0px  }
+#alertMessage .button.red:hover > span{background:url(../buttonhover.html) left -42px  }
+#confirmMessage{text-align:center;position:fixed;z-index:9999999;left:300px;top:300px;padding:12px;width:344px; background:url(../agendareminderbg.html) repeat-x 0 bottom;border:2px solid #fff;-moz-box-shadow:3px 1px 5px rgba(0,0,0, 0.81);-webkit-box-shadow:3px 1px 5px rgba(0,0,0, 0.81);box-shadow:3px 1px 5px rgba(0,0,0, 0.81);display:none }
+#confirmMessage h1{margin-bottom:5px;font-size:16px;color:#fff }
+#confirmYes, #confirmNo{font-size:19px;color:#fff09c;margin-top: 8px;}
+#confirmNo{margin-left:20px; }
+#confirmMessage .button span{padding-top:10px;padding-bottom:5px;font-size: 18px;font-weight: normal;}
+#confirmMessage .button.red:hover{background:url(../buttonhover.html) no-repeat right 0px  }
+#confirmMessage .button.red:hover > span{background:url(../buttonhover.html) left -42px  }
+.genericForm .subtitle{margin-top:16px;margin-bottom:18px;padding:8px 13px 5px 0px;font-size:16px;color:#DB0000;border-bottom:1px dotted #CCCCCC;}
+.genericForm .splitter{margin-top:18px;margin-bottom:18px;border-bottom:1px dotted #CCCCCC;}
+.genericForm label{color:#444444;font-weight: bold;}
+.genericForm input[type="text"].iptext, .genericForm textarea.iptext{margin-bottom:22px;padding:6px 10px 0;height:23px;font-size:14px;color:#000;border:1px solid #d7d4cf ;width:25px}
+.genericForm input[type="text"].agreement, .genericForm textarea.agreement{margin-bottom:22px;padding:6px 10px 0;height:375px;font-size:14px;color:#000;border:1px solid #d7d4cf ;width:600px;}
+.genericForm input[type="text"].small, .genericForm textarea.small{margin-bottom:22px;padding:6px 10px 0;height:23px;font-size:14px;color:#000;border:1px solid #d7d4cf ;width:100px}
+.genericForm input[type="text"].smallauto, .genericForm textarea.smallauto{margin-bottom:22px;padding:6px 10px 0;height:23px;font-size:14px;color:#000;border:1px solid #d7d4cf ;width:auto}
+.genericForm input[type="radio"]{margin-right:5px;}
+.genericForm input[type="checkbox"]{margin-right:5px;}
+.genericForm select{border:1px solid #d7d4cf;}
+.errorManager{padding-left:10px;padding-right:20px; margin-top:10px;width:465px;background:#efefef;background:-moz-linear-gradient(top, #ffffff 0%, #e8e8e8 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e8e8e8));background:-moz-linear-gradient(top, #ffffff 0%, #e8e8e8 100%);-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;-moz-box-shadow:0 -1px 5px rgba(124,114,114, 0.31);-webkit-box-shadow:0 -1px 5px rgba(124,114,114, 0.31);box-shadow:0 -1px 5px rgba(124,114,114, 0.31);font:14px/19px Calibri, Tahoma, Verdana, sans-serif;color:#333333 }
+.errorManager p{width:auto !important;padding-left:65px;padding-top:25px;padding-bottom:25px;background-repeat: no-repeat;background-position: 10px center;background-image:url(../error.html);}
+.successMessage{padding-right:20px; margin-top:10px;width:465px;background:#efefef;background:-moz-linear-gradient(top, #ffffff 0%, #e8e8e8 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e8e8e8));background:-moz-linear-gradient(top, #ffffff 0%, #e8e8e8 100%);-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;-moz-box-shadow:0 -1px 5px rgba(124,114,114, 0.31);-webkit-box-shadow:0 -1px 5px rgba(124,114,114, 0.31);box-shadow:0 -1px 5px rgba(124,114,114, 0.31);font:14px/19px Calibri, Tahoma, Verdana, sans-serif;color:#333333 }
+.successMessage p{width:auto !important;padding-left:75px;padding-top:25px;padding-bottom:25px;background-repeat: no-repeat;background-position: 10px center;background-image:url(../ok.html);}
+#introtext{display:none;}
+.accountFunctions .edekont{padding-left:10px;background-color: #fafafa;color: #ed4653;font-size: 24px}
+a.softlink{color:#d56363;text-decoration:underline  }
+a.UnderlinedRedLink{padding-left:30px;font:11px Tahoma, Verdana, sans-serif;color:#d56363;text-align:right;text-decoration:underline }
+span.CurrentPageNumber{padding-left:30px;font:13px Tahoma, Verdana, sans-serif;color:#d56363;text-align:right; }
+.autosize{width:auto !important;height:auto !important}
+span.tick{padding-left:0px;padding-right:0px;display:block;text-indent:-9999px;width:20px;height:20px;background:url(../tick.html) no-repeat transparent;}
+/*VALİDATİON ENDGİNE*/
+.inputContainer{position: relative;float: left;}
+.formError{position:absolute;top: 300px;left: 300px;display: block;z-index: 50;cursor: pointer;}
+.ajaxSubmit{padding: 20px;background: #55ea55;border: 1px solid #999;display: none}
+.formError .formErrorContent{width: 100%;background: #ee0101;position:relative;z-index:51;color: #fff;width: 150px;font-family: tahoma;font-size: 11px;border: 2px solid #ddd;box-shadow: 0 0 6px #000;-moz-box-shadow: 0 0 6px #000;-webkit-box-shadow: 0 0 6px #000;padding: 4px 10px 4px 10px;border-radius: 6px;-moz-border-radius: 6px;-webkit-border-radius: 6px;}
+.greenPopup .formErrorContent{background: #33be40;}
+.warningBoxPopup .formErrorContent{background:#696969;font-size:12px;font-weight:bold;height:40px;width:240px;padding-top:5px;padding-bottom:5px;padding-left:20px;padding-right:5px;color:#fff;}
+.blackPopup .formErrorContent{background: #393939;color: #FFF;}
+.formError .formErrorArrow{width: 15px;margin: -2px 0 0 13px; position:relative; z-index: 5006;}
+.formError .formErrorArrowBottom{ box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none;margin: 0px 0 0 12px; top:2px;}
+.formError .formErrorArrow div{border-left: 2px solid #ddd;border-right: 2px solid #ddd;box-shadow: 0 2px 3px #444;-moz-box-shadow: 0 2px 3px #444;-webkit-box-shadow: 0 2px 3px #444;font-size: 0px;height: 1px;background: #ee0101;margin: 0 auto;line-height: 0;font-size: 0;display: block;}
+.formError .formErrorArrowBottom div{ box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none;}
+.greenPopup .formErrorArrow div{background: #33be40;}
+.blackPopup .formErrorArrow div{background: #393939;color: #FFF;}
+.formError .formErrorArrow .line10{width: 15px;border: none;}
+.formError .formErrorArrow .line9{width: 13px;border: none;}
+.formError .formErrorArrow .line8{width: 11px;}
+.formError .formErrorArrow .line7{width: 9px;}
+.formError .formErrorArrow .line6{width: 7px;}
+.formError .formErrorArrow .line5{width: 5px;}
+.formError .formErrorArrow .line4{width: 3px;}
+.formError .formErrorArrow .line3{width: 1px;border-left: 2px solid #ddd;border-right: 2px solid #ddd;border-bottom: 0 solid #ddd;}
+.formError .formErrorArrow .line2{width: 3px;border: none;background: #ddd;}
+.formError .formErrorArrow .line1{width: 1px;border: none;background: #ddd;}
+/*===========*/
+
+/*=All Buttons=*/
+.btnType1{ display:inline-block; height:36px;background:url(../png/btntype1.png) no-repeat right 0px; margin-left:25px; color:#fff; font:bold 12px/36px arial; text-align:center; padding-right:25px; }
+.btnType1 span{display:inline-block; float:left; width:15px; height:36px; background:url(../png/btntype1.png) no-repeat 0 0; margin-right:10px; margin-left:-15px; }
+.btnType1:hover{background-position:right bottom;}
+.btnType1:hover span{background-position:0 bottom;}
+
+.btnType2{background:url(../png/btntype2.png) no-repeat right 0px;display:inline-block; height:41px;margin-left:25px; color:#fff; font:bold 12px/41px arial; padding-right:55px; }
+.btnType2 span{ background:url(../png/btntype2.png) no-repeat 0 0;display:inline-block; float:left; width:15px; height:41px;margin-right:10px; margin-left:-15px; }
+.btnType2:hover{background-position:right bottom;}
+.btnType2:hover span{background-position:0 bottom;}
+
+.btnType3{background:url(../png/btntype3.png) no-repeat right 0px;display:inline-block; height:36px;margin-left:25px; color:#fff; font:bold 12px/36px arial; padding-right:25px; }
+.btnType3 span{ background:url(../png/btntype3.png) no-repeat 0 0;display:inline-block; float:left; width:15px; height:36px;margin-right:10px; margin-left:-15px; }
+.btnType3:hover{background-position:right bottom;}
+.btnType3:hover span{background-position:0 bottom;}
+
+
+.button1{ margin:25px 22px 0 0; float:right;}
+.button2{ margin:30px 0 0 15px; float:left;}
+.right.button2{ margin:30px 0 0 15px; float:right;}
+
+.logout{position:absolute;right:25px;top:10px;padding-left:27px;padding-top:4px;display:block;height:25px;background:url(../cikis.html) no-repeat left 0px;font:11px Tahoma, Verdana, sans-serif;color:#610404;}
+
+.errorMessage { position:absolute; z-index:999; left:-13px; top:-50px; padding:17px 20px 17px 80px; min-width:340px; background-color:#f4000c; background:-moz-linear-gradient(top, #DB0001 0%, #330001 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#DB0001), color-stop(100%,#330001)); box-shadow:5px 5px 5px rgba(0,0,0, 0.75); -moz-box-shadow:5px 2px 5px rgba(0,0,0, 0.75); -webkit-box-shadow:5px 5px 5px rgba(0,0,0, 0.75); border:2px solid #fff }
+	.errorMessage p { font-size:14px; font-weight:bold; color:#fff }
+	.errorMessage .close { position:absolute; right:8px; top:9px; width:10px; height:11px; background:url(../png/closeerror.png); text-indent:-9999px }
+	.errorMessage .errorIcon { position:absolute; left:20px; top:50%; margin-top:-23px; width:52px; height:53px; background:url(../png/error.png); }
+
+@media only screen and (max-device-width:1025px){
+    div.inputSize31{padding-left:8px;text-indent:2px; background-position:2px 0;}
+    div.inputSize25{padding-left:8px;text-indent:2px;background-position:2px 0;}    
+}

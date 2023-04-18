@@ -1,0 +1,1159 @@
+td
+{
+	FONT-SIZE: 8pt;
+	FONT-FAMILY:  verdana,Arial;
+}
+table
+{
+	FONT-SIZE: 8pt;
+	FONT-FAMILY:  verdana,Arial;
+}
+
+.BankBG
+{
+	 BACKGROUND-COLOR: #0F238C;
+}
+.Heading
+{
+    BACKGROUND-COLOR: #E2E2E2;
+    BORDER-BOTTOM: #9485a8;
+    BORDER-LEFT: #9485a8;
+    BORDER-RIGHT: #9485a8;
+    BORDER-TOP: #9485a8;
+    COLOR: #FFFFFF;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: left;
+    VERTICAL-ALIGN: middle;
+}
+.HeadingCenter
+{
+    BACKGROUND-COLOR: red;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    BORDER-BOTTOM: #9485a8;
+    BORDER-LEFT: #9485a8;
+    BORDER-RIGHT: #9485a8;
+    BORDER-TOP: #9485a8;
+    COLOR: #0e259a;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center;
+    VERTICAL-ALIGN: middle;
+}
+.DataRightAligned
+{
+    COLOR: #0F238C;
+    FONT-WEIGHT: normal;
+    TEXT-ALIGN: right;
+    VERTICAL-ALIGN: middle;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY:  verdana,Arial;
+
+}
+.DataLeftAligned
+{
+    COLOR: #0F238C;
+    FONT-WEIGHT: normal;
+    TEXT-ALIGN: left;
+    VERTICAL-ALIGN: middle;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY:  verdana,Arial;
+
+}
+.DataRightAlignedBold
+{
+    COLOR: #0F238C;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: right;
+    VERTICAL-ALIGN: middle;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY:  verdana,Arial;
+
+}
+.DataLeftAlignedBold
+{
+    COLOR: #0F238C;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: left;
+    VERTICAL-ALIGN: middle;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY:  verdana,Arial;
+
+}
+.DataCenterAligned
+{
+    COLOR: #0F238C;
+    FONT-WEIGHT: normal;
+    TEXT-ALIGN: center;
+    VERTICAL-ALIGN: middle;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY:  verdana,Arial;
+
+}
+.DataCenterAlignedBold
+{
+    COLOR: #0F238C;
+    FONT-WEIGHT: normal;
+    TEXT-ALIGN: center;
+    VERTICAL-ALIGN: middle;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY:  verdana,Arial;
+
+}
+.ControlDataRightAligned
+{
+    COLOR: #09092e;
+    TEXT-ALIGN: right;
+    VERTICAL-ALIGN: middle
+	FONT-SIZE: 8pt;
+	FONT-FAMILY:  verdana,Arial;
+
+}
+.ControlDataLeftAligned
+{
+    COLOR:#000099;
+    TEXT-DECORATION: none;
+    VERTICAL-ALIGN: middle;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY:  verdana,Arial;
+
+}
+.Error
+{
+    BACKGROUND-COLOR: #ccccb7;
+    COLOR: #09092e;
+    FONT-WEIGHT: normal;
+    TEXT-ALIGN: left
+}
+.Warning
+{
+    COLOR: red;
+    TEXT-ALIGN: left;
+    VERTICAL-ALIGN: middle
+}
+.Response
+{
+    COLOR: maroon;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: left;
+    VERTICAL-ALIGN: middle
+}
+.Instruction
+{
+    COLOR: #09092e;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: left;
+    VERTICAL-ALIGN: middle
+}
+.NavBold
+{
+    		
+    COLOR: #09092e;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center;
+    VERTICAL-ALIGN: middle
+}
+.NavBoldInitCaps
+{
+    COLOR: #09092e;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: left;
+    TEXT-INDENT: 5pt;
+    TEXT-TRANSFORM: capitalize;
+    VERTICAL-ALIGN: middle
+}
+.rCross1
+{
+	position: relative;
+	overflow: none;
+	BACKGROUND-COLOR: #C4E1FF;
+    BACKGROUND-REPEAT: no-repeat;
+    height: 21px;
+    width: 19px;
+    text-align:left;
+}
+.rCrossImg
+{
+	BACKGROUND-COLOR: #C4E1FF;
+    BACKGROUND-REPEAT: no-repeat;
+    height: 21px;
+    width: 21px;
+    text-align:left;
+}
+.LCross
+{
+	position: static;
+	BACKGROUND-COLOR: #EBEBEB;
+	border-bottom: 3px inset #EBEBEB
+	
+	BACKGROUND-REPEAT: no-repeat;
+        height: 19px;
+        width: 19px;
+        text-align:left;
+}
+.iCross
+{
+	position: relative;
+	overflow:none;
+	BACKGROUND-IMAGE: url('../../images/eng/colorPurple/iCross.gif'); 
+    BACKGROUND-REPEAT: no-repeat;
+    height: 19px;
+    width: 18px;
+}
+
+.MainMenu
+{
+    BACKGROUND-COLOR: #E2E2E2;
+    BORDER-BOTTOM: #c8c7cc 1px solid;
+    BORDER-LEFT: #c8c7cc 1px;
+    BORDER-RIGHT: #c8c7cc 1px;
+    BORDER-TOP: #c8c7cc 1px;
+    COLOR: #09092e;
+    FONT-WEIGHT: bold;
+    HEIGHT: 20px;
+    TEXT-ALIGN: left;
+    TEXT-TRANSFORM: capitalize;
+    VERTICAL-ALIGN: middle
+}
+
+.VisitedLink
+{
+    COLOR: red;
+    VERTICAL-ALIGN: middle
+}
+.UnVisitedLink
+{
+    COLOR: #09092e;
+    VERTICAL-ALIGN: middle
+}
+.WorkArea
+{
+    BACKGROUND-COLOR: #FFFFFF;    
+	FONT-SIZE:8pt;
+	FONT-FAMILY:Verdana, Arial;
+}
+.ControlDataLeftAligned SELECT
+{
+}
+.ColHeadingRightAligned
+{
+    BACKGROUND-COLOR: #C4E1FF;
+    COLOR: #0F238C;
+    TEXT-ALIGN: right;
+    TEXT-DECORATION: none;
+    VERTICAL-ALIGN: middle;
+    FONT-WEIGHT: bold;
+	FONT-SIZE:8pt;
+	FONT-FAMILY:Verdana, Arial;
+
+}
+.ColHeadingLeftAligned
+{
+    BACKGROUND-COLOR: #C4E1FF;
+    COLOR: #0F238C;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+    PADDING-LEFT: 5px;
+    VERTICAL-ALIGN: middle;
+    FONT-WEIGHT: bold;
+	FONT-SIZE:8pt;
+	FONT-FAMILY:Verdana, Arial;
+}
+.ColHeadingCenterAligned
+{
+    BACKGROUND-COLOR: #C4E1FF;
+    COLOR: #0F238C;
+    OVERFLOW: auto;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none;
+    VERTICAL-ALIGN: middle;
+	FONT-SIZE:8pt;
+	FONT-FAMILY:Verdana, Arial;
+
+}
+.ColHeadingRightAlignedBold
+{
+    COLOR: #0F238C;
+    BACKGROUND-COLOR: #C4E1FF;
+    TEXT-ALIGN: right;
+    TEXT-DECORATION: none;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+	FONT-SIZE:8pt;
+	FONT-FAMILY:Verdana, Arial;
+
+}
+.ColHeadingLeftAlignedBold
+{
+    COLOR: #0F238C;
+    BACKGROUND-COLOR: #C4E1FF;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+    FONT-WEIGHT: bold;
+	FONT-SIZE:8pt;
+	FONT-FAMILY:Verdana, Arial;
+
+}
+.ColHeadingCenterAlignedBold
+{
+    OVERFLOW: auto;
+    COLOR: #0F238C;
+    BACKGROUND-COLOR: #C4E1FF;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none;
+    FONT-WEIGHT: bold;
+	FONT-SIZE:8pt;
+	FONT-FAMILY:Verdana, Arial;
+
+}
+.MenuArea
+{
+    BACKGROUND-COLOR: ash;
+    COLOR: #EBEBEB
+}
+.ControlDataLeftAligned INPUT
+{
+}
+.MainMenu A:link
+{
+    COLOR: #0F238C
+}
+.MainMenu A:active
+{
+    COLOR: #0F238C
+}
+.MenuLevel2 A:hover
+{
+    COLOR: #0F238C;
+    TEXT-DECORATION: none
+}
+.MenuLevel2 A:link
+{
+    COLOR: #0F238C;
+    TEXT-DECORATION: none
+}
+.MenuLevel2 A:visited
+{
+    COLOR: #0F238C;
+    TEXT-DECORATION: none
+}
+.MenuLevel2 A:active
+{
+    COLOR: #0F238C;
+    TEXT-DECORATION: none
+}
+
+.MainMenu A:link
+{
+    COLOR: #0F238C
+}
+.MainMenu A:active
+{
+    COLOR: #0F238C
+}
+.MainMenu A:hover
+{
+    COLOR: #cc6600
+}
+.MainMenu A:visited
+{
+    COLOR: #09092e
+}
+.NavBold A:hover
+{
+    COLOR: #cc6600;
+    TEXT-DECORATION: underline
+}
+.NavBold A:link
+{
+    COLOR: #0F238C;
+    TEXT-DECORATION: underline
+}
+.NavBold A:visited
+{
+    COLOR: #0F238C;
+    TEXT-DECORATION: underline
+}
+.NavBold A:active
+{
+    COLOR: #0F238C;
+    TEXT-DECORATION: underline
+}
+.Heading A:hover
+{
+    COLOR: #cc6600;
+    TEXT-DECORATION: underline
+}
+.Heading A:link
+{
+    COLOR: #0F238C;
+    TEXT-DECORATION: underline
+}
+.Heading A:visited
+{
+    COLOR: #0F238C;
+    TEXT-DECORATION: underline
+}
+.Heading A:active
+{
+    COLOR: #0F238C;
+    TEXT-DECORATION: underline
+}
+.NavBoldInitCaps A:active
+{
+    COLOR: #0F238C
+}
+.NavBoldInitCaps A:link
+{
+    COLOR: #0F238C
+}
+.NavBoldInitCaps A:visited
+{
+    COLOR: #0F238C
+}
+.ControlDataRightAligned SELECT
+{
+    TEXT-ALIGN: right
+}
+.ControlDataRightAligned INPUT
+{
+    TEXT-ALIGN: right
+}
+.DataLeftAligned A:active
+{
+    COLOR: #0F238C
+}
+.DataLeftAligned A:link
+{
+    COLOR: #0F238C
+}
+.DataLeftAligned A:visited
+{
+    COLOR: #0F238C
+}
+.DataCenterAligned A:active
+{
+    COLOR: #0F238C
+}
+.DataCenterAligned A:link
+{
+    COLOR: #0F238C
+}
+.DataCenterAligned A:visited
+{
+    COLOR: #0F238C
+}
+.DataRightAligned A:active
+{
+    COLOR: #0F238C
+}
+.DataRightAligned A:link
+{
+    COLOR: #0F238C
+}
+.DataRightAligned A:visited
+{
+    COLOR: #0F238C
+}
+.DataLeftAlignedBold A:hover
+{
+    COLOR: #cc6600;
+    TEXT-DECORATION: underline
+}
+.DataLeftAlignedBold A:link
+{
+    COLOR: #0F238C;
+    TEXT-DECORATION: underline
+}
+.DataLeftAlignedBold A:visited
+{
+    COLOR: #0F238C;
+    TEXT-DECORATION: underline
+}
+.DataLeftAlignedBold A:active
+{
+    COLOR: #0F238C;
+    TEXT-DECORATION: underline
+}
+.TopRowBlank
+{
+    BACKGROUND-color: #9485a8;
+    BORDER-BOTTOM: #d3a88f;
+    BORDER-LEFT: #d3a88f;
+    BORDER-RIGHT: #d3a88f;
+    BORDER-TOP: #d3a88f;
+    COLOR: #d3a88f;
+    FONT: bold 8pt Arial;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-RIGHT: 1px;
+    PADDING-TOP: 1px;
+    TEXT-ALIGN: right;
+    WIDTH: 100%
+}
+.CopyrightBold
+{
+    COLOR: #09092e;
+    TEXT-ALIGN: center
+}
+.LeftMenuTable
+{
+    BORDER-BOTTOM: #9396a8 1px solid;
+    BORDER-LEFT: #9396a8 1px solid;
+    BORDER-RIGHT: #9396a8 1px solid;
+    BORDER-TOP: #9396a8 1px solid
+}
+.LeftMenuTable TABLE
+{
+    BACKGROUND-COLOR: #ffffff;
+    BORDER-BOTTOM: #9396a8 2px solid;
+    BORDER-LEFT: #9396a8 2px solid;
+    BORDER-RIGHT: #9396a8 2px solid;
+    BORDER-TOP: #9396a8 2px solid;
+    FONT-SIZE: 356px
+}
+.MenuWorkArea
+{
+    BACKGROUND-COLOR: #666666;    
+    BACKGROUND-REPEAT: repeat-y
+    BORDER-RIGHT: #6395BF 2px solid;
+}
+.MenuWorkArea .MenuTD
+{
+    BACKGROUND-COLOR: #666666;    
+    BACKGROUND-REPEAT: repeat-y
+}
+.ColAlter1
+{
+    BACKGROUND-COLOR: #E1EDFA;
+    COLOR: white;
+    FONT-SIZE: 8pt
+}
+.ColAlter2
+{
+    BACKGROUND-COLOR: #F7F7F7;
+    COLOR: #ffffff;
+    FONT-SIZE: 8pt
+}
+.AlterRow1
+{
+    BACKGROUND-COLOR: #EBEBEB;
+    COLOR: #0F238C;
+    FONT-SIZE: 8pt;
+}
+.AlterRow2
+{
+    BACKGROUND-COLOR: #FFFFFF;
+    COLOR: #0F238C;
+    FONT-SIZE: 8pt;
+}
+.TableBody
+{
+    BACKGROUND-COLOR: #C4E1FF	
+}
+.TableBorder
+{   
+    BORDER: 1px double #0F238C;
+    Background-color:#F7F7F7;
+}
+.TableBorderEOS
+{   
+    BORDER: 1px double #0F238C;
+    Background-color:#FFFFFF;
+}
+.top-nav-item
+{
+    FONT-WEIGHT: bold;
+    COLOR: #0F238C;
+    FONT-FAMILY: Verdana,Helvetica,sans-serif;
+    TEXT-DECORATION: none;
+
+}
+A.top-nav-item
+{
+    FONT-WEIGHT: bold;
+    COLOR: #0F238C;
+    FONT-FAMILY: Verdana,Helvetica,sans-serif;
+
+}
+A.top-nav-item:active
+{
+    FONT-WEIGHT: bold;
+    COLOR: #0F238C;
+    FONT-FAMILY: sans-serif;
+}
+A.top-nav-item:hover
+{
+    FONT-WEIGHT: bold;
+}
+.framing-table
+{
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-COLOR: #767776
+}
+.noframe-framing-table
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    BACKGROUND-IMAGE: none;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-BOTTOM: #000000 1px solid;    
+}
+.buttons
+{
+
+    BORDER-RIGHT: #000000 1px outset;
+    BORDER-TOP: #b1b1b1 1px outset;
+    FONT-SIZE: 10pt;
+    MARGIN: 1px 2px;
+    BORDER-LEFT: #b1b1b1 1px outset;
+    BORDER-BOTTOM: #000000 1px outset;
+    FONT-FAMILY: Verdana,Helvetica, sans-serif;
+    BACKGROUND-COLOR:#9CF;
+}
+.buttons_1
+{
+
+    BORDER-RIGHT: #000000 1px outset;
+    BORDER-TOP: #b1b1b1 1px outset;
+    FONT-SIZE: 10pt;
+    MARGIN: 1px 2px;
+    WIDTH: 6em;
+    BORDER-LEFT: #b1b1b1 1px outset;
+    BORDER-BOTTOM: #000000 1px outset;
+    FONT-FAMILY: Verdana,Helvetica, sans-serif;
+    BACKGROUND-COLOR: #C4E1FF
+}
+
+
+.MenuLevel1
+{
+	FONT-FAMILY: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+   	font-weight: bold;	
+	text-decoration: none;	
+	padding-top: 5px;
+	padding-bottom: 3px;
+	padding-left: 5px;		
+	background-repeat: no-repeat;    	
+	BACKGROUND-POSITION:0% 50%;	
+    	HEIGHT: 20px;
+	TEXT-TRANSFORM: capitalize;
+	color: #8A0028;    
+}
+.MenuLevel1Img
+{
+	BACKGROUND-IMAGE: url('../../images/eng/colorPurple/subbullet.gif');
+    	BACKGROUND-REPEAT: no-repeat;   
+	width:11px;
+	Height:20px;
+}
+.MenuLevel2
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-style: normal;	
+    Height:15px;
+    color: #11248B;    
+    BACKGROUND-REPEAT: no-repeat;
+    BACKGROUND-POSITION:0% 50%;    
+    HEIGHT: 20px;
+    TEXT-ALIGN: left;
+    TEXT-TRANSFORM: capitalize;
+    PADDING-LEFT: 5pt;
+    VERTICAL-ALIGN: bottom;	
+}
+.MenuLevel2Img
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	Height:15px;
+	color: #11248B;
+
+}
+.SubMenuArea
+{
+    border-right: 0px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+    text-align:left;
+    background-color: #E6E6E6;
+    width:100%;
+}
+.MainSMenuTable
+{
+    border-right: 1px solid #6395BF;
+    border-bottom: 0px solid #E2E2E2;
+    text-align:left;
+    background-color: #E6E6E6;
+    height:100%;
+    width:100%;
+}
+.side
+{
+	background-color: #BAD3ED;
+	border-bottom: 0px solid #E2E2E2;
+	height:9px;
+}
+
+.top-navigation
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 3px;
+    FONT-SIZE: 7pt;
+    COLOR: #0F238C;
+    FONT-FAMILY: Verdana,Helvetica, sans-serif;
+    /*BACKGROUND-COLOR: #def7fe;*/
+   /* border-top:1px solid #6395BF;*/
+	VERTICAL-ALIGN: top;
+	height:19px;
+	padding-top:3px;
+}
+.top-navigation1
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 8px;
+    FONT-SIZE: 7pt;
+    COLOR: #6395BF;
+    FONT-FAMILY: Verdana,Helvetica, sans-serif;
+    BACKGROUND-COLOR: #E6E6E6;
+    border-top:1px solid #6395BF;
+    border-bottom:1px solid #6395BF;
+    VERTICAL-ALIGN: top;
+    text-decoration:none;
+	padding-top:2px;
+}
+.top-navigation5
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 3px;
+    FONT-SIZE: 8pt;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana,Helvetica, sans-serif;
+    BACKGROUND-COLOR: #E6E6E6;
+	VERTICAL-ALIGN: top;
+	height:19px;
+	padding-top:3px;
+}
+.menuTable
+{
+	background-color: #E2E2E2;
+	border-top: 1px solid #6395BF;
+	border-bottom:1px solid #6395BF;
+	border-right: 0px solid #FFFFFF ;
+	COLOR: #0F238C;
+	FONT-FAMILY: Verdana,Helvetica, sans-serif;
+	FONT-SIZE: 8pt;
+	FONT-WEIGHT:Bold;
+	text-decoration:none;
+}
+.menuTable a:link
+{
+	background-color: #C4E1FF;
+	COLOR: #0F238C;
+	FONT-FAMILY: Verdana,Helvetica, sans-serif;
+	FONT-SIZE: 8pt;
+	FONT-WEIGHT:Bold;
+	text-decoration:none;
+}
+.menuTable a:visited
+{
+	background-color: #C4E1FF;
+	COLOR: #0F238C;
+	FONT-FAMILY: Verdana,Helvetica, sans-serif;
+	FONT-SIZE: 8pt;
+	FONT-WEIGHT:Bold;
+	text-decoration:none;
+}
+.menuTable a:hover
+{
+	background-color: #C4E1FF;
+	COLOR: #6395BF;
+	FONT-FAMILY: Verdana,Helvetica, sans-serif;
+	FONT-SIZE: 8pt;
+	FONT-WEIGHT:Bold;
+	text-decoration:none;
+}
+.menuTable a:active
+{
+	background-color: #C4E1FF;
+	COLOR: #6395BF;
+	FONT-FAMILY: Verdana,Helvetica, sans-serif;
+	FONT-SIZE: 8pt;
+	FONT-WEIGHT:Bold;
+	text-decoration:none;
+}
+
+.PageHeading
+{
+    BACKGROUND-COLOR: #C4E1FF;
+	border-bottom: 3px inset #C4E1FF;
+	COLOR: #0F238C;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: LEFT;
+    TEXT-DECORATION: NONE;
+    TEXT-TRANSFORM: Capitalize;
+    VERTICAL-ALIGN: middle;
+    FONT-FAMILY:  verdana,Arial;
+    FONT-SIZE: 8.5pt;
+    PADDING-LEFT: 2px;
+	height:23px;
+}
+.PageHeadingEOS
+{
+    BACKGROUND-COLOR: #FFFFFF;
+	border-bottom: 3px inset #FFFFFF;
+	COLOR: #0F238C;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: CENTER;
+    TEXT-DECORATION: NONE;
+    TEXT-TRANSFORM: Capitalize;
+    VERTICAL-ALIGN: middle;
+    FONT-FAMILY:  verdana,Arial;
+    FONT-SIZE: 10.5pt;
+    PADDING-LEFT: 2px;
+	height:23px;
+}
+.HeadingImg1
+{
+	BACKGROUND-COLOR: #C4E1FF;
+	border-bottom: 3px inset #C4E1FF;
+	background-image: url('../../images/eng/headertabCross.gif'); 	
+	background-repeat:no-repeat;
+	width : 8px;
+	height: 23px;
+}
+
+.TableBorderHead
+{
+    border-left: 2px solid #C4E1FF;
+    border-right: 2px solid #C4E1FF;
+    border-bottom: 2px solid #C4E1FF;
+	width:99%;
+	padding-bottom:2px;
+}
+.TableBorderHeadEOS
+{
+    border-left: 1px solid #0F238C;
+    border-right: 1px solid #0F238C;
+    border-bottom: 1px solid #0F238C;
+	width:99%;
+	padding-bottom:1px;
+}
+.Copyright
+{
+    COLOR: #B6BEEB;
+    TEXT-ALIGN: center;
+    VERTICAL-ALIGN: middle;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 8pt
+}
+
+.copyrightBG
+
+{
+    border-top:1px solid #B6BEEB;
+    background-color:#B6BEEB;
+    margin-left:4px;
+}
+
+.Tab
+{
+	background-color:#C4E1FF;
+	border-right:1px solid #808080;
+	border-left:1px solid #FEFEFE;
+	
+}
+.TabBlank
+{
+	width: 1px;
+}
+
+.Tab_A
+{
+	background-color:#E2E2E2;
+	border-right:1px solid #808080;
+	border-left:1px solid #FEFEFE;
+}	
+.subbullet
+{
+	BACKGROUND-IMAGE: url('../../images/eng/colorPurple/subbullet.gif'); 
+    BACKGROUND-REPEAT: no-repeat;
+    height: 13px;
+    width: 10px;
+    text-align:left;
+    PADDING-LEFT: 2px;
+    PADDING-right: 3px;
+}
+
+.MenuBG
+{
+	background-color:#C4E1FF;
+}
+.MenuBG1
+{
+	background-color:#E6E6E6;
+}
+
+.loginhead
+{
+	border-left: 1px solid #424a03; 
+	border-right: 1px solid #424a03; 
+	border-top: 1px solid #424a03; 
+	border-bottom: 1px solid #424a03;
+	background-color:#bfd800;
+}
+.loginheadborder
+{
+	border-right:1px solid #424a03; 
+	border-top: 1px solid #424a03; 
+	border-bottom: 1px solid #424a03;
+	background-color:#B6BEEB;
+}
+
+.loginheadcorner
+{
+	border-left-width: 1px; 
+	border-right-width: 1px; 
+	border-top-width: 1px; 
+	border-bottom: 1px solid #424a03;
+}
+
+
+
+
+.EBAlterRow1
+{
+    BACKGROUND-COLOR: #EBEBEB;
+    COLOR: #0F238C;
+    FONT-SIZE: 8pt;
+}
+.EBAlterRow2
+{
+    BACKGROUND-COLOR: #FFFFFF;
+    COLOR: #0F238C;
+    FONT-SIZE: 8pt;
+}
+.EBPageHeading
+{   
+	BACKGROUND-COLOR: #C4E1FF;
+	border-bottom: 3px inset #B6BEEB;
+	COLOR: #0F238C;
+	FONT-WEIGHT: bold;
+	TEXT-ALIGN: LEFT;
+	TEXT-DECORATION: NONE;
+	TEXT-TRANSFORM: Capitalize;
+	VERTICAL-ALIGN: middle;
+	FONT-FAMILY:  verdana,Arial;
+	FONT-SIZE: 8.5pt;
+	PADDING-LEFT: 2px;
+	height:23px;
+}
+.EBHeading
+{
+    BACKGROUND-COLOR: #C4E1FF;
+    BORDER-BOTTOM: #9485a8;
+    BORDER-LEFT: #9485a8;
+    BORDER-RIGHT: #9485a8;
+    BORDER-TOP: #9485a8;
+    COLOR: #0F238C;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: left;
+    VERTICAL-ALIGN: middle;
+}
+.EBColHeadingRightAligned
+{
+	BACKGROUND-COLOR: #C4E1FF;
+	COLOR: #0F238C;
+	TEXT-ALIGN: right;
+	TEXT-DECORATION: none;
+	VERTICAL-ALIGN: middle;
+	FONT-WEIGHT: bold;
+	FONT-SIZE:8pt;
+	FONT-FAMILY:Verdana, Arial;
+}
+.EBColHeadingLeftAligned
+{
+	BACKGROUND-COLOR: #C4E1FF;
+	COLOR: #0F238C;
+	TEXT-ALIGN: left;
+	TEXT-DECORATION: none;
+	PADDING-LEFT: 5px;
+	VERTICAL-ALIGN: middle;
+	FONT-WEIGHT: bold;
+	FONT-SIZE:8pt;
+	FONT-FAMILY:Verdana, Arial;
+}
+.EBColHeadingCenterAligned
+{
+	BACKGROUND-COLOR: #C4E1FF;
+	COLOR: #0F238C;
+	OVERFLOW: auto;
+	TEXT-ALIGN: center;
+	TEXT-DECORATION: none;
+	VERTICAL-ALIGN: middle;
+	FONT-SIZE:8pt;
+	FONT-FAMILY:Verdana, Arial;
+}
+.EBTableBody
+{
+    BACKGROUND-COLOR: #C4E1FF
+}
+.EBWorkArea
+{
+	BACKGROUND-COLOR: #FFFFFF;    
+	FONT-SIZE:8pt;
+	FONT-FAMILY:Verdana, Arial;
+}
+.EBAlterRow1 A:visited
+{
+    COLOR: darkred;
+}
+.EBAlterRow1 A:link
+{
+    COLOR: navy;
+}
+.EBAlterRow1 A:hover
+{
+    COLOR: crimson;
+}
+.EBAlterRow2 A:visited
+{
+    COLOR: darkred;
+}
+.EBAlterRow2 A:link
+{
+    COLOR: navy;
+}
+.EBAlterRow2A:active
+{
+    COLOR: navy;
+}
+.EBAlterRow2 A:hover
+{
+    COLOR: crimson;
+}
+.DataLeftAligned
+{
+	COLOR: #0F238C;
+	FONT-WEIGHT: normal;
+	TEXT-ALIGN: left;
+	VERTICAL-ALIGN: middle;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY:  verdana,Arial;
+}
+.DataLeftTopAligned
+{
+    COLOR: #0F238C;
+    FONT-WEIGHT: normal;
+    TEXT-ALIGN: left;
+    VERTICAL-ALIGN: middle
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 8pt	
+}
+.EBNavBold
+{
+    COLOR: #09092e;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center;
+    VERTICAL-ALIGN: middle
+}
+.EBLabel
+{
+    COLOR: #4E7DAB;
+    BACKGROUND-COLOR: #ebebdf;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 8pt;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+.EBErrorText
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 10pt;
+}
+.EBFooter
+{
+    BACKGROUND-COLOR: transparent;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Tahoma, 'Times New Roman';
+    FONT-SIZE: 10px;
+    FONT-WEIGHT: lighter;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: overline;
+}
+.EBInfoText
+{
+    BACKGROUND-COLOR: #4E7DAB;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana;
+    FONT-SIZE: x-small;
+    FONT-WEIGHT: bolder;
+    TEXT-DECORATION: none;
+}
+.EBWarningText
+{
+    BACKGROUND-COLOR: navy;
+    COLOR: khaki;
+    FONT-FAMILY: Arial, Verdana;
+    FONT-SIZE: x-small;
+    FONT-WEIGHT: bolder;
+    TEXT-DECORATION: none;
+}
+.EBPrintText
+{
+    COLOR: black;
+    FONT-FAMILY: Arial, Verdana;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: lighter;
+    TEXT-DECORATION: none;
+}
+.Greeting
+{
+    BACKGROUND-COLOR: #e0dfdf;
+    BACKGROUND-IMAGE: url(../images/eng/flex@intf_left_bgrdHoriz.gif);
+    COLOR: #09092e;
+    FONT-WEIGHT: bold;
+    HEIGHT: 20px;
+    PADDING-LEFT: 12px;
+    TEXT-ALIGN: left;
+    VERTICAL-ALIGN: middle
+}
+.EBLinktext
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    COLOR: #FFFFFF;
+    LINE-HEIGHT: normal;
+    FONT-STYLE: normal;
+}
+.EBLinktext1
+{
+    FONT-FAMILY: Verdana;
+    FONT-WEIGHT: normal;    
+    FONT-SIZE: 8pt;
+    COLOR: #0F238C;
+    LINE-HEIGHT: normal;
+    FONT-STYLE: normal;
+}
+.EBTransparentTextBox
+{
+    BORDER: medium none; 
+    BACKGROUND-COLOR: #F7F7F7;
+}
+.Text{
+        font-family: Verdana, Arial, Sans-serif, 'Times New Roman';
+        font-size: 8pt;
+        font-weight: normal;
+        font-style: normal;
+        color: #333333;
+        text-decoration: none;
+}
+.toolTip {
+        font-family: Verdana, Arial, Sans-serif, 'Times New Roman';
+        font-size: 8pt;
+        filter:alpha(opacity=80);
+        -moz-opacity: 0.8;
+        opacity: 0.8;
+        /* comment the above 3 line if you don't want transparency*/
+}

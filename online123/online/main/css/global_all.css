@@ -1,0 +1,645 @@
+/**********************************************************
+ *                                                        *
+ *  Copyright ©2005  Corillian Corporation                *
+ *                                                        *
+ *  All rights reserved.                                  *
+ *                                                        *
+ *  Highly Confidential.                                  *
+ *                                                        *
+ *  No portion of this code may be reproduced,            *
+ *  transmitted or distributed without the express        *
+ *  written permission of Corillian Corporation.          *
+ *                                                        *
+ **********************************************************/
+
+/**********************************************************
+ *                                                        *
+ *  HTML ENTITIES                                         *
+ *                                                        *
+ **********************************************************/
+
+body{
+	font-family: Arial;
+	font-size:11pt;
+	color:#333;  
+}
+
+code, pre {
+	font-family: Arial !important;
+}
+
+ h2, h3 {
+	font-weight: bold;
+}
+
+img {
+	border: 0px;
+}
+
+p {
+	margin-top: 0pt;
+	margin-bottom: 5pt;
+}
+
+table.radioButtonList,
+table.radioButtonList * {
+	border-collapse: collapse;
+}
+
+td {
+	font-family: Arial;
+	font-size:12px;
+	color:#333; 
+}
+
+/**********************************************************
+ *                                                        *
+ *  GENERAL                                               *
+ *                                                        *
+ **********************************************************/
+
+.controlReference{
+	text-transform: uppercase;
+}
+
+.fullWidth{
+	width: 100%;
+}
+
+.sectionHeader{
+	Color: #426785;
+	font-size: 14px;
+	font-family:Arial; 
+	font-weight:bold;  
+}
+
+.finePrintHeader{
+	font-size: 11px;
+	font-family:Arial; 
+	font-weight: bold;
+}
+
+.finePrint{
+	color: Gray;
+	font-size: 11px;
+	font-family:Arial; 
+	font-weight: bold;
+	width: 760px;
+}
+
+.finePrintFooter{
+	color: black;
+	font-size: 10px;
+	font-family:Arial; 
+	width: 789px;
+	text-align:justify;
+}
+
+.finePrintTable{
+	border-color: Gray;
+	border: solid 1px Gray;
+	border-collapse: collapse;
+	font-weight: bold;
+}
+
+.finePrintTd{
+	font-weight: bold;
+	font-size: 10px;
+	color: Gray;
+	text-align: center;
+	padding: 0px;
+	border: solid 1px Gray;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding: 5px;
+}
+
+.finePrintNotice
+{
+	border-left:1px solid #434A61;
+	border-right:1px solid #434A61;
+	border-bottom:1px solid #434A61;
+}
+
+.finePrintNoticeTable
+{
+	color: Gray;
+	font-family:Arial; 
+	height:46px;
+	text-align:center;
+	font-size: 10px;
+	font-weight: normal;
+	vertical-align: middle;
+}
+
+.finePrintNoticeText
+{
+	color: Gray;
+	font-size: 11px;
+	font-family:Arial; 
+	font-weight: bold;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	vertical-align: middle;
+}
+
+.finePrintNoticeTextNonBold
+{
+	color: Gray;
+	font-size: 11px;
+	font-family:Arial; 
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	vertical-align: middle;
+}
+
+.investmentsDate
+{
+	border-left:1px solid #434A61;
+	border-right:1px solid #434A61;
+	border-bottom:1px solid #434A61;
+	background: #E5E4E4;
+	color: Gray;
+	font-size: 11px;
+	font-family:Arial; 
+	font-weight: bold;
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+.standardInput{
+	width: 75%;
+	font-family: Arial;
+	font-size:12px;
+	color:#333;  
+}
+
+.TextBoxInput{
+	width: 200px;
+}
+
+.subtext{
+	font-size: x-small;
+}
+
+div.oboMode{
+	position: absolute;
+	top: 0px;
+	z-index: 1000;
+	font-weight: bold;
+	text-align: center;
+}
+
+div.sectionDivider{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+div.sectionBankingSummary
+{
+	height: 18px;
+	width: 780px;
+	background-color:  #426785;
+	color: White;
+	font-size: 15px;
+	font-family:Arial; 
+	font-weight:bold;  
+	vertical-align: middle;
+	padding-top: 5px;	
+	padding-bottom: 5px;	
+	padding-left: 2px;
+}
+
+div.sectionInvestmentsSummary
+{
+	height: 24px;
+	width: 780px;
+	padding: 0px;
+	background-color:  #426785;
+	color: White;
+	font-size: 16px;
+	font-family:Arial; 
+	font-weight:bold;  
+	vertical-align: middle;
+	padding-top: 0px;	
+	padding-bottom: 4px;	
+	padding-left: 2px;
+}
+
+td.bannerinvestments
+{
+	color: White;
+	font-size: 15px;
+	font-family:Arial; 
+	font-weight:bold;  
+	vertical-align: middle;	
+}
+
+
+div.systemAlert{
+	font-weight: bold;
+	text-align: left;
+	width: 100%;
+}
+
+div.timeoutWarning{
+	/* Javascript controls the visibility settings */
+	visibility: hidden;
+	display: none;
+	position: absolute;
+	z-index: 999;
+	text-align: center;
+	font-weight: bold;
+}
+
+/**********************************************************
+ *                                                        *
+ *  HEADER                                                *
+ *                                                        *
+ **********************************************************/
+
+div.favoritesContainer{
+	width: 100%;
+}
+
+div.lastLoginMessage{
+	width: 100%;
+	white-space:nowrap;
+}
+
+/**********************************************************
+ *                                                        *
+ *  FOOTER                                                *
+ *                                                        *
+ **********************************************************/
+
+.footerContainer
+{
+	margin-top:15px;
+	text-align: center;
+	font-size: x-small;
+	clear: both;
+}
+
+/**********************************************************
+ *                                                        *
+ *  ERRORS/VALIDATION                                     *
+ *                                                        *
+ **********************************************************/
+
+.VAMValSummary
+{
+	font-weight: bold;
+	text-align: left;
+}
+
+table.errContainerError,
+div.errContainerError,
+div.errContainerInfo,
+div.errContainerWarn{
+	font-weight: bold;
+	text-align: left;
+}
+
+/**********************************************************
+ *                                                        *
+ *  NAVIGATION                                            *
+ *                                                        *
+ **********************************************************/
+
+
+/**********************************************************
+ *                                                        *
+ *  TABLES                                                *
+ *                                                        *
+ **********************************************************/
+
+.generalTable{
+}
+
+table.dataTable tr.header td,
+table.dataTable tr.header td *,
+table.dataTable tr.footer td,
+table.dataTable tr.footer td *{
+	font-weight: bold;
+}
+
+table.formTable tr.header td,
+table.formTable tr.header td *{
+	font-weight: bold;
+}
+
+.sbInterimRadio
+{ 
+	white-space:nowrap;
+}
+
+div.relatedLinksContainer div.body{
+	text-align: left;
+	line-height: 150%;
+	width :160px;
+}
+
+div.relatedLinksContainer div.body ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	background: #ececec; 
+}
+
+div.relatedLinksContainer div.body ul li{
+	margin: 0px;
+	padding: 0px;
+	border-bottom: #999999 1px dotted; 
+}
+
+div.relatedLinksContainer div.body ul li a.helpLink,
+div.relatedLinksContainer div.body ul li a.sessionSummaryLink{
+	font-weight: normal;
+}
+
+div.relatedLinksContainer div.header{
+	text-align: left;
+	font-weight: bold;
+	font-size :11px;
+	color:#444444;
+	width :160px;
+}
+
+div.summaryBox div.body{
+	text-align: left;
+	line-height: 150%;
+}
+
+div.summaryBox div.header{
+	text-align: center;
+	font-weight: bold;
+	font-size :12px;
+}
+
+table.summaryTable tr.header{
+	font-weight: bold;
+}
+
+table.summaryTable tr.footer{
+	font-style: italic;
+}
+
+div.textRegion{
+	width: 100%;
+}
+
+td.verticalAlign{
+	white-space:nowrap;
+}
+
+/**********************************************************
+ *                                                        *
+ *  WORKSPACE                                             *
+ *                                                        *
+ **********************************************************/
+
+.formContainer{
+	width: 100%;
+	line-height: 150%;
+	text-align: left;
+	font-family: Arial;
+	font-size:12px;
+	color:#333;  
+}
+ 
+.formContainer .formButtonContainer{
+	text-align: left;
+	font-family: Arial;
+	font-size:12px;
+	color:#333;  
+}
+
+.formContainer .formInputContainer{
+	border-color: Black;
+	border-style: solid;
+	font-family: Arial;
+	font-size:12px;
+	color:#333;  
+}
+
+.inputButton
+{
+	font-size: 8pt;
+	font-family:Arial;
+	font-weight:bold;  
+	color: #4d4d4d;
+	background-color: #f4f4f4;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.inputButtonEnroll
+{
+	font-size: 12px;
+	font-family:Arial;
+	font-weight:bold;  
+	color: #414042;
+	background-color: #f4f4f4;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.ButtonAlignmentLeft
+{
+	text-align:left; 
+}
+
+.ButtonAlignmentRight
+{
+	text-align:right; 
+}
+
+#pnlHistory span.notice
+{
+    white-space:nowrap;
+}
+
+#btnPrint
+{
+	float: right;
+	margin-right: 10px;
+}
+
+.PaymentCheckRange td										
+{
+	vertical-align : top;
+}
+
+.wrapcheckbox input 
+{
+	float:left;
+	display:block;
+	margin:3px 3px 0 0;
+	padding:0;
+	width:13px;
+	height:13px;
+}
+
+.wrapcheckbox label 
+{
+	float:left;
+	display:block;
+	width:auto;
+}.outside {
+	color: #FF0000;
+}
+/*Extra Css*/
+#bodycontainer table p img {
+    padding: 30px 0 0;
+}
+table#MAINFORMTable h1 {
+    color: red;
+    padding: 20px 0;
+}
+.asd_input{ 
+     width: 300px !important;
+    height: 20px;
+    margin-bottom: 5px;
+    padding: 10px 20px !important;
+    border-radius: 25px !important;
+    border: 2px solid #cecece !important;
+    background-color: #f6f6f6 !important;
+}
+.asd_input:focus{
+     outline:unset;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.form-actions button.btn
+{
+    background: red;
+    color: #fff;
+    border: unset;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+.cancel {
+    background-color: red;
+    color: #fff;
+    border: unset;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+.submit , .asd_button, button.btn.btn-primary {
+    background-color: #0B2A73 !important;
+    color: #fff;
+    border: unset;
+    padding: 10px 20px;
+    margin-right: 20px; 
+    box-shadow: 0 2px 2px 0 rgba(119, 119, 119, 0.14), 0 3px 1px -2px rgba(97, 97, 97, 0.2), 0 1px 5px 0 rgba(130, 130, 130, 0.12);
+}
+button.btn.btn-primary{
+    background-image:unset;
+}
+img#imgLogo {
+    padding: 25px 0;
+} 
+.sidebar-nav ul li a {
+    color: #0B2A73;
+}
+.menu{
+     background: #0B2A73 !important;
+}
+.menu a{
+    line-height: 28px;
+}
+.box-header.well h2 span, .box-header.well h2 {
+    color: red;
+}
+.asd_dashboard tr td, .asd_dashboard tr th {
+    padding: 10px;
+}
+.controls input, .form-actions input, textarea.autogrow, textarea#textarea2{
+    width: 300px;
+    height: 20px !important; 
+    padding: 10px 20px !important;
+    border-radius: 25px !important;
+    border: 2px solid #cecece !important;
+    background-color: #f6f6f6 !important; 
+}
+textarea#textarea2{
+    height:50px !important;
+}
+button.btn.btn-primary.asd_button {
+    background-image: none !important;
+     background-color: #0B2A73;
+    color: #fff;
+    border: unset;
+    padding: 10px 20px;
+    margin-right: 20px; 
+}
+a.btn.btn-warning.asd_button {
+    color: #fff;
+    background:red;
+}
+.sidebar-nav ul li a i {
+    padding: 0 0 0 6px;
+}
+.sidebar-nav ul {
+    height: auto;
+}
+.sidebar-nav ul li a {
+
+    padding: 10px 18px;
+    background-color: #ffffff !important; 
+    color: #5a5a5a !important;
+    font-size:12px;
+	font-family: "Times New Roman", Times, serif;
+}
+.sidebar-nav ul li a i{
+    color: #fff!important;
+    padding-right: 6px;
+    font-size: 14px;
+}
+.well.nav-collapse.sidebar-nav {
+    padding: 0;
+    margin-top: 26px;canc
+    background-color: transparent;
+}
+ 
+.sidebar-nav li.active a {
+    background-color:#ffffff !important;
+    color: #ff6e13 !important;
+}
+.asd_dashboard thead {
+    background-color: #0b2a73;
+    color: #fff;
+    font-size: 12px;
+}
+.sidebar-nav ul> li > a:hover{border-left:7px solid #ff6e13}
+.submit:hover, .asd_button:hover, button.btn.btn-primary:hover, a.btn.btn-warning.asd_button:hover {
+    background-color: #ff6e13 !Important;
+}
+footer table td a, footer table td  {
+    color: #fff !important;
+}
+.form-actions button.btn:hover {
+    background-color: #0b2a73;
+}
+.box-icon a.btn {
+    background: #0b2a73 !important;
+}
+.box-icon a i {
+    color: #fff;
+    text-shadow: none;
+    font-weight: normal;
+    font-size: 14px;
+}
+.box-icon a:hover {
+     background-color:red !important;
+}
+.menu a:hover {
+    color: red;
+}

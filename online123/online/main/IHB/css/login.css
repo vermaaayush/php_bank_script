@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+background-color: #ffffff;
+}
+td img {display: block;}body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.style10 {font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #DF722C;
+}
+.style8 {font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.log_txt{
+	height:20px;
+	width:180px;
+	border:solid 1px #333333;
+	}
+.log_btn{
+	border:solid 1px #666;
+	background-color:#d96623;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	}
+
+.userhght{
+height:5px;
+}
+.pwdhght{
+height:1px;
+}
+.style2 {
+	font-size:11px;
+	font-family:arial;
+	font-weight:bold;
+}
+.style3 {
+	font-size:10px;
+	font-family:arial;
+}
+.style4 {
+	margin-left:0px;
+	margin-bottom:0px;
+	margin-top:0px;
+	list-style-type: disc;
+	list-style-position:inside;
+	line-height:20px;
+	padding-left:0px;"
+}
+.style5 {
+	margin:0px;
+}
+.style6 {
+	display:none;
+}
+.log_vpad {
+	color: #F0F6F5;
+}
+
+
+/*----------------addad by mouna 12-9-09------------------*/
+
+.log_login2{
+background-image:url(/RetailBank/IHB/img/en_US/colortheme1_E.css/gif/login2.jpg);
+background-position:top; 
+background-repeat:no-repeat;
+background-color:#F0F6F5; 
+}
+
+.log_login4{
+background-image:url(/RetailBank/IHB/img/en_US/colortheme1_E.css/gif/login4.gif);
+background-position:bottom right;
+background-repeat:no-repeat;
+}
+
+.log_login5{
+background-image:url(/RetailBank/IHB/img/en_US/colortheme1_E.css/gif/login5.gif);
+background-position:bottom right;
+background-repeat:no-repeat; 
+}
+
+.log_login6{
+background-image:url(/RetailBank/IHB/img/en_US/colortheme1_E.css/gif/login6.gif);
+background-position:bottom left;
+background-repeat:repeat-x;
+}

@@ -1,0 +1,369 @@
+
+/******************
+general tags
+******************/
+html, body, .md div, .md span, .md applet, .md object, .md iframe,
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6, .md p, .md blockquote, .md pre,
+.md a, .md abbr, .md acronym, .md address, .md big, .md cite, .md code,
+.md del, .md dfn, .md em, .md font, .md ins, .md kbd, .md q, .md s, .md samp,
+.md small, .md strike, .md strong, .md sub, .md sup, .md tt, .md var,
+.md dl, .md dt, .md dd, .md ol, .md ul, .md li,
+.md fieldset, .md form, .md label, .md legend,
+.md table, .md caption, .md tbody, .md tfoot, .md thead, .md tr, .md th, .md td{
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+	border-style: none;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+body .md,
+.md input, 
+.md select, 
+.md textarea,
+.md button{
+	font-size: 12px;
+	line-height: 1.2;
+}
+@-moz-document url-prefix() {
+	/* FF12 does not correctly render form input font sizes */
+	.md6 .input input{
+		font-size: 11px;
+	}
+}
+.md blockquote:before, .md blockquote:after,
+.md q:before, .md q:after {
+	content: "";
+}
+.md blockquote, q {
+	quotes: "" "";
+}
+.md a:hover{
+	text-decoration: none;
+}
+.md a img{
+	border: none;
+}
+.md img{
+	border-style: none;
+	border-width: 0;
+	clear: both;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.md p{
+	margin-bottom: 1em;
+}
+.md sup, /* fix for the line-height problem with sub and sup */
+.md sub{
+        position: relative;
+        vertical-align: 0;
+}
+.md sup{
+        bottom: 0.4em;
+}
+.md sub{
+        top: 0.4em;
+}
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6{
+	margin: 0 0 10px 0;
+	font-weight: bold;
+}
+.md h2, .md h3, .md h4, .md h5, .md h6{
+	margin: 14px 0 8px;
+}
+.md h1	{font-size: 18px;}
+.md h2	{font-size: 14px;}
+.md h3	{font-size: 13px;}
+.md h4	{font-size: 12px;}
+.md h5	{font-size: 11px;}
+.md h6	{font-size: 10px;}
+.md ol{
+	margin: 0 0 20px 0;
+	padding: 0 0 0 30px;
+	list-style-position: outside;
+}
+.md ul{
+	margin: 0 0 20px 8px;
+	padding: 0 0 0 10px;
+	list-style-position: outside;
+}
+.md li{
+	margin: 0 0 5px 0;
+}
+.md dl{
+	list-style-type: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+.md dt{
+	margin: 0 0 5px 0;
+}
+.md dd{
+	margin: 0 0 8px 20px;
+}
+/******************
+tables
+******************/
+.md table {
+	display: table;
+	clear: both;
+	width : 100%; 
+	border-width: 0 0 1px 1px;
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+.md table caption {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+}
+.md table,
+.md td,
+.md th {
+	border-style: solid;
+	vertical-align: top;
+}
+.md td,
+.md th {
+	border-width: 1px 1px 0 0;
+	margin: 0;
+	padding: 4px 8px;
+}
+.md thead th,
+.md tbody th, 
+.md tfoot th{
+	text-align: left;
+	font-weight: bold;
+}
+
+/**/
+body .md,
+.md input, 
+.md select, 
+.md textarea,
+.md a{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #000;
+}
+.md .noPrint,
+.md .onlyScreen{
+	display: none;
+}
+.md .hidden{
+	display: none !important;
+}
+.md .onlyPrint{
+	display: block !important;
+}
+.md h1.logo{
+	margin-bottom: 20px;
+}
+.md .nav,
+.md .colOne,
+.md .cntxthelp{
+	display: none !important;
+}
+/*tables*/
+.md table{
+	width: 99% !important;
+	margin-left: 5px !important;
+}
+.md table, 
+.md td, 
+.md th{
+	border-color: #DDDDDD;
+}
+.md .nav,
+.md .loginPortlet,
+.md .colOne,
+.md .colThree,
+.md ul.util,
+.md .loginPortlet,
+.md .utilities,
+.md .sectionTitle,
+.md .cntxthelp,
+.md div.breadcrumb,
+.md .searchGlobal,
+.md .banner{
+	display: none !important;
+}
+.md .header td{
+	font-weight: bold;
+}
+.ModalWindow h1.logo img.screen {
+	display: none;
+}
+.summarydata tr td.currency,
+.summarydata tr th.currency,
+.summarydata tr td.control,
+.summarydata tr th.control,
+.summarydata tr td.rate,
+.summarydata tr th.rate{
+	text-align:right;
+}
+/*forms*/
+.md label, .md .label, .md input, .md .input{
+	display: block !important;
+	clear: both !important;
+}
+.md .il label,
+.md .il input,
+.md .il .label,
+.md .il .input{
+	display: inline !important;
+}
+/*online*/
+div.control,
+div.required, div.requirederror, div.string, div.entry,
+div.buttons, div.submit, div.confButtons{
+	margin-bottom: 10px !important;
+}
+#MultiMember label{
+	width: auto;
+	float: left;
+}
+#MultiMember span.value{
+	display: inline;
+}
+
+.content .control{
+	clear: both;
+}
+/*********************
+Account Summary
+*********************/
+.md .accountsList th.control,
+.md .accountsList td.control {
+	display: none;
+}
+/*********************
+Account Activity (Usability 3)
+*********************/
+.md .details{
+	display: block;
+    clear: both;
+}
+.details .oneColRow,
+.details .twoColRow{
+    clear: both;
+    display: block !important;
+    float: left;
+    padding-bottom: 10px;
+    width: 520px;
+}
+.details .column{
+	margin: 0;
+    width: 50%;
+	float: left;    
+}
+.details label{
+	float: left;
+	padding-right: 10px;
+}
+.details .value{
+	padding-right: 10px;
+}
+.results h2{
+	clear: both;
+    display: block;
+}
+.results .currentDate{
+	font-weight: bold;
+    padding: 0 0 20px 0;
+    display: block;
+    clear: both;
+}
+.md .selectedBox{
+	display: none;
+}
+/* MRR-3914 hide account details modal box from print  */
+.md tr.oddSelected td,
+.md tr.evenSelected td{
+	padding-bottom: 3px !important;
+}
+/*********************
+Receipt
+*********************/
+.md .receipts{
+	clear: both;
+	display: block;
+	width: 100%;
+}
+/*receipt header*/
+.receipts .receiptHeader{
+	float: none;
+	margin: 0 0 5px;
+	padding: 0;
+	width: 100%;
+}
+.receiptHeader .column{
+	margin: 0px;
+}
+.receiptHeader .twoColRow .column{
+	float: left;
+	width: 50%;
+}
+.receiptHeader label{
+	float: left;
+	padding-right: 10px;
+}
+.receiptHeader .value{
+	padding-right: 10px;
+}
+/*receipt*/
+.receipts .receipt{
+	border-top: 1px solid #CCCCCC;
+	clear: both;
+	display: block;
+	float: none;
+	margin: 0;
+	padding: 10px 0;
+	width: 100%;
+}
+.receipt dl{ 
+	clear: both;
+	display: block;
+	float: none;
+	margin: 0;
+	padding: 0;
+	width: 440px;
+}
+.receipt dt,
+.receipt dd{
+	margin: 0 0 3px 0;
+}
+.receipt dt{
+	clear: both;
+	display: block;
+	float: left;
+	font-weight: bold;
+	padding-right: 5px;
+	width: 200px;
+}
+.receipt dd{
+	float: left;
+	width: 200px;
+}
+.receiptFail dd.status{
+	font-weight: bold;
+}
+.receipt p{
+	clear: both;
+	padding-left: 0;
+}
+.receipt p.note{
+	clear: left;
+	padding: 10px 5px;
+}
+.receipt p.noteN{
+	margin-bottom: 0px;
+}
+
+.md .asOfDate{
+	padding-left: 5px;
+}
+/**/

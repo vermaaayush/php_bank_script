@@ -1,0 +1,876 @@
+/**********************************************************
+ *                                                        *
+ *  Copyright ©2005  Corillian Corporation                *
+ *                                                        *
+ *  All rights reserved.                                  *
+ *                                                        *
+ *  Highly Confidential.                                  *
+ *                                                        *
+ *  No portion of this code may be reproduced,            *
+ *  transmitted or distributed without the express        *
+ *  written permission of Corillian Corporation.          *
+ *                                                        *
+ **********************************************************/
+
+/**********************************************************
+ *                                                        *
+ *  HTML ENTITIES                                         *
+ *                                                        *
+ **********************************************************/
+
+a, a:visited, a:link, a:active {
+	text-decoration: none;
+	font-size:12px;
+	font-family:Arial; 
+	color: #23527C;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: #426785;
+	font-size:12px;
+	font-family:Arial; 
+}
+
+body{
+	margin: 0px;
+	background-color: white;
+}
+
+form#MAINFORM{
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+ h2, h3{
+	color: #444;
+	margin-left: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family:Arial; 
+	font-size:14px;   
+}
+
+ h1{
+	color: #426785;
+	margin-left: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size:16px;
+	font-family:Arial;   
+	font-weight : bold;
+}
+/**********************************************************
+ *                                                        *
+ *  GENERAL                                               *
+ *                                                        *
+ **********************************************************/
+
+.notice{
+	color: red;
+}
+
+.printOnly{
+	visibility: hidden;
+	display: none;
+}
+
+.screenOnly{
+	visibility: visible;
+	display: inherit;
+}
+
+.sectionHeader{
+	margin-left: 0px;
+}
+
+div.oboMode{
+	border: 1px solid Black;
+	background-color: Red;
+	color: White;
+	width: 150px;
+	padding: 4px;
+}
+
+div.sectionDivider{
+	margin: 2px 0px 2px 0px;
+	border: none;
+}
+
+div.invSectionHeader{
+	display:none;
+}
+
+div.systemAlert{
+	border: 1px solid red;
+	color: Red;
+	background-color: White;
+	margin: 5px;
+	width:80%;
+}
+
+div.systemAlert div{
+	padding: 5px;
+}
+
+div.systemAlert div.header{
+	text-align: center;
+	border-bottom: 1px solid red;
+	background-color: red;
+	color: white;
+}
+
+div.systemAlert div.footer{
+	text-align: center;
+	border-top: 1px solid red;
+}
+
+div.systemAlert div.footer table{
+	width: 100%;
+}
+
+div.systemAlert a,
+div.systemAlert a:hover,
+div.systemAlert a:visited,
+div.systemAlert a:link,
+div.systemAlert a:active{
+	color: Red;
+	text-decoration: underline;
+}
+
+div.timeoutWarning{
+	border: 3px solid Black;
+	background-color: White;
+	color: Black;
+	padding: 5px;
+	width: 400px;
+}
+
+/**********************************************************
+ *                                                        *
+ *  HEADER                                                *
+ *                                                        *
+ **********************************************************/
+
+div.pageHeader{
+	background-color: #ffffff;
+	border-bottom: 0px solid #faf5df;
+	color: #999;
+}
+
+div.favoritesContainer{
+	background-color: #ffffff;
+	text-align: right;
+}
+
+div.lastLoginMessage{
+	padding-left: 10px;
+	background-color: white;
+}
+
+div.pageHeader a,
+div.pageHeader a:visited,
+div.pageHeader a:link,
+div.pageHeader a:active 
+{
+	font-family :Arial;
+	font-size:11px; 
+	text-decoration: none;
+	color: #646464;
+}
+div.pageHeader a:hover {
+		color:#d96000;
+		text-decoration: underline;
+}
+
+div.termsContainer{
+	color: white !important;
+	background: #ffffff;
+	padding: 2px;
+	margin-top: 10px;
+	border-top: 0px solid #c1bead;
+	width: 780px;
+}
+
+/**********************************************************
+ *                                                        *
+ *  FOOTER                                                *
+ *                                                        *
+ **********************************************************/
+div.footerContainer a,
+div.footerContainer a:visited,
+div.footerContainer a:link,
+div.footerContainer a:active 
+{
+	font-family :Arial;
+	font-size:11px; 
+	text-decoration: none;
+	color: #999;
+	font-weight:bold;
+	line-height:16px;
+}
+
+div.footerContainer a:active 
+{
+	font-family :Arial;
+	font-size:11px; 
+	text-decoration: none;
+	color: #999;
+	font-weight:bold;
+	line-height:16px;
+}
+
+div.footerContainer a:hover {
+		color:#426785;
+		text-decoration: underline;
+}
+
+div.footerContainerBlack
+{
+	font-family :Arial;
+	font-size:11px; 
+	text-decoration: none;
+	color: Black;
+	line-height:16px;
+}
+
+#FOOTERCUSTOMPANEL
+{
+	margin-bottom:20px;
+}
+
+div.footerCustomContainer{
+	color: white !important;
+	background: #ffffff;
+	padding: 2px;
+	margin-top: 70px;
+	border-top: 0px solid #c1bead;
+	width: 760px;
+}
+
+div.footerCustomContainer table
+{
+	width: 100%;
+	border: 0;
+	border-collapse: collapse;
+}
+
+div.footerCustomContainer td
+{
+	color: #999 !important;
+	border-right: 0px dotted #999;
+	text-align: left;
+}
+
+div.footerCustomContainer span
+{
+	FONT-FAMILY: Arial;
+	COLOR: #808080; 
+	FONT-SIZE: 11px; 
+	line-height:10px;
+}
+
+div.footerCustomSubContainer span
+{
+	color:black;
+	font-size:11px;
+	font-weight:bold;
+	line-height :15px;
+}
+
+div.footerCustomSubContainer table
+{
+	color: Gray;
+	width: 100%;
+	border: 2px solid gray;
+}
+
+div.footerCustomSubContainer td
+{
+	text-align: center;
+	color: #999 !important;
+	border-right: 1px dotted #999;
+	FONT-FAMILY: Arial;
+	padding-top:5px;
+	COLOR: #808080; 
+	FONT-SIZE: 11px; 
+	font-weight: bold;
+	line-height :15px;
+}
+
+/**********************************************************
+ *                                                        *
+ *  ERRORS/VALIDATION                                     *
+ *                                                        *
+ **********************************************************/
+
+.VAMBlinkText{
+   color: White;
+}
+
+.VAMFieldWithError
+{
+   background-color: Yellow;
+}
+
+.VAMErrorText,
+.VAMRequiredFieldMarker,
+.VAMValSummary,
+.VAMValSummaryHeader,
+.VAMValSummaryHeader tr,
+.VAMValSummaryErrors,
+.VAMValSummaryFooter,
+.VAMValSummaryFooter tr
+{
+   color: #DF0404;
+}
+
+.VAMValSummaryHeader img{
+	margin-right: 3px;
+}
+
+.VAMValSummary
+{
+	border: 1px solid red;
+	background-color: #FAFAD2;
+	padding: 5px;
+	margin: 5px;
+}
+
+.VAMValSummary a,
+.VAMValSummary a:hover,
+.VAMValSummary a:visited,
+.VAMValSummary a:link,
+.VAMValSummary a:active{
+	color: Red;
+	text-decoration: underline;
+}
+
+div.errContainerError,
+div.errContainerInfo,
+div.errContainerWarn{
+	background-color: White; /*#FAFAD2;*/
+	padding: 5px;
+	margin: 5px;
+}
+
+table.errContainerError,
+div.errContainerError{
+	border: 1px solid red;
+}
+
+div.errContainerInfo{
+	border: 1px solid green;
+}
+
+div.errContainerWarn{
+	border: 1px solid yellow;
+}
+
+.errError,
+.errInfo,
+.errWarn{
+	margin-left: 5px;
+}
+
+.errError{
+	color: #444444;
+}
+
+.errInfo{
+	color: green;
+}
+
+.errWarn{
+	color: black;
+}
+
+/**********************************************************
+ *                                                        *
+ *  NAVIGATION                                            *
+ *                                                        *
+ **********************************************************/
+
+
+/**********************************************************
+ *                                                        *
+ *  TABLES                                                *
+ *                                                        *
+ **********************************************************/
+
+table.dataTable{
+	background-color: #FFFFFF;
+	margin-top: 5px;
+	border: 1px solid #FFFFFF;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table.dataTable tr.header td{
+	background-color: #426785;
+	padding: 5px;
+	border-right: 1px solid #FFFFFF;
+	vertical-align: bottom;
+	color: #FFFFFF;
+	font-size :12px;
+	font-family:Arial;
+	height:21px; 
+}
+
+table.dataTable tr.greyheader td{
+	background-color: #ececec;
+	padding: 5px;
+	border-right: 1px solid #FFFFFF;
+	vertical-align: bottom;
+	color: #426785;
+	font-size :14px;
+	font-family:Arial;
+	height:21px; 
+	font-weight : bold;
+}
+
+table.dataTable[id^=ctlInvestmentBalanceList],
+table.dataTable[id^=ctlFHBBalanceList],
+table.dataTable[id^=ctlBOWBalanceList],
+table.dataTable[id^=ctlInvestmentBalanceList] tr.greyheader td,
+table.dataTable[id^=ctlFHBBalanceList] tr.greyheader td,
+table.dataTable[id^=ctlBOWBalanceList] tr.greyheader td
+{
+	border: 1px solid #000000;
+}
+
+table.dataTable tr.header td a,
+table.dataTable tr.header td a:visited,
+table.dataTable tr.header td a:link,
+table.dataTable tr.header td a:active {
+	text-decoration: underline;
+	color: #FFFFFF;
+	font-size :12px;
+}
+
+table.dataTable tr.header td a:hover{
+	color: #d96000;
+}
+
+table.dataTable tr.item td a,
+table.dataTable tr.item td a:visited,
+table.dataTable tr.item td a:link,
+table.dataTable tr.item td a:active
+
+{
+	font-size :12px;
+}
+
+table.dataTable tr.alternatingItem td a,
+table.dataTable tr.alternatingItem td a:visited,
+table.dataTable tr.alternatingItem td a:link,
+table.dataTable tr.alternatingItem td a:active
+
+{
+	font-size :12px;
+}
+
+table.dataTable tr.item{
+	background: white;
+	height:21px;
+}
+
+table.dataTable tr.alternatingItem{
+	background: #FFFFFF;
+	height:21px;
+}
+
+table.dataTable tr.item td,
+table.dataTable tr.alternatingItem td{
+	padding: 5px;
+	font-size:12px;
+	font-family:Arial;
+	color: #426785;
+}
+
+
+table.dataTable tr.footer td{
+	background-color: #ececec;
+	padding: 5px;	
+	font-size:12px;
+	height:21px;
+	font-weight : bold;
+}
+
+/*------------------------------Overview Page Styles-----------------*/
+div.summaryBoxOverview{
+	border: 0px solid #434A61;
+}
+
+
+div.summaryBoxOverview div.body{
+	border: 1px solid #434A61;
+	background-color: White;
+	padding: 3px;
+}
+
+div.summaryBoxOverview div.header{
+	border: 1px solid #434A61;
+	border-bottom: 0px solid #434A61;
+	background-color: #426785;
+	padding: 5px;
+	color: White;	
+	vertical-align: center;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: bold;
+	text-align:left;
+}
+
+div.activityBox{
+	border: 0px solid #434A61;
+	margin-bottom: 5px;
+}
+
+div.activityBox div.body{
+	background-color: #FFFFFF;
+	padding: 0px;
+}
+
+
+div.activityBox div.header, div.activityBox {
+	border-bottom: 1px solid #434A61;
+	background-color: #426785;
+}
+
+div.headerText {
+	color: White;	
+	font-family:Arial;
+	font-size: 10pt;
+	font-weight:bold;
+	padding-left: 0px;
+	vertical-align: bottom;
+}
+
+div.instructionText {
+	font-family: Arial;
+	font-size:12px;
+	font-weight: normal;
+	color:#333; 
+}
+
+div.specialinstructionText 
+{
+	font-size:13px;
+}
+
+div.activityBox div.header ul {
+	margin: 0; 
+	float: right; 
+	list-style-type: none;
+}
+
+div.activityBox div.header li {
+	margin: 0; 
+	float: left; 
+	padding: 0px; 
+	display:inline;
+}
+
+div.activityBox div.header li span {
+	padding-left: 5px
+	;font-size: .7em;
+}
+
+div.activityBox div.header li a, div.activityBox div.header li a:visited {
+	color: White;	
+	font-size: .8em;
+}
+
+.tablecommon
+{
+	background-color: #434A61;
+	margin-top: 0px;
+	border: 1px solid #434A61;
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 9pt;
+}
+
+.trcommonalternate
+{
+	background: #FFFFFF;
+}
+
+.trcommon
+{
+	background: white;
+}
+
+.trcommonHeader
+{
+	background-color: #ECECEC;
+	padding: 99px;
+	border: 1px solid #434A61;
+	vertical-align: bottom;
+}
+
+.tdcommonHeader
+{
+	vertical-align:text-top;
+	border: 1px solid #434A61;
+	padding: 2px;
+	font-weight:bold;			
+}
+
+.noDataSpan
+{
+	margin-top: 0px;
+	border: 1px solid #434A61;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.tdcommon
+{
+	vertical-align:text-top;
+	border-bottom: 1px dotted #999999;	
+	padding: 2px;	
+}
+
+.nowrapclass
+{
+	white-space:nowrap; 
+	border-bottom: 1px dotted #999999;	
+	vertical-align:text-top;
+	
+	
+}
+
+.redamount
+{
+	color:red;
+}
+
+.amountright
+{
+	text-align: right;
+	padding-right: 5px;
+}
+.amountcenter
+{
+	text-align: center;
+}		
+
+/*------------------------------End of Overview Page Styles-----------------*/
+
+div.relatedLinksContainer{
+	border: 0px solid #434A61;
+	margin-bottom: 5px;
+	background-color: #ececec;
+	width:160px;
+	padding-left :5px;
+}
+
+div.relatedLinksContainer div.body{
+	background-color: #ececec;
+	padding: 0px;
+}
+
+div.relatedLinksContainer div.body a,
+div.relatedLinksContainer div.body a:visited,
+div.relatedLinksContainer div.body a:link,
+div.relatedLinksContainer div.body a:active {
+	text-decoration: none;
+	color: #426785;
+	font-size:12px;
+	font-family:Arial; 
+	background-color: #ececec;
+	
+}
+div.relatedLinksContainer div.body a:hover{
+		color:#426785;
+		font-size:12px;
+		font-family:Arial; 
+		text-decoration: underline;
+	}
+
+div.relatedLinksContainer div.header{
+	border-bottom: 0px solid #434A61;
+	background-color: #ececec;
+	padding: 0px;
+	color: #444444;
+	margin-bottom : 20px;
+	width:160px;
+	font-size:12px;
+	font-family:Arial; 
+	font-weight : bold;
+}
+
+div.summaryBox{
+	border: 1px solid #434A61;
+	margin-bottom: 5px;
+}
+
+div.summaryBox div.body{
+	background-color: White;
+	padding: 3px;
+}
+
+div.summaryBox div.body a,
+div.summaryBox div.body a:visited,
+div.summaryBox div.body a:link,
+div.summaryBox div.body a:active {
+	font-size:12px; 
+}
+
+div.summaryBox div.header{
+	border-bottom: 1px solid #434A61;
+	background-color: #426785;
+	padding: 5px;
+	color: white;
+	vertical-align: bottom;
+}
+
+table.summaryTable{
+	background: White;
+	border-collapse: collapse;
+}
+
+table.summaryTable tr.header td{
+	padding: 2px 5px 2px 5px;
+}
+
+table.summaryTable tr.footer td,
+table.summaryTable tr.item td,
+table.summaryTable tr.alternatingItem td{
+	padding: 0px 5px 0px 5px;
+	font-size :12px;
+}
+
+table.activitySummaryTable{
+	background-repeat:repeat-x;
+}
+
+.activityheader
+{
+	background-color:#ececec;
+	padding: 5px 9px 0px 9px;
+	height: 20px;
+	vertical-align:middle;
+	text-transform:capitalize;
+	font-weight: bolder;	
+}
+
+table.activitySummaryTable tr.item td,
+table.activitySummaryTable tr.alternatingItem td{
+	padding: 0px 5px 0px 5px;
+	font-size :12px;
+	border-right-style:dotted;
+	border-right-width:thin;  
+	background-color:#ececec;
+	
+}
+
+table.activitySummaryTable tr.item td.lastitem,
+table.activitySummaryTable tr.alternatingItem td.lastitem{
+	padding: 0px 5px 0px 5px;
+	font-size :12px;
+	border-right-style:none;
+}
+
+table.activitySummaryTable tr.item td.hideitem,
+table.activitySummaryTable tr.alternatingItem td.hideitem{
+	display:none;
+}
+
+
+div.textRegion{
+	border: 0px solid black;
+	overflow: auto;
+	height: 550px;
+}
+
+
+.special 
+{ 
+	font-family:arial; 
+	font-size:12px; 
+	width:100%;
+} 
+
+.special:first-line 
+{ 
+	font-weight: bold; 
+	color:#be865a; 
+} 
+
+div.footerContainerBlack td{
+	font-family :Arial;
+	font-size:11px; 
+	color: Black;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+	vertical-align: top;
+}
+
+div.footerContainerBlack th{
+	font-family :Arial;
+	font-size:11px; 
+	color: Black;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+	vertical-align: top;
+}
+
+/**********************************************************
+ *                                                        *
+ *  WORKSPACE                                             *
+ *                                                        *
+ **********************************************************/
+div.divSelections
+{
+	width: 100%;
+	white-space: nowrap;
+}
+ 
+.formContainer .formInputContainer{
+	border-width: 0px;
+	background-color: white;
+}
+
+.formContainer .formButtonContainer{
+	margin-top: 5px;
+	font-family: Arial;
+	font-size:12px;
+	color:#333;
+}
+
+.formContainer .sbFormButtonContainer{
+	font-family: Arial;
+	font-size:12px;
+	color:#333;
+	margin-top: 5px;
+	margin-right :120px;
+	margin-bottom :60px;	
+}
+
+hr
+{
+	color:#d0d0d0;
+	margin-left:0px;
+	font-size: 1px;
+	width: 85%
+}
+
+div.SpecialMessages th{
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+	vertical-align: top;
+}
+
+div.SpecialMessages td{
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+	vertical-align: top;
+}

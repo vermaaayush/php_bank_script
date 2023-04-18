@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:#FFF repeat-x;
+	margin:0px;
+	padding:0px;
+	}
+p{
+	margin:0;
+	padding:0;}
+a{
+	text-decoration:none;}
+.clr{clear:both}
+
+#wrapper{
+	width:960px;
+	margin:0 auto;
+}
+#header{
+	width:960px;
+	margin:0 auto;
+	float:left;}
+#logo{
+	width:326px;
+	margin:0 0 48px 15px;
+	float:left;
+	}
+	
+#lgdivider{
+ 	float: left;
+	width: 960px;
+	background:#104a94;
+	padding: 4px 0;
+}
+
+#middlecon{
+ 	float: left;
+	width: 960px;
+	background:url(../images/bg.jpg);
+	padding: 4px 0;
+	border:1px solid #c19c0c;
+	margin: 8px 0 0;
+}
+	
+.middlecon2{
+ 	float: left;
+	width: 952px;
+	background:url(../images/bg_2.jpg);
+	padding: 4px 0;
+	margin: 0 0 0 4px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#FFF;
+	font-weight:bold;
+}
+.middlecon2text{
+ 	float: left;
+	width: 858px;
+	margin: 0 0 0 25px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#FFF;
+	font-weight:bold;
+}
+
+.middlecon2text_1{
+ 	float: left;
+	width: 200px;
+	margin: 20px 0 0 31px;;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#000;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.middlecon2text_2{
+ 	float: left;
+	width: 300px;
+	margin: 40px 0 0 -199px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000;
+	font-weight:bold;
+	letter-spacing:1px;
+	
+}
+.middlecon2text_3{
+ 	float: left;
+	width: 368px;
+	margin: 15px 0 0 30px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000;
+	
+}
+.middlecon3{
+ 	float: left;
+	width: 380px;
+	padding: 4px 0;
+	 margin: 27px 0 0 31px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#8e0b20;
+}
+.button{
+	width:70px;
+	height:28px;
+	font-family:Arial, Helvetica, sans-serif;
+	border:none;
+	font-weight:bold;
+	font-size:14px;
+	color:#FFF;
+	background:url(../images/button.png) no-repeat;
+	margin:0 10px 0 0px;}
+	
+.middlecon5{
+ 	float: left;
+	width: 500px;
+	padding: 4px 0;
+	margin: 100px 297px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#8e0b20;
+}
+.leftpannel{
+	width:415px;
+	margin:0px;
+	float:left;
+	}
+.rightpannel{
+	width:435px;
+	margin:20px 0 0 10px;
+	float:left;
+	}

@@ -1,0 +1,6314 @@
+/******************
+general tags
+******************/
+html, body, .md div, .md span, .md applet, .md object, .md iframe,
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6, .md p, .md blockquote, .md pre,
+.md a, .md abbr, .md acronym, .md address, .md big, .md cite, .md code,
+.md del, .md dfn, .md em, .md font, .md ins, .md kbd, .md q, .md s, .md samp,
+.md small, .md strike, .md strong, .md sub, .md sup, .md tt, .md var,
+.md dl, .md dt, .md dd, .md ol, .md ul, .md li,
+.md fieldset, .md form, .md label, .md legend,
+.md table, .md caption, .md tbody, .md tfoot, .md thead, .md tr, .md th, .md td{
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+	border-style: none;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+body .md,
+.md input, 
+.md select, 
+.md textarea,
+.md button{
+	font-size: 12px;
+	line-height: 1.2;
+}
+@-moz-document url-prefix() {
+	/* FF12 does not correctly render form input font sizes */
+	.md6 .input input{
+		font-size: 11px;
+	}
+}
+.md blockquote:before, .md blockquote:after,
+.md q:before, .md q:after {
+	content: "";
+}
+.md blockquote, q {
+	quotes: "" "";
+}
+.md a:hover{
+	text-decoration: none;
+}
+.md a img{
+	border: none;
+}
+.md img{
+	border-style: none;
+	border-width: 0;
+	clear: both;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.md p{
+	margin-bottom: 1em;
+}
+.md sup, /* fix for the line-height problem with sub and sup */
+.md sub{
+        position: relative;
+        vertical-align: 0;
+}
+.md sup{
+        bottom: 0.4em;
+}
+.md sub{
+        top: 0.4em;
+}
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6{
+	margin: 0 0 10px 0;
+	font-weight: bold;
+}
+.md h2, .md h3, .md h4, .md h5, .md h6{
+	margin: 14px 0 8px;
+}
+.md h1	{font-size: 18px;}
+.md h2	{font-size: 14px;}
+.md h3	{font-size: 13px;}
+.md h4	{font-size: 12px;}
+.md h5	{font-size: 11px;}
+.md h6	{font-size: 10px;}
+.md ol{
+	margin: 0 0 20px 0;
+	padding: 0 0 0 30px;
+	list-style-position: outside;
+}
+.md ul{
+	margin: 0 0 20px 8px;
+	padding: 0 0 0 10px;
+	list-style-position: outside;
+}
+.md li{
+	margin: 0 0 5px 0;
+}
+.md dl{
+	list-style-type: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+.md dt{
+	margin: 0 0 5px 0;
+}
+.md dd{
+	margin: 0 0 8px 20px;
+}
+/******************
+tables
+******************/
+.md table {
+	display: table;
+	clear: both;
+	width : 100%; 
+	border-width: 0 0 1px 1px;
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+.md table caption {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+}
+.md table,
+.md td,
+.md th {
+	border-style: solid;
+	vertical-align: top;
+}
+.md td,
+.md th {
+	border-width: 1px 1px 0 0;
+	margin: 0;
+	padding: 4px 8px;
+}
+.md thead th,
+.md tbody th, 
+.md tfoot th{
+	text-align: left;
+	font-weight: bold;
+}
+
+/**/
+/*********************
+Site Layout
+***********************/
+.md{
+	position: relative;
+}
+.md div.outerWarning,
+.md div.outerHeader, 
+.md div.outerColContainer, 
+.md div.outerFooter,
+.md div.outerBanner{
+	text-align: center;
+}
+div.outerWarning{
+	border-style: solid;
+	border-width: 5px;
+	text-align: center;
+	width: auto;
+}
+div.outerWarning div.warning{
+	padding: 10px 10px 0;
+}
+div.outerWarning div.warning, /*.warning is used elsewhere*/
+div.header, 
+div.colContainer,
+div.footer{
+	width: 770px;
+}
+.md div.outerWarning div.warning, /*.warning is used elsewhere*/
+.md div.header, 
+.md div.colContainer,
+.md div.footer,
+.md div.banner{
+	margin: 0 auto;
+	text-align: left;
+	width: 960px;
+}
+.md div.outerWarning div.warning{ /*.warning is used elsewhere*/
+    padding: 12px;
+	text-align: center;
+	width: 936px;
+}
+div.header{
+	background-position: top right;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	height: 100px;
+	position: relative;
+}
+div.colContainer{
+	border-top-style: solid;
+	border-top-width: 2px;
+	clear: both;
+	display: block;
+	float: none;
+	padding-top: 12px;
+}
+.Popup div.colContainer{
+	border-top-style: none;
+	border-top-width: 0;
+	padding-top: 0;
+	width: auto;
+}
+div.footer{
+	clear: both;
+    float: none;
+    padding: 0 212 0 150px;
+    width: 520px;
+}
+.md div.banner{
+	float: none;
+	padding: 0 212px;
+	width: 520px;
+}
+/**********
+Columns
+***********/
+div.colOne{
+	float: left;
+	height: 50px;
+	height: auto !important;
+    margin: 0 0 0 8px;
+	min-height: 50px;
+	overflow: hidden;
+    width: 200px;
+}
+.md div.colThree{
+	float: left;
+	height: 50px;
+	height: auto !important;
+	margin: 0 8px 0 0;
+	min-height: 50px;
+	overflow: hidden;
+	width: 200px;
+}
+.md div.colTwo{
+	float: left;
+	height: 50px;
+	height: auto !important;
+	margin: 0 12px 0;
+	min-height: 50px;
+	overflow: visible;
+	width: 520px;	
+}
+div.colTwoThree{
+	float: left;
+	margin: 0px;
+	padding-top: 35px;
+	position: relative;
+	width: 605px;
+}
+div.colOneTwoThree{
+	display: block;
+	margin: 0 8px;
+	padding-bottom: 15px;
+}
+/**********
+Site Layout variations
+***********/
+body.ModalWindow .outerWarning div.warning, /*.warning is used elsewhere*/
+body.ModalWindow .header, 
+body.ModalWindow .colContainer{
+	width: 536px;
+}
+body.ModalWindow .colOneTwoThree{
+	width: 520px;
+}
+/**/
+/*
+Based on twitter bootstrap v3
+Using only col-md class because mdi is not responsive
+Custom to MDI: 
+.container = .row-container
+Additional classes for .row div
+classes added to .row:
+.row-filled-content so that we can use the grid for callout blocks
+see brandProduct.jsp
+*/
+.md .row-container {
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+   -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.row-container .row{
+  overflow: hidden;
+   -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.md .row-show-grid > div { /*really only for debugging*/
+    border-width: 1px;
+    border-style: solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    float: left;
+}
+.md .row-container:before,
+.md .row-container:after,
+.row-container .row:before,
+.row-container .row:after{
+  display: table;
+  content: " ";
+  clear: both;
+}
+.row .col-md-1, .row .col-md-2, .row .col-md-3, .row .col-md-4, .row .col-md-5, .row .col-md-6,.row .col-md-7, .row .col-md-8, .row .col-md-9, .row .col-md-10, .row .col-md-11, .row .col-md-12 {
+  position: relative;
+  min-height: 1px;
+   -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.row .col-md-1, .row .col-md-2, .row .col-md-3, .row .col-md-4, .row .col-md-5, .row .col-md-6, .row .col-md-7, .row .col-md-8, .row .col-md-9, .row .col-md-10, .row .col-md-11, .row .col-md-12 {
+  float: left;
+}
+.row .col-md-12 {
+  width: 100%;
+}
+.row .col-md-11 {
+  width: 91.66666667%;
+}
+.row .col-md-10 {
+  width: 83.33333333%;
+}
+.row .col-md-9 {
+  width: 75%;
+}
+.row .col-md-8 {
+  width: 66.66666667%;
+}
+.row .col-md-7 {
+  width: 58.33333333%;
+}
+.row .col-md-6 {
+  width: 50%;
+}
+.row .col-md-5 {
+  width: 41.66666667%;
+}
+.row .col-md-4 {
+  width: 33.33333333%;
+}
+.row .col-md-3 {
+  width: 25%;
+}
+.row .col-md-2 {
+  width: 16.66666667%;
+}
+.row .col-md-1 {
+  width: 8.33333333%;
+}
+.row .col-md-pull-12 {
+  right: 100%;
+}
+.row .col-md-pull-11 {
+  right: 91.66666667%;
+}
+.row .col-md-pull-10 {
+  right: 83.33333333%;
+}
+.row .col-md-pull-9 {
+  right: 75%;
+}
+.row .col-md-pull-8 {
+  right: 66.66666667%;
+}
+.row .col-md-pull-7 {
+  right: 58.33333333%;
+}
+.row .col-md-pull-6 {
+  right: 50%;
+}
+.row .col-md-pull-5 {
+  right: 41.66666667%;
+}
+.row .col-md-pull-4 {
+  right: 33.33333333%;
+}
+.row .col-md-pull-3 {
+  right: 25%;
+}
+.row .col-md-pull-2 {
+  right: 16.66666667%;
+}
+.row .col-md-pull-1 {
+  right: 8.33333333%;
+}
+.row .col-md-pull-0 {
+  right: auto;
+}
+.row .col-md-push-12 {
+  left: 100%;
+}
+.row .col-md-push-11 {
+  left: 91.66666667%;
+}
+.row .col-md-push-10 {
+  left: 83.33333333%;
+}
+.row .col-md-push-9 {
+  left: 75%;
+}
+.row .col-md-push-8 {
+  left: 66.66666667%;
+}
+.row .col-md-push-7 {
+  left: 58.33333333%;
+}
+.row .col-md-push-6 {
+  left: 50%;
+}
+.row .col-md-push-5 {
+  left: 41.66666667%;
+}
+.row .col-md-push-4 {
+  left: 33.33333333%;
+}
+.row .col-md-push-3 {
+  left: 25%;
+}
+.row .col-md-push-2 {
+  left: 16.66666667%;
+}
+.row .col-md-push-1 {
+  left: 8.33333333%;
+}
+.row .col-md-push-0 {
+  left: auto;
+}
+.row .col-md-offset-12 {
+  margin-left: 100%;
+}
+.row .col-md-offset-11 {
+  margin-left: 91.66666667%;
+}
+.row .col-md-offset-10 {
+  margin-left: 83.33333333%;
+}
+.row .col-md-offset-9 {
+  margin-left: 75%;
+}
+.row .col-md-offset-8 {
+  margin-left: 66.66666667%;
+}
+.row .col-md-offset-7 {
+  margin-left: 58.33333333%;
+}
+.row .col-md-offset-6 {
+  margin-left: 50%;
+}
+.row .col-md-offset-5 {
+  margin-left: 41.66666667%;
+}
+.row .col-md-offset-4 {
+  margin-left: 33.33333333%;
+}
+.row .col-md-offset-3 {
+  margin-left: 25%;
+}
+.row .col-md-offset-2 {
+  margin-left: 16.66666667%;
+}
+.row .col-md-offset-1 {
+  margin-left: 8.33333333%;
+}
+.row .col-md-offset-0 {
+  margin-left: 0;
+}
+/*remove gutter padding for grid columns*/
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+/**/
+/*************
+general tags
+**************/
+.md .onlyPrint{
+	display: none !important;
+}
+.md .opposed{
+	float: right;
+}
+.md .hidden{
+	display: none !important;
+}
+.md .loading{
+	margin-left: 16px;
+	display: inline-block;
+	height: 11px;
+	margin-bottom: 0px;	
+}
+.md .loading canvas{
+	float: left;
+	margin-top: -4px;	
+}
+.md .loading_centered{
+	display: block;
+	margin: 0 auto;
+	width: 20px;
+}
+.md .loading_centered canvas{
+	margin-top: 0;
+}
+.md .portlets .loading{
+	margin-left: 5px;
+}
+.md h1 .loading canvas{
+	margin-top: -5px;
+}
+.md h3 .loading canvas{
+	margin-top: -6px;
+}
+.md .portlets .loading canvas{
+	margin-top: -3px;	
+}
+.md .modal .loading canvas{
+	margin-top: -3px;
+}
+.md .asOfDate{
+	display: block;
+	font-size: 10px;
+	font-style: italic;
+}
+/* START graphing CSS - these belong in properties somewhere */
+.md .chart_legend:before{
+	content: '';
+	display: inline-block;
+	height: 10px;
+	margin-right: 2px;
+	width: 10px;
+}
+/*general classes*/
+.md .filter_heading{
+	margin-top: -31px;
+	float: right;
+}
+.md div.hr{
+	clear: both;
+	display: block;
+	font-size: 1px;
+	height: 1px;
+	line-height: 1px;
+	margin: 4px 0 12px;
+}
+.md div.hr hr{
+	display: none;
+}
+.aligncenter{
+	text-align: center;
+}
+.alignright{
+	text-align: right;
+}
+img.alignLeft{
+	float: left;
+	margin: 0 5px 5px 0;
+}
+img.alignRight{
+	float: right;
+	margin: 0 0 5px 5px;
+}
+.md div.clear,
+.md div.clearBoth,
+.md br.clearboth{
+	display: block;
+	clear: both;
+	height: 1px;
+	line-height: 1px;
+	font-size: 1px;
+}
+.string_break{
+	word-break: break-all;
+	word-break: break-word; /* non standard for webkit*/
+	-ms-word-break: normal; /* IE, needs hasLayout */
+	word-wrap: break-word;
+}
+.noBreak {
+	white-space: nowrap;
+}
+.clickable{ 
+	cursor: pointer;
+}
+.indent{
+	text-indent: 10px;
+}
+.md .subduedText{
+	font-weight: lighter;
+}
+.md .subduedText_size{
+	font-size: 90%;
+}
+/*************
+Header
+**************/
+.ModalWindow h1.logo img.print {
+	display: none;
+}
+.ModalWindow div.colContainer {
+	border-top: 0px transparent;
+}
+.header h1{
+	margin: 0;
+}
+/*this is also h2.sectionTitle*/
+.header h2{
+	margin: 0;
+	position: absolute;
+	z-index: 10;
+	top: 88px;
+	left: 10px;
+}
+.header .clear{
+	margin-top: -1px;
+}
+/*system & mobile warnings*/
+div.outerWarning div.warning{ /*.warning is used elsewhere*/
+    font-size: 18px;
+}
+div.outerWarning div.mobileAlert{
+    font-size: 26px;
+}
+div.outerWarning .warning p{
+	margin: 0;
+}
+/*content treatment maincontent*/
+h1#PageTitle{
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+sup.tm{/*french tm*/
+	font-size: 0.9em;
+	vertical-align: super;
+	text-transform: lowercase;
+	font-variant: small-caps;
+}
+sub.tm{/*french tm*/
+        font-size: 0.9em;
+        vertical-align: sub;
+        text-transform: lowercase;
+        font-variant: small-caps;
+}
+/*content treatment footer*/
+div.footer p{
+	font-size: 10px;
+	text-align: center;
+}
+.iop div.footer p {
+	text-align: left;
+}
+/*content treatment popup*/
+.md .helpSelect{/*Help pages*/
+	margin: 0 0 10px 0;
+}
+/*Hide this everywhere in md6*/
+.mainContent .cntxthelp{
+	display: none;
+}
+/*md6 has controls everywhere*/
+.md div.control{
+	display: block;
+	clear: both;
+	height: 1%;
+	margin: 0;
+	padding: 0 0 10px;
+}
+.md div.control a{
+	font-size: 10px;
+	font-weight: bold;
+}
+/*.collapsable
+	.control
+	.collapsableContent*/
+.collapsable .control,
+.collapsableLevel2 .controlLevel2{
+	cursor:pointer;
+	text-decoration:underline;
+}
+.collapsable .control:hover,
+.collapsableLevel2 .controlLevel2:hover{
+	text-decoration:none;
+}
+/*if js enabled collapsed class is added*/
+.collapsed .collapsableContent,
+.collapsedLevel2 .collapsableContentLevel2{
+	display:none;
+}
+.collapsable .controlIcon,
+.collapsableLevel2 .controlIcon{
+	padding-left: 15px;
+}
+.hiddenInlineControl,
+.hiddenBlockControl{
+	display: none;
+}
+.javascript .hiddenBlockControl{
+	display: block;
+}
+.javascript .hiddenInlineControl{
+	display: inline;
+    font-weight: normal;
+    font-size: 11px;
+}
+.javascript .collapsable .showText,
+.javascript .collapsableLevel2 .showText{
+	display: none;
+}
+.javascript .collapsable .hideText,
+.javascript .collapsableLevel2 .hideText{
+	display: inline;
+}
+.javascript .collapsed .showText,
+.javascript .collapsedLevel2 .showText{
+	display: inline;
+}
+.javascript .collapsed .hideText,
+.javascript .collapsedLevel2 .hideText{
+	display: none;
+}
+
+/*remove styling from tables in properties that should have no borders or background colors*/
+table.noDefaultStyle,
+table.noDefaultStyle td,
+table.noDefaultStyle th{
+	background-color: transparent;
+	border-width: ;
+	padding: 0;
+}
+/*cleaning up form styling of tables*/
+table.formTable td,
+table.formTable th{
+	vertical-align: bottom;
+}
+table.formTable td label{
+	font-weight: normal;
+}
+table.formTable td div.string{
+	width: auto;
+}
+/*****
+JavaScript Items - don't work without JavaScript need to be hidden by default
+******/
+.calcTotalResult{
+	display: none;
+}
+.javascript .calcTotalResult{
+	display: table-footer-group;
+}
+/*ShowHideSwitch*/
+.javascript p.selected,
+.javascript span.selected,
+.javascript h2.selected,
+.javascript h3.selected,
+.javascript p.unselected,
+.javascript span.unselected,
+.javascript h2.unselected,
+.javascript h3.unselected{
+	text-decoration: underline;
+}
+
+.md ul.skip {
+	list-style-type: none;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	height: 1px;
+	overflow: visible;
+	margin: 0;
+	padding: 0;
+	z-index: 9999;
+}
+.md ul.skip li {
+	float: left;
+}
+
+.md ul.skip a {
+	position: absolute;
+	top: -9999px;
+	padding: 2px;
+}
+
+.md ul.skip a:focus {
+	position: relative;
+	top: auto;
+}
+
+/*****
+Long Call to action
+Main part is just like regular content
+******/
+.md .Component-LongCallToAction {
+	padding: 0;
+	margin: 0; /*when not inside mainContent margin is on the elements*/
+	position: relative;
+	clear: both;
+}
+.md .Component-LongCallToAction:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.md .mainContent .Component-LongCallToAction {
+	margin: 0 0 12px 0;
+}
+.Component-LongCallToAction .simple h2{
+	margin: 0 0 8px 0;
+}
+.Component-LongCallToAction .simple h3{
+	margin: 0 0 8px 0;
+}
+/*inside mainContent*/
+.mainContent .Component-LongCallToAction.hasCallout{
+	float: left;
+	width: 100%;
+	clear: both;
+}
+.mainContent .Component-LongCallToAction.hasCallout .section{
+	clear: none;
+}
+.Component-LongCallToAction.hasCallout .callout,
+.Component-LongCallToAction.hasCallout .simple{/*when not inside main content*/
+	margin-bottom: 12px;
+}
+.mainContent .Component-LongCallToAction.hasCallout .simple{
+	float: left;
+	padding: 0 212px 0 0;
+	margin: 0;
+}
+.mainContent .Component-LongCallToAction .callout + .simple{
+	float: right;
+	padding: 0 0 0 212px;
+}
+.mainContent .Component-LongCallToAction .callout{
+	float: left; 
+	position: relative;
+	margin: 0 -200px 0 0;
+	width: 200px;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.mainContent .Component-LongCallToAction .simple + .callout {
+	float: right;
+	margin: 0 0 0 -200px;
+}
+.Component-LongCallToAction .callout h3{
+	padding: 8px 8px 0;
+	margin: 0 0 8px 0;
+}
+.Component-LongCallToAction .callout .copy{
+	padding: 0 8px 8px;
+}
+.Component-LongCallToAction .callout .Component-Button{
+	float: none;
+	margin: 0;
+}
+.Component-LongCallToAction .callout .Component-Button a{
+	float: none;
+}
+/**/
+/****
+Component EventGroup - here because we won't be using the portlet classes anymore
+*****/
+.md .Component-EventGroup{
+	clear: both;
+	margin: 0 0 1em;
+}
+.md .Component-EventGroup h2 {
+  margin-bottom: 0;
+  padding: 5px 10px;
+}
+.md .Component-EventGroup .event-item {
+  clear: both;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+}
+.md .Component-EventGroup .event-item:first-child{
+  border: none;
+}
+.md .Component-EventGroup .date {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  float: left;
+  margin-right: 2%;
+  padding: 10px 6px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 80px;
+}
+.md .Component-EventGroup .month {
+  margin-left: 0;
+  width: 100%;
+}
+.md .month.end {
+  display: none;
+}
+.md .Component-EventGroup .day {
+  display: inline;
+  font-size: 20px;
+  font-weight: bold;
+}
+.day.end:before {
+  content: " - ";
+}
+.md .Component-EventGroup .event {
+  overflow: hidden;
+}
+.md .Component-EventGroup .title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 1em;
+  margin-right: 2%;
+}
+.md .Component-EventGroup span.location {
+  display: block;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: normal;
+}
+.md .Component-EventGroup .description {
+  overflow: hidden;
+}
+
+/**/
+
+/*****
+Expandable content
+******/
+.md div.Component-ExpandableContent {
+	clear: both;
+	position: relative;
+	margin-bottom: 12px;
+}
+.md div.Component-ExpandableContent .expandableTitle {
+	position: relative;
+	padding-right: 50px;
+}
+.md div.Component-ExpandableContent h1,
+.md div.Component-ExpandableContent h2,
+.md div.Component-ExpandableContent h3,
+.md div.Component-ExpandableContent h4,
+.md div.Component-ExpandableContent h5 {
+	margin: 0.6em 0;
+	padding: 0;
+}
+.md div.Component-ExpandableContent .expandableToggle {
+	position: absolute;
+	text-indent: -9999px;
+	width: 17px;
+	height: 100%;
+	top: 0;
+	right: 0;
+	outline: none;
+}
+.md div.Component-ExpandableContent .content .actions {
+    list-style-type: none;
+    margin: 0 0 20px 0;
+}
+.md div.Component-ExpandableContent .content .actions li {
+	padding-left: 12px;
+}
+/**/
+/*****
+Document List
+******/
+.md ul.Component-DocumentList {
+	clear: both;
+	margin: 0 0 20px 0;
+	padding: 0;
+	list-style-type: none;
+}
+.md ul.Component-DocumentList h3{
+	margin: 0;
+	padding: 5px 0;
+}
+.md ul.Component-DocumentList li {
+	margin: 0;
+	padding: 5px 5px 10px 48px;
+	position: relative;
+}
+.md ul.Component-DocumentList li:before{
+	content: '';
+	display: block;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+.md ul.Component-DocumentList li.pdf:before{
+	background-position: 0 -96px;
+}
+.md ul.Component-DocumentList li.xls:before{
+	background-position: 0 -32px;
+}
+.md ul.Component-DocumentList li.doc:before{
+	background-position: 0 -64px;
+}
+.md ul.Component-DocumentList li.img:before{
+	background-position: 0 -128px;
+}
+.md ul.Component-DocumentList p:last-child {
+	margin: 0;
+}
+/**/
+/*****
+Short Call to action
+******/
+.md .Component-ShortCallToAction {
+	clear: both;
+	margin: 0 0 12px;
+}
+.md .Component-ShortCallToAction a {
+	display: block;
+	padding: 10px 10px 10px 20px;
+	background-repeat: no-repeat;
+}
+/**/
+/*****
+Button Call to Action
+******/
+.md .Component-Button{
+	clear: right;
+	float: right;
+	margin: 0 0 12px 0;
+}
+.md .Component-Button:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.md .Component-Button a{
+	display: block;
+	float: right;
+	padding: 8px 9px;
+	text-decoration: none;
+}
+.md .Component-Button a:after{
+	content: '\00a0\00a0\00BB';
+}
+
+.md .oneClickOpenAnywhere .Component-Button {
+	float: none;
+	margin-bottom: 0;
+	padding: 5px;
+}
+
+.md .oneClickOpenAnywhere .Component-Button a {
+	float: none;
+	text-align: center;
+}
+/**/
+/*****
+Disclaimer text
+******/
+.md .Component-Disclaimer{
+	clear: both;
+	margin: 10px 0;
+	padding: 10px;
+	font-size: 0.8em;
+}
+.md .Component-Disclaimer p:last-child{
+	margin-bottom: 0;
+}
+/**/
+/*****
+Blockquotes - class to avoid regression
+******/
+blockquote.Component-Blockquote{
+	border-width: 1px;
+	clear: both;
+	padding: 13px;
+	margin: 0 0 13px;
+}
+blockquote.Component-Blockquote h3{
+	margin: 0 0 5px 0;
+}
+blockquote.Component-Blockquote p:last-child{
+	margin-bottom: 0;
+}
+/**/
+/*****
+Component-Marketing
+******/
+.md .Component-Marketing{
+	clear: both;
+	margin: 0 0 12px 0;
+	position: relative;
+}
+.md .Component-Marketing > :first-child{
+	margin-top: 0;
+	padding-top: 0;
+}
+.md .Component-Marketing .imageWrapper{
+	display: block;
+	margin: 0 0 1px 0;
+}
+.md .Component-Marketing .imageWrapper img{
+	display: block;
+}
+.md .Component-Marketing .copy{
+	padding: 12px 0;
+}
+.md .Component-Marketing .Icon-Help,
+.md .Component-Marketing .Icon-Forms,
+.md .Component-Marketing .Icon-Contact,
+.md .Component-Marketing .Icon-Information,
+.md .Component-Marketing .Icon-Alert,
+.md .Component-Marketing .Icon-Performance,
+.md .Component-Marketing .Icon-NewProduct,
+.md .Component-Marketing .Icon-Custom{
+	position: relative;
+	padding-left: 45px;
+}
+.md .Component-Marketing .overlayContent{
+	position: absolute;
+	padding-top: 0;
+	padding-right: 12px;
+	width: 100%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.md .Component-Marketing .copy h3{
+	margin: 0 0 12px 0;
+}
+.md .Component-Marketing .copy p:last-child{
+	margin-bottom: 0;
+}
+.md .Component-Marketing .Component-Button{
+	float: none;
+	margin: 0 0 1px 0;
+}
+.md .Component-Marketing .Component-Button a{
+	display: block;
+	float: none;
+	text-align: right;
+}
+/*icons used in .Component-Marketing*/
+.Component-Marketing .Icon-Help,
+.Component-Marketing .Icon-Forms,
+.Component-Marketing .Icon-Contact,
+.Component-Marketing .Icon-Information,
+.Component-Marketing .Icon-Alert,
+.Component-Marketing .Icon-Performance,
+.Component-Marketing .Icon-NewProduct,
+.Component-Marketing .Icon-Custom{
+	position: relative;
+	padding-left: 45px;
+}
+.Component-Marketing .Icon-Custom{/*when custom this is a bg image*/
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+.Component-Marketing .Icon-Help:before,
+.Component-Marketing .Icon-Forms:before,
+.Component-Marketing .Icon-Contact:before,
+.Component-Marketing .Icon-Information:before,
+.Component-Marketing .Icon-Alert:before,
+.Component-Marketing .Icon-Performance:before,
+.Component-Marketing .Icon-NewProduct:before{
+	content: '';
+	display: block;
+	position: absolute;
+	height: 32px;
+	width: 32px;
+	background-position: top left;
+	background-repeat: no-repeat;
+	left: 0;
+}
+.Component-Marketing .Icon-Help:before{background-position: 0 0px;}
+.Component-Marketing .Icon-Forms:before{background-position: 0 -32px;}
+.Component-Marketing .Icon-Contact:before{background-position: 0 -64px;}
+.Component-Marketing .Icon-Information:before{background-position: 0 -96px;}
+.Component-Marketing .Icon-Alert:before{background-position: 0 -160px;}
+.Component-Marketing .Icon-Performance:before{background-position: 0 -128px;}
+.Component-Marketing .Icon-NewProduct:before{background-position: 0 -192px;}
+/**/
+/****
+Component Quicknav - here because we won't be using the portlet classes anymore
+*****/
+.md .Component-Quicknav{
+	clear: both;
+	margin: 0 0 12px 0;
+}
+.md .Component-Quicknav h3{
+	margin: 0 0 6px 0;	
+}
+.md .Component-Quicknav select{
+	max-width: 100%;
+}
+.md .Component-Quicknav .submit{
+	clear: both;
+	display: block;
+	margin-top: 4px;
+}
+/**/
+/****
+Component Shortcuts - here because we won't be using the portlet classes anymore
+****/
+.md .Component-Shortcuts{
+	clear: both;
+	margin: 0 0 12px 0;
+}
+.md .Component-Shortcuts h3{
+	margin: 0 0 6px 0;	
+}
+.md .Component-Shortcuts ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.md .Component-Shortcuts li{
+	margin: 0;
+	padding: 0 0 6px 17px;
+	position: relative;
+}
+.md .Component-Shortcuts li:before{
+	content: '';
+	background-position: -2px -1px;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 15px;
+	height: 15px;
+}
+/**/
+/*****
+Component-RatesTable
+******/
+div.Component-RatesTable{
+	display: block;
+	clear: both;
+}
+div.Component-RatesTable:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.Component-RatesTableCompact table thead th{
+	font-size: 13px;
+}
+.Component-RatesTableCompact table,
+.Component-RatesTableCompact table th,
+.Component-RatesTableCompact table td{
+	border: none;
+	padding: 4px 8px 4px 0;
+}
+/**/
+/*****
+Component-ContactFormlet Only affects the universal template. In fact all Component- classes do
+******/
+.Component-ContactFormlet h3{
+	margin: 0 0 8px 0;
+}
+.md .Component-ContactFormlet{
+	margin: 0 0 12px 0;
+}
+/**/
+.Component-Carousel > .slide{
+    display: none;
+}
+.Component-Carousel > .slide:first-child{
+    display: block;
+}
+/*base slick.css*/
+.md .slick-slider{
+    position: relative;
+    display: block;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-slider .slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-slider .slick-list:focus{
+    outline: none;
+}
+.slick-slider .slick-list.dragging{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-slider .slick-track,
+.slick-slider .slick-slider .slick-list{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-slider .slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-slider .slick-track:before,
+.slick-slider .slick-track:after{
+    display: table;
+    content: '';
+}
+.slick-slider .slick-track:after{
+    clear: both;
+}
+.slick-slider .slick-loading .slick-track{
+    visibility: hidden;
+}
+.slick-slider .slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.slick-slider .slick-slide img{
+    display: block;
+}
+.slick-slider .slick-slide.slick-loading img{
+    display: none;
+}
+.slick-slider .slick-slide.dragging img{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide{
+    display: block;
+}
+.slick-loading .slick-slide{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+/*slick-theme.css*/
+.slick-loading .slick-list{
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* Arrows */
+.slick-slider .slick-prev,
+.slick-slider .slick-next{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    padding: 0;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 1001;
+}
+.slick-slider .slick-prev:hover,
+.slick-slider .slick-prev:focus,
+.slick-slider .slick-next:hover,
+.slick-slider .slick-next:focus{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-slider .slick-prev:hover:before,
+.slick-slider .slick-prev:focus:before,
+.slick-slider .slick-next:hover:before,
+.slick-slider .slick-next:focus:before{
+    opacity: 1;
+}
+.slick-slider .slick-prev.slick-disabled:before,
+.slick-slider .slick-next.slick-disabled:before{
+    opacity: .25;
+}
+
+.slick-slider .slick-prev:before,
+.slick-slider .slick-next:before{
+    line-height: 1;
+    opacity: .75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-slider .slick-dots{
+    position: absolute;
+    z-index: 1001;
+    margin: 0;
+    display: block;
+
+    width: 100%;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-slider .slick-dots li{
+    position: relative;
+
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-slider .slick-dots li button{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-slider .slick-dots li button:hover,
+.slick-slider .slick-dots li button:focus{
+    outline: none;
+}
+.slick-slider .slick-dots li button:hover:before,
+.slick-slider .slick-dots li button:focus:before{
+    opacity: 1;
+}
+.slick-slider .slick-dots li button:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: .25;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-slider .slick-dots li.slick-active button:before{
+    opacity: .75;
+}
+.slick-slider .slick-slide img{
+    width: 100%;
+    height: auto;
+}
+.slick-slider .slick-slide a{
+    display: block;
+}
+.slick-slider .slick-track{
+    max-height: 100%;
+    overflow: hidden;
+}
+/* MTCC Targeted Marketing */
+#marketing-carousel .slick-slider .slick-dots {
+    position: static;
+    z-index: auto;
+    text-align: left;
+}
+#marketing-carousel .slick-dots li:before{
+    content: normal;
+}
+
+/**/
+
+/*****
+Component-Random-Images
+******/
+.md .Component-RandomImages{
+	position: relative;
+}
+/**/
+
+/*even in posistion 2 we want the text to be centered*/
+.md .outerImageCopy{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -1px;
+    width: 960px;
+    height: 1px;
+}
+.md .imageCopy{
+    position: absolute;
+    width: 300px;
+    top: 20%;
+    text-align: center;
+    left: 50%;
+    margin-left: -150px;
+}
+.imageCopy h2{
+    font-size: 22px;
+    margin: 0 0 15px 0;
+}
+.imageCopy .copy{
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+.imageCopy ul.actions{
+    text-align: center;
+}
+.imageCopy ul.actions li{
+    display: block;
+}
+.imageCopy ul.actions a{
+    display: inline-block;
+    padding: 10px 15px;
+}
+.imageCopy .actionPrimary a{
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    float: left;
+    font-weight: bold;
+    outline: medium none;
+    padding: 2px 10px;
+    text-decoration: none;
+}
+/**/
+/*************
+buttons
+**************/
+/*button group*/
+.md .btn_group{
+	position: relative;
+}
+.md .btn_group_opposed{
+	text-align: right;
+}
+/*buttons*/
+.md .btn{
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+	height: 20px;
+	margin: 0;
+	opacity: 1;
+	filter:alpha(opacity=100);
+	padding: 2px 12px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.md .btn_group_segmented .btn {
+	border-left-width: 0;
+}
+.md .btn_group_segmented .btn:first-child {
+	border-left-width: 1px;
+}
+.md .btn_icon{
+	background-position: 0 -638px;
+	background-repeat: no-repeat;
+	display: block;
+	float: left;
+	height: 8px;
+	width: 8px;
+	margin: 0 auto;
+}
+.btn_icon_only{
+	padding: 0 12px;
+}
+.md .btn_icon_down{
+	background-position: 0 -638px;
+}
+.btn:hover .btn_icon_down{
+	background-position: 0 -670px;
+}
+.md .btn_icon_up{
+	background-position: 0 -702px;
+}
+.btn:hover .btn_icon_up{
+	background-position: 0 -734px;
+}
+.md .btn_icon_left{
+	background-position: 2px -768px;
+}
+.btn:hover .btn_icon_left{
+	background-position: 2px -800px;
+}
+.md .btn_icon_right{
+	background-position: 2px -832px;
+}
+.btn:hover .btn_icon_right{
+	background-position: 2px -864px;
+}
+.md .btn_text{
+	margin-right: 8px;
+}
+.btn_icon_only .btn_text{
+	display: block;
+	height: 0;
+	margin-right: 0;
+	text-indent: -9999px;
+}
+.md .btn_cta{
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+/* in tables */
+.sortable .header .btn_icon{
+	display: inline-block;
+	float: none;
+}
+.sortable .header_hide_icon .btn_icon{
+	display: none;
+}
+.sortable .header_sort_asc .btn_icon{
+	background-position: 0 -702px;
+}
+.sortable .header_sort_asc:hover .btn_icon{
+	background-position: 0 -734px;
+}
+.sortable .header_sort_desc .btn_icon{
+	background-position: 0 -638px;
+}
+.sortable .header_sort_desc:hover .btn_icon{ 
+	background-position: 0 -670px;
+}
+
+/**/
+/*************
+Bars
+**************/
+.md .bar{
+	padding: 4px;
+}
+.md .bar_block{
+	margin: -4px -4px 8px;
+}
+.md .bar_block_snug{
+	margin: -4px -4px 1px;
+}
+.md .bar_tight{
+    margin: 0;
+}
+
+/**/
+
+.md .heading_split{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.md .heading_icons{
+	line-height: 20px;
+}
+.md .heading_filter{
+	line-height: 26px;
+	padding-right: 200px;
+}
+/**/
+
+/*************
+General list augmentation
+**************/
+.md .noBullets{
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.md .noBullets_snug{
+	margin-bottom: 4px;
+}
+/********
+Inline Lists
+Default based on "add a payee"
+*********/
+ul.inline{
+	list-style-type: none;
+	display: block;
+	clear: both;
+	margin: 0 0 12px 0;
+	padding: 0;
+}
+ul.inline li{
+	background: none;
+	padding: 0px 3px 0px 0px;
+	margin: 0px;
+	display: inline;
+}
+ul.inline li a{
+	padding: 0 1px;
+}
+/*********
+document list
+*********/
+ul.documentlist{
+	margin:0;
+	padding:0;
+}
+ul.documentlist li{
+	display:block;
+	margin: 0 0 4px 0;
+	padding: 4px;
+	border-width: 1px;
+	border-style: solid;
+}
+ul.documentlist h5{
+	margin: -4px -4px 4px -4px;
+	padding:8px 4px 8px 38px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	background-position: 4px 50%;
+	background-repeat: no-repeat;
+	font-size: 13px;
+}
+/******
+Block DL
+Default based on "add a payee"
+*******/
+dl.block{
+	margin: 0px 0px 15px 0px;
+	padding: 0;
+	display: block;
+	clear: both;
+}
+dl.block dt{
+	font-weight: bold;
+	display: block;
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+}
+dl.block dd{
+	margin:0px 0px 2px 0px;
+	padding: 0px;
+}
+/******
+Total DL
+Default based on Account Summary accounts total
+*******/
+.md .inlineTotal{
+	border-top: 2px solid #ABABAB;
+	font-size: 18px;
+	margin-top: 8px;
+	padding-top: 8px;
+	text-align: right;
+}
+.inlineTotal dt,
+.inlineTotal dd{
+	display: inline;
+	font-weight: bold;
+}
+.inlineTotal dd{
+	margin-left: 8px;
+}
+/**
+IconChecklist - list items have custom image icon
+*//
+ul.iconChecklist {
+	padding-left: 15px;
+}
+
+/**/
+
+/*****
+Rates table
+******/
+table.rates{
+	border-width: 0 1px 1px 1px;
+	margin-bottom: 12px;
+}
+table.rates td,
+table.rates th{
+	border-width: 1px 0 0 0;
+}
+table.rates th{
+	text-align:left;
+}
+table.rates td,
+table.rates .value{
+	text-align: right;
+}
+table.rates tbody th{
+	font-weight: normal;
+}
+/*****
+Sortable table
+******/
+body.waiting{
+	cursor: wait;
+}
+.javascript .sortable th,
+.javascript .sortable th label{
+	cursor: pointer;
+}
+.javascript .sortable th label{
+	text-decoration: underline;
+}
+/******************
+table modifiers
+The following remove default syle
+******************/
+.md table.noBorder,
+.md table.noBorder tr,
+.md table.noBorder th,
+.md table.noBorder td{
+	border-style: none;
+}
+.md table.noBGColor,
+.md table.noBGColor tr,
+.md table.noBGColor th,
+.md table.noBGColor td{
+	background-color: transparent;
+}
+.md table.textual{
+  width:auto;
+}
+.md table.textual th,
+.md table.textual td{
+  margin:0;
+  padding: 0 4px 0 0;
+}
+.md table.noTH th,
+.md table.noTH tr.header,
+.md table.noTH tr.header td,
+.md table.noTH tr.header th,
+.md table.noTH thead tr,
+.md table.noTH thead td,
+.md table.noTH thead th,
+.md table.noTH tfoot th,
+.md table.noTH tfoot td{
+  font-weight:normal;
+  background-color:inherit;
+  color:inherit;
+  text-align:left;
+}
+table.noStripeUnselected tr.even,
+table.noStripeUnselected tr.even td,
+table.noStripeUnselected tr.even th{
+	background-color:inherit;
+	color:inherit;
+}
+.md table.noStripe tr.even,
+.md table.noStripe tr.even td,
+.md table.noStripe tr.even th,
+.md table.noStripe tr.odd,
+.md table.noStripe tr.odd td,
+.md table.noStripe tr.odd th,
+.md table.noStripe tr.evenSelected,
+.md table.noStripe tr.evenSelected td,
+.md table.noStripe tr.evenSelected th,
+.md table.noStripe tr.oddSelected,
+.md table.noStripe tr.oddSelected td,
+.md table.noStripe tr.oddSelected th{
+	background-color:inherit;
+	color:inherit;
+}
+.md table.snug{
+	margin-bottom: 4px;
+}
+.md .fixedTableHeader {
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.md table.fixedLayout{
+	table-layout: fixed;
+}
+
+/**/
+
+/**/
+/*************
+making things accessbile to assistive technologies only
+**************/
+.md .assistive{
+	height: 1px;
+	margin-top: -1px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	width: 1px;
+}
+/**/
+
+/*************
+actions dropdown
+**************/
+.md .actions_dropdown{
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	display: none;
+	float: right;
+	list-style-type: none;
+	margin: 1px 0 0;
+	padding: 4px 0 0;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	z-index: 100;
+}
+.md .actions_dropdown_opposed{
+	left: 0;
+	right: auto; 
+}
+.md .actions_dropdown_up {
+	top: auto;
+	bottom: 100%;
+}
+.actions_dropdown a{
+	display: block;
+	padding: 4px 12px;
+	text-decoration: none;
+	white-space: nowrap;
+	outline: 0;
+}
+.md .actions_opposed{
+	text-align: right;
+}
+.md .value_stacked{
+	clear: both;
+	display: block;
+}
+
+/**/
+/*************
+hover behaviours and such
+**************/
+.visibleOnHover{ visibility: hidden; }
+.hover .visibleOnHover{	visibility: visible; }
+
+.invisibleOnHover{ visibility: visible; }
+.hover .invisibleOnHover{ visibility: hidden; }
+
+.showOnHover{ display: none; }
+.hover .showOnHover{ display: block; }
+
+.hideOnHover{ display: block; }
+.hover .hideOnHover{ display: none; }
+
+/*************
+Set height to match bars
+eg. Budget/spending analysis tables
+*************/
+table.progressBarsTable td{
+	line-height: 22px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+/*************
+eg. Budget health status bars
+div.progressBarContainer [ progressBarContainer_alignRight | progressBarContainer_alignCenter | progressBarContainer_over | progressBarContainer_under | progressBarContainer_near | progressBarContainer_negative ]
+	div.progressBar
+		span.description
+**************/
+.md .progressBarContainer{
+	border-style: solid;
+	border-width: 1px;
+	line-height: 18px;
+	padding: 0;
+	position: relative;
+	text-align: left;
+}
+.progressBarContainer .progressBar{
+	border-style: solid;
+	border-width: 1px;
+	-mox-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 20px;
+	white-space: nowrap;
+}
+.progressBarContainer_zero .progressBar {
+	border-width: 0;
+	visibility: hidden;
+}
+.progressBarContainer_noBorder .progressBar{
+	border-width: 0;
+}
+.progressBarContainer .description{
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.md .progressBarContainer_alignRight{
+	text-align: right;
+}
+.progressBarContainer_alignCenter .description{
+	left: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+/**/
+/**********
+Content Containers/Layouts
+***********/
+/*content columns*/
+div.contentColumns{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	clear: both;
+	overflow: hidden;
+	width: 100%;
+}
+div.contentColumnsBorder{
+	border-style: solid;
+	border-width: 1px;
+}
+div.columnGroup{
+	overflow: hidden;
+	width: 100%;
+}
+div.contentColumn{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	padding: 8px 8px 0;
+	width: 100%;
+}
+.OAOLanding div.contentColumn{
+	text-align: center;
+}
+.contentColumns_snugHorizontal .contentColumn{
+	padding-left: 0;
+	padding-right: 0;
+}
+.contentColumns_snugVertical .contentColumn{
+	padding-top: 0;
+}
+div.contentColumn > div *:first-child{
+	margin-top: 0;
+}
+.columnGroup2Col .contentColumn{
+	width: 50%;
+}
+.columnGroup3Col .contentColumn{
+	width: 33.333333%;
+}
+.columnGroup4Col .contentColumn{
+	width: 25%;
+}
+.columnGroup5Col .contentColumn{
+	width: 20%;
+}
+/*block*/
+.md .block{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin-bottom: 12px;
+	width: 100%;
+}
+.md .block_cushion{
+	padding: 4px 4px 0;
+}
+.md .block_cushion_all{
+	padding: 4px;
+}
+.md .block_cushion_all_thick{
+	padding: 12px;
+}
+.md .block_spacing{
+	margin-bottom: 12px;
+}
+.md .block_tight{
+	margin-bottom: 0;
+}
+.md .block_scrollable{
+	height: 200px;
+	overflow-y: auto;
+	width: 100%;
+}
+.md .block_border{
+	border-style: solid;
+}
+.md .block_border_all{
+	border-width: 1px;
+}
+.md .block_border_bottom{
+	border-bottom-width: 1px;
+}
+.md .block_border_left{
+	border-left-width: 1px;
+}
+.md .block_border_right{
+	border-right-width: 1px;
+}
+.md .block_border_top{
+	border-top-width: 1px;
+}
+.
+.md .block_marker{	
+	margin: -1px;
+    padding: 16px 12px 12px;
+    position: relative;
+}
+.md .block_marker:before{
+	border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+	content: "";
+    height: 0;
+	left: 0;
+	position: absolute;
+	top: 0;
+    width: 0;
+}
+
+/**/
+
+/**********
+Content Layouts
+***********/
+/*spending analysis*/
+div.spendingCol1,
+div.spendingCol2{
+	min-height: 50px;
+}
+div.spendingCol1{
+	float: left;
+	width: 160px;
+}
+div.spendingCol2{
+	width: 350px;
+	float: right;
+}
+div.spendingGraph{
+	clear: both;
+	height: 160px;
+	width: 160px;
+}
+div.spendingFilter{
+	margin-bottom: 8px;
+	overflow: auto;
+}
+div.spendingFilter label {
+	float: left;
+	padding: 4px 4px 0;
+}
+div.spendingFilter form label:first-child {
+	padding-left: 0;
+}
+div.spendingFilter div.selectWrapper {
+	float: left;
+	overflow: hidden;
+	width: 125px;
+}
+/**/
+
+#ModModalWrapper{
+    position: static;
+}
+.md .modal{
+    border-width: 1px;
+    border-style: solid;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	float: left;
+    padding: 12px;
+    position: fixed;
+    width: 520px;
+    z-index: 1000;
+}
+.md .modal_noChrome{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    height: auto;
+    padding: 0;
+    width: auto;
+}
+.md .modal_noShadow{
+    -webkit-box-shadow: 0 0 0 0 transparent;
+    -moz-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent;
+}
+.md .modal_noPadding{
+    padding: 0;
+}
+.md .overlay_decorator{
+    filter: alpha(opacity=80);
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    zoom: 1;
+}
+.md .overlay_wrap{
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10001;
+}
+.md .overlay{
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    vertical-align: middle;
+    z-index: 20000;
+}
+.md .dialog_wrap{
+    display: table-cell;
+    vertical-align: middle;
+}
+.md .dialog{
+    border-style: solid;
+    border-width: 2px;
+    position: relative;
+    outline: none;
+}
+.md .modalContent{
+	max-height: 450px;
+	overflow-y: auto;
+}
+.md .modal h1,
+.md .modal h2,
+.md .modal h3 {
+	margin-top: 0px;
+}
+.md .modal .modal_heading{
+    padding: 0 0 10px;
+}
+.md .modal div.formActions{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.md .modal_close{
+    background-position: 0 -609px;
+    background-repeat: no-repeat;
+    display: block;
+    height: 31px;
+    position: absolute;
+    right: -16px;
+    text-indent: -9999px;
+    top: -16px;
+    width: 31px;
+    outline: none;
+    z-index: 1;
+}
+.growl_panel{
+    width: 520px;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    top: 0px;
+}
+.growl_panel ul{
+	margin-bottom: 0px;
+}
+.growl_panel li{
+	background: none repeat scroll 0 0 white;
+    border: 1px solid #BABABA;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 4px;
+}
+.growl_panel li{
+	background-color: #ffffcc;
+}
+.growl_panel p{
+	margin-bottom: 0px;
+	width: 440px;
+}
+.growl_panel span.close{
+	float: right;
+}
+.md .modal .modal_activity{
+	display: inline-block;
+	height: 16px;
+	padding-left: 0px; 
+	margin: -3px 0 -4px 10px;
+}
+.md div .selectedBox {
+    margin-bottom: 6px;
+}
+
+/**/
+
+.md .tip{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+    -webkit-box-shadow: 0 8px 6px -6px;
+    box-shadow: 0 8px 6px -6px;
+	padding: 8px 8px 0;
+	width: 200px;
+}
+.md .tip:before{
+	background-color: transparent;
+	background-position: top left;
+	background-repeat: no-repeat;
+	content: "";
+	display: block;
+	float: left;
+	height: 16px;
+	width: 26px;
+	margin-top: -24px;
+}
+/* (giant tool tip) <div class="contentCallout (bottom|top|left|right|bottom-left|bottom-right|top-left|top-right|right-top|right-bottom|left-top|left-bottom)">...</div> */
+div.contentCallout {
+	box-sizing: border-box;
+	position: relative;
+	padding: 15px;
+	border-radius: 3px;
+}
+div.contentCallout.bottom,
+div.contentCallout.bottom-left,
+div.contentCallout.bottom-right{
+	margin-bottom: 10px;
+}
+div.contentCallout.top,
+div.contentCallout.top-left,
+div.contentCallout.top-right{
+	margin-top: 10px;
+}
+div.contentCallout.right,
+div.contentCallout.right-top,
+div.contentCallout.right-bottom {
+	margin-right: 10px;
+}
+div.contentCallout.left,
+div.contentCallout.left-top,
+div.contentCallout.left-bottom{
+	margin-left: 10px;
+}
+div.contentCallout::before {
+	content: "";
+	width: 0;
+	height: 0;
+	border: 0.8em solid transparent;
+	position: absolute;
+}
+div.contentCallout.bottom::before {
+	left: 45%;
+	bottom: -19px;
+}
+div.contentCallout.top::before {
+	left: 45%;
+	top: -19px;
+}
+div.contentCallout.right::before {
+	right: -19px;
+	top: 35%;
+}
+div.contentCallout.left::before {
+	left: -19px;
+	top: 35%;
+}
+div.contentCallout.bottom-left::before {
+	left: 7px;
+	bottom: -19px;
+}
+div.contentCallout.bottom-right::before {
+	right: 7px;
+	bottom: -19px;
+}
+div.contentCallout.top-left::before {
+	left: 7px;
+	top: -19px;
+}
+div.contentCallout.top-right::before {
+	right: 7px;
+	top: -19px;
+}
+div.contentCallout.right-bottom::before {
+	bottom: 7px;
+	right: -19px;
+}
+div.contentCallout.right-top::before {
+	top: 7px;
+	right: -19px;
+}
+div.contentCallout.left-bottom::before {
+	bottom: 7px;
+	left: -19px;
+}
+div.contentCallout.left-top::before {
+	top: 7px;
+	left: -19px;
+}
+
+/**/
+
+/******************
+content tabs - regular and inverted
+******************/
+.md .contentTabsContainer,
+.md .contentTabsContainerFaked{
+	border-bottom-Style: solid;
+	border-bottom-width: 1px;
+	display: block;
+	float: left;
+	margin-bottom: 12px;
+	width: 100%;
+}
+.contentTabsContainer .contentTabs,
+.contentTabsContainerFaked .contentTabs{
+	border-bottom-Style: solid;
+	border-bottom-width: 1px;
+	display: none;/*Hide real tabs without JS*/
+	height: 22px;
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 0 0 20px;
+	padding: 0;
+	width: 100%;
+}
+.contentTabsContainerFaked .contentTabs,/*Show fake tabs without JS*/
+.javascript .contentTabsContainer .contentTabs{/*Show real tabs with JS*/
+	display: block;
+}
+.contentTabsContainerFaked .contentTabHeader,
+.javascript .contentTabsContainer .contentTabHeader{/*Hide header for each tab with JS*/
+	display: none;
+}
+.contentTabs li{
+	display: block;
+	float: left;
+	height: 22px;
+	margin: 0 1px 0 0;
+	padding: 0;
+	position: relative;
+	top: 1px;
+}
+/*right side*/
+.contentTabs a{
+	background-position: right -66px;
+	background-repeat: no-repeat;
+	display: block;
+	font-weight: bold;
+	outline-style: none;
+	outline-width: 0;
+	overflow: visible;
+	padding-right: 10px;
+	text-decoration: none;
+}
+/*left side*/
+.contentTabs span{
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 17px;
+	overflow: hidden;
+	padding-left: 10px;
+	padding-bottom: 2px;
+	padding-top: 3px;
+}
+/*current and current hover state for right side of tab*/
+.contentTabs .selected a,
+.contentTabs .selected a:hover{
+	background-position: right -110px;
+}
+/*current and current hover state for left side of tab*/
+.contentTabs .selected a span,
+.contentTabs .selected a:hover span{
+	background-position: 0 -44px;
+}
+/*hover state for right side of tab*/
+.contentTabs a:hover{
+	background-position: right -88px;
+}
+/*hover state for left side of tab*/
+.contentTabs a:hover span{
+	background-position: 0 -22px;
+}
+
+/****************************** 
+(flexapp) helper.tabify.js 
+div.tabify [ 
+	[ tabify_vertical | tabify_horizontal ](1) | 
+	tabify_opposed | 
+	tabify_decor [ tabify_decor_image | tabify_decor_border ](1) ]*
+	div.tabify_menu_container
+		ul.tabify_menu
+			li.tabify_tab [ tabify_tab_active ]? // repeatable item
+				div.tabify_tab_content [ tabify_tab_cushion ]? // optional
+					a.tabify_tab_label (href='#<IDENTIFIER>')
+						span.tabify_tab_label_text // optional
+	div.tabify_content_container
+		div.tabify_content_frame
+			div.tabify_content
+				div.tabify_page [ <IDENTIFIER> ] // repeatable item
+*******************************/
+/* menu base - tabs */
+.tabify .tabify_menu_container{
+	border-style: solid;
+	float: left;
+	position: relative;
+	width: 100%;
+}
+.tabify .tabify_menu{
+	clear: both;
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+.tabify .tabify_tab_cushion{
+	padding: 2px 4px 0 4px;	
+}
+.tabify .tabify_tab{
+	cursor: pointer;
+	float: left;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+	top: 1px;
+}
+.tabify_tab .tabify_tab_content{
+	overflow: hidden;
+	width: auto;
+}
+.tabify .tabify_tab_label{
+	display: block;
+	font-weight: bold;
+	outline-style: none;
+	outline-width: 0;
+	overflow: visible;
+	padding-right: 10px;
+	text-decoration: none;
+}
+.tabify .tabify_tab_label_text{
+	cursor: pointer;
+	display: block;
+	line-height: 17px;
+	overflow: hidden;
+	padding: 3px 0 2px 10px;
+	width: auto;
+}
+/* menu base: tabs - active  */
+.tabify_decor_border .tabify_tab_active{
+	z-index: 1;
+}
+.tabify_decor_image .tabify_tab_active .tabify_tab_label,
+.tabify_decor_image .tabify_tab_active .tabify_tab_label:hover{
+	background-position: right -110px;
+}
+.tabify_decor_image .tabify_tab_active .tabify_tab_label_text,
+.tabify_decor_image .tabify_tab_active .tabify_tab_label:hover .tabify_tab_label_text{
+	background-position: 0 -44px;
+}
+.tabify_decor_border .tabify_tab_content{
+	border-style: solid;
+	border-width: 1px 1px 0 1px;
+}
+/* menu base: opposed */
+.tabify_horizontal.tabify_opposed .tabify_menu,
+.tabify_vertical.tabify_opposed .tabify_menu_container{
+	float: right;
+}
+/* menu base: decorated  - decor_image */
+.tabify_decor_image .tabify_menu_container{
+	border-bottom-width: 1px;
+}
+.tabify_decor_image .tabify_tab{
+	height: 22px;
+}
+.tabify_decor_image .tabify_tab_label{
+	background-position: right -66px;
+	background-repeat: no-repeat;
+	display: block;
+}
+.tabify_decor_image .tabify_tab_label:hover{
+	background-position: right -88px;
+}
+.tabify_decor_image .tabify_tab_label_text{
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+.tabify_decor_image .tabify_tab_label:hover .tabify_tab_label_text{
+	background-position: 0 -22px;
+}
+/* menu base: decorated - decor_border */
+/* horizontal layout - menu & tabs */
+.tabify_horizontal .tabify_menu{
+	float: left;
+}
+.tabify_horizontal.tabify_decor_border .tabify_menu{
+	position: relative;
+	top: 2px;
+}
+.tabify_horizontal.tabify_decor_border .tabify_tab{
+	top: -1px;
+}
+/* horizontal & opposed layout - menu & tabs */
+/* vertical layout - tabify menu & tabs */
+.tabify_vertical .tabify_menu_container{
+	border-width: 0;
+	clear: none;
+	height: 100%;
+	width: 170px;
+}
+.tabify_vertical .tabify_menu{
+	width: 100%;
+}
+.tabify_vertical .tabify_tab{
+	clear: both;
+	float: none;
+	left: 1px;
+	top: 0;
+	width: 100%;
+}
+.tabify_vertical .tabify_tab_label{
+	padding: 0 0 0 10px;
+}
+.tabify_vertical.tabify_decor_image .tabify_tab_label{
+	background-position: 0 0;
+}
+.tabify_vertical .tabify_tab_label_text,
+.tabify_vertical.tabify_opposed .tabify_tab_label{
+	padding-left: 0;
+	padding-right: 10px;
+}
+/* vertical layout: decorated - decor_image */
+.tabify_vertical.tabify_decor_image .tabify_tab_label_text{
+	background-position: right 0;
+}
+.tabify_vertical.tabify_decor_image .tabify_tab_label:hover{
+	background-position: 0 -22px;
+}
+.tabify_vertical.tabify_decor_image .tabify_tab_label:hover .tabify_tab_label_text{
+	background-position: right -22px;
+}
+.tabify_vertical.tabify_decor_image .tabify_tab_active .tabify_tab_label,
+.tabify_vertical.tabify_decor_image .tabify_tab_active .tabify_tab_label:hover{
+	background-position: 0 -44px;
+}
+.tabify_vertical.tabify_decor_image .tabify_tab_active .tabify_tab_label_text,
+.tabify_vertical.tabify_decor_image .tabify_tab_active .tabify_tab_label:hover .tabify_tab_label_text{
+	background-position: right -44px;
+}
+.tabify_vertical.tabify_decor_image .tabify_menu_container{
+	left: 0;
+	z-index: 1;
+}
+/* vertical layout: decorated - decor_border */
+.tabify_vertical.tabify_decor_border .tabify_menu{
+	top: 0;
+}
+.tabify_vertical.tabify_decor_border .tabify_tab{
+	padding-left: 5px;
+}
+.tabify_vertical.tabify_decor_border .tabify_tab_cushion{
+	padding: 6px 6px 6px 6px;	
+}
+.tabify_vertical.tabify_decor_border .tabify_tab_content{
+	border-width: 1px;
+}
+.tabify_vertical.tabify_decor_border .tabify_tab_active .tabify_tab_content{
+	border-right-width: 0;
+}
+.tabify_vertical.tabify_decor_border .tabify_tab_active{
+	-webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    padding: 0;	
+}
+/* vertical & opposed layout - menu & tabs */
+.tabify_vertical.tabify_opposed .tabify_tab{
+	left: 0;
+}
+.tabify_vertical.tabify_opposed .tabify_tab_label_text{
+	padding-left: 10px;
+	padding-right: 0;
+}
+/* vertical & opposed layout: decorated - decor_image */
+.tabify_vertical.tabify_opposed.tabify_decor_border,
+.tabify_vertical.tabify_opposed.tabify_decor_image .tabify_menu_container{
+	left: -1px;
+}
+.tabify_vertical.tabify_opposed.tabify_decor_image .tabify_tab_label{
+	background-position: right -66px;
+}
+.tabify_vertical.tabify_opposed.tabify_decor_image .tabify_tab_label_text{
+	background-position: 0 -66px;
+}
+.tabify_vertical.tabify_opposed.tabify_decor_image .tabify_tab_label:hover{
+	background-position: right -88px;
+}
+.tabify_vertical.tabify_opposed.tabify_decor_image .tabify_tab_label:hover .tabify_tab_label_text{
+	background-position: 0 -88px;
+}
+.tabify_vertical.tabify_opposed.tabify_decor_image .tabify_tab_active .tabify_tab_label,
+.tabify_vertical.tabify_opposed.tabify_decor_image .tabify_tab_active .tabify_tab_label:hover{
+	background-position: right -110px;
+}
+.tabify_vertical.tabify_opposed.tabify_decor_image .tabify_tab_active .tabify_tab_label_text,
+.tabify_vertical.tabify_opposed.tabify_decor_image .tabify_tab_active .tabify_tab_label:hover .tabify_tab_label_text{
+	background-position: 0 -110px;
+}
+/* vertical & opposed layout: decorated - decor_border */
+.tabify_vertical.tabify_opposed.tabify_decor_border .tabify_tab{
+	left: -5px;
+	padding-left: 0;
+}
+.tabify_vertical.tabify_opposed.tabify_decor_border .tabify_tab_active{
+	left: -1px;
+	padding-left: 0;
+}
+.tabify_vertical.tabify_opposed.tabify_decor_border .tabify_tab_content{
+	padding-left: 11px;
+	left: -5px;
+}
+.tabify_vertical.tabify_opposed.tabify_decor_border .tabify_tab_active .tabify_tab_content{
+	border-left-width: 0;
+	border-right-width: 1px;
+	padding-left: 6px;
+}
+/* page base - page content */
+.tabify .tabify_content_container{
+	clear: both;
+	overflow: auto;
+	position: relative;
+	width: 100%;
+}
+.tabify .tabify_content_frame{
+	border-style: solid;
+	height: inherit;
+	overflow: auto;
+	width: auto;
+}
+.tabify .tabify_content{
+	overflow: auto;
+	padding: 8px 8px 0px 8px;
+	width: auto;
+}
+.tabify .tabify_content ul li {
+	position: relative;
+	left: 1em;
+	width: 95%; /* necessary to prevent extra width causing overflow */
+}
+.tabify .tabify_page{
+	display: none;
+	overflow: auto;
+}
+.tabify .tabify_page_active{
+	display: block;
+	width: 100%;
+}
+/* horizontal layout - page content */
+/* vertical layout - page content */
+.tabify_vertical .tabify_content_container{
+	clear: none;
+	width: auto;
+}
+/* page base: decorated - decor_image */
+.tabify_vertical.tabify_decor_image .tabify_content_frame{
+	border-left-width: 1px;
+}
+.tabify_vertical.tabify_opposed.tabify_decor_image .tabify_content_frame{
+	border-left-width: 0;
+	border-right-width: 1px;
+}
+/* page base: decorated - decor_border */
+.tabify_decor_border .tabify_content_frame{
+	border-width: 1px;
+}
+/* CSS Document */
+
+
+/*************
+Icons
+**************/
+/*Icons - before or after the text of an element*/
+.md .icon_before:before,
+.md .icon_after:after{
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    content: "";
+    display: inline-block;
+	height: 16px;
+	position: absolute;
+	top: 0;
+	width: 16px;
+}
+.md .icon_before,
+.md .icon_after{
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    position: relative;
+}
+.md .icon_before:before{
+	margin-right: 4px;
+	left: 0;
+}
+.md .icon_after:after{
+	margin-left: 4px;
+	right: 0;
+}
+.md .icon_inline{
+	position: static;
+}
+/* centered icon with text
+div.icon_withLabel
+	div.icon_withLabel_lower
+	div.icon_withLabel_upper
+ */
+.md .icon_withLabel{
+	position: relative;
+}
+.md .icon_withLabel_lower{
+	margin: 0 auto;
+	height: 27px;
+	width: 27px;
+}
+.md .icon_withLabel_upper{
+	position: absolute;
+	left: 0;
+	text-align: center;
+	top: 8px;
+	width: 100%;
+}
+/*Icons - When used as Image Replacement*/
+.md .icon{
+    background-repeat: no-repeat;
+	padding-left: 16px;
+    line-height: 16px;
+}
+.md .icon_only{
+	display: inline-block;
+	height: 16px;
+	margin: 0 0 0 4px;
+    overflow: hidden;
+	padding: 0;
+	text-align: left;
+    text-indent: 100%;
+	white-space: nowrap;
+	width: 16px;
+}
+.md .icon_tight{
+    margin-left: 0;
+    margin-right: 0;
+}
+.md .icon_only_before{
+	margin: 0 4px 0 0;
+}
+.md .icon_circle{
+	background-position: 0 0;
+}
+.md .icon_none{
+	background-position: 0 -32px;
+}
+.md .icon_success{
+	background-position: 0 -64px;
+}
+.md .icon_alert{
+	background-position: 0 -96px;
+}
+.md .icon_lock{
+	background-position: 0 -128px;
+    padding-left: 24px;
+}
+.md .icon_news{
+	background-position: 0 -160px;
+    padding-left: 24px;
+}
+.md .icon_plus,
+.md .icon_before.icon_plus:before,
+.md .icon_after.icon_plus:after{
+	background-position: 0 -192px;
+}
+.md .icon_repeat,
+.md .icon_before.icon_repeat:before,
+.md .icon_after.icon_repeat:after{
+    /*background-position: 0 -224px;*/
+    background-position: 0 -1249px;
+}
+.md .icon_complete,
+.md .icon_before.icon_complete:before{
+	background-position: 0 -256px;
+}
+.md .icon_info,
+.md .icon_before.icon_info:before{
+	background-position: 0 -288px;
+}
+.md .icon_warning,
+.md .icon_before.icon_warning:before{
+	background-position: 0 -320px;
+}
+.md .icon_error,
+.md .icon_before.icon_error:before{
+	background-position: 0 -352px;
+}
+.md .icon_close{
+	background-position: 0 -896px;
+}
+.md .icon_close:hover{
+	background-position: 0 -928px;
+}
+.md .icon_payment{
+    background-position: 0 -1184px;
+}
+.md .icon_transfer{
+    background-position: 0 -1216px;
+}
+/* epost icon on bill payee list */
+.md .icon_epost{
+	display: inline;
+	vertical-align: top;
+}
+.md .icon_config{
+    background-position: 0 -1344px;
+    padding-left: 24px;
+}
+/* global warning style */
+.md div.globalWarning{
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+    margin:0 0 10px 0;
+}
+
+/**/
+/*************
+Toggle - Generic Classes
+**************/
+.md .toggle{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.md .toggle_header{
+	float: right;
+	margin-top: -28px;
+}
+.toggle li{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.toggle a{
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: block;
+	text-indent: -9999px;
+}
+/*chart toggle*/
+.md .toggle_chart a{
+	height: 22px;
+	overflow: hidden;
+	width: 22px;
+}
+.md .toggle_chart li{
+	margin: 0 0 0 -4px;
+}
+.md .toggle_chart li:first-child{
+	margin-left: 0px;
+}
+.md .toggle_chart li:last-child{
+	margin-left: -5px;
+}
+.toggle_chart .toggle_chart_pie a{
+	background-position: 0 -480px;
+	background-repeat: no-repeat;
+}
+.toggle_chart .toggle_chart_bar a{
+	background-position: 0 -544px;
+}
+.toggle_chart .toggle_chart_pie.current  a,
+.toggle_chart .toggle_chart_pie a:hover{
+	background-position: 0 -512px;
+}
+.toggle_chart .toggle_chart_bar.current a,
+.toggle_chart .toggle_chart_bar a:hover{
+	background-position: 0 -576px;
+}
+/*show hide toggle*/
+.toggle_visibility li{
+	display: none;
+}
+.toggle_visibility .current{
+	display: inline-block;
+}
+.md .toggle_visibility a{
+	height: 16px;
+	width: 16px;
+}
+.md .toggle_visibility_show a{
+	background-position: 0 -448px;
+	background-repeat: no-repeat;
+}
+.md .toggle_visibility_hide a{
+	background-position: 0 -416px;
+	background-repeat: no-repeat;
+}
+/*tip text toggle*/
+.md .toggle_tip{
+	background-position: 0 -384px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: inline-block;
+	height: 16px;
+	margin: 0 0 0 10px;
+	padding: 0;
+	text-align: left;
+	text-indent: -9999px;
+	width: 16px;
+}
+.md .toggle_tip_before{
+	margin: 0 4px 0 0;
+}
+.md .toggle_errortip{
+	background-position: 0 -352px;
+    background-repeat: no-repeat;
+	cursor: pointer;
+    display: inline-block;
+	font-weight: normal;
+	height: 16px;
+	line-height: 18px;
+	margin-left: 10px;
+	padding-left: 20px;
+}
+/**/
+
+
+div.graphMonthHighlights{
+	position: absolute;
+	z-index: 1;
+}
+div.graphMonthContainer{
+	position: absolute;
+	z-index: 11;
+}
+div.graphMonthSelectorHover,
+div.graphMonthSelectorHighlight{
+	position:absolute;
+	top:0;
+	left:0;
+	width:0;
+}
+div.graphMonthSelectorHighlight{
+	z-index: 1;
+}
+div.graphMonthSelectorHover{
+	z-index: 2;
+}
+div.graphMonthContainer{
+	background-color: #FFFFFF;
+	filter: alpha(opacity=0); 
+    -khtml-opacity: 0;      
+    -moz-opacity: 0;       
+    opacity: 0;           
+}
+
+
+/* Component-GraphDateRangeSelector */
+div.graphMonthSelectorHover {
+    background-color: #CAE1FF;
+}
+div.graphMonthSelectorHighlight {
+    background-color: #E7F1FE;
+}
+
+
+
+
+/* Component-TransactionCategoryList */
+.categoryTransactionsTable .progressBar{
+	background-color: #9FC5F8;
+}
+.categoryTransactionsTable .hover .progressBar{
+	background-color: #2B78E4;
+}
+/*************
+Highcharts
+*************/
+.highcharts-tooltip span{
+    z-index: 9999 !important;
+}
+.widePaddingTooltip .highcharts-tooltip span{
+    padding: 3px 500px 0;
+}
+.backgroundTooltip .highcharts-tooltip span{
+    background-color: #FFFFFF;
+}
+
+div.breadcrumb{
+	height: 1%;
+	margin-bottom: 8px;
+}
+.Landing div.breadcrumb{
+    margin-bottom: 0;
+}
+div.breadcrumb span{/*You are here text*/
+	display: none;
+}
+ul.breadcrumb{
+    font-weight: bold;
+    height: 1%;
+    margin: 0;
+    padding: 0;
+}
+html>body ul.breadcrumb{
+    height: auto;
+}
+ul.breadcrumb:after{
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility:hidden;
+}
+ul.breadcrumb li{
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin: 0 0 0 5px;
+    padding: 5px 2px 5px 12px;
+    white-space: nowrap;
+}
+ul.breadcrumb li.link0{
+    background-image: none;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 6px;
+}
+ul.breadcrumb li a{
+    font-weight: normal;
+}
+ul.breadcrumb li.self a{
+    font-weight: bold;
+    text-decoration: none;
+}
+/**/
+/**********************
+global
+***********************/
+div.global{
+	position: absolute;
+	right: 15px;
+	top: 17px;
+    width: 90px;
+}
+ul.global{
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+ul.global li{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	font-size: 10px;
+	font-weight: bold;
+	list-style-type: none;
+	margin: 0 0 2px;
+	padding: 0 0 2px;
+    text-align: right;
+}
+ul.global li.linkN{
+	border-bottom-style: none;
+	border-bottom-width: 0px;
+}
+ul.global li a{
+    text-decoration : none;
+	text-transform: uppercase;
+}
+ul.global li a:hover{
+    text-decoration : underline;
+}
+/**/
+.md ul.lang{
+    margin : 0;
+   	padding: 0;
+    text-align: left;
+}
+ul.lang li{
+    display: inline;
+	padding: 0 4px 0 0;
+}
+ul.lang li.current{
+	display: none
+}
+ul.lang li a{
+    text-decoration: underline;
+}
+ul.lang li a:hover{
+    text-decoration: none;
+}
+
+
+/**/
+/**********************
+topic
+***********************/
+div.topic,
+div.utilities{ /*remove ones PFM is in production*/
+    clear: both;
+    display: block;
+}
+ul.topic{
+    font-size: 12px;
+    font-weight: normal;
+    list-style-type: none;
+    margin: 4px 0 12px 0;
+    padding: 0;
+    text-align: left;
+}
+ul.topic li{
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    display : inline;
+    margin: 0 0 5px;
+    padding: 0 4px 0 5px;
+}
+ul.topic li.link0{
+    background-image: none;
+    padding-left: 0;    
+}
+ul.topic li.noSeparator{
+    background-image: none
+}
+ul.topic li a{
+    text-decoration : underline;
+}
+ul.topic li a:hover{
+    text-decoration : none;
+}
+ul.topic ul{
+    display: inline;
+    margin: 0 0 0 4px;
+    padding: 0;
+}
+ul.topic ul.listBlock li{
+	display: inline-block;
+}
+ul.topic ul li{
+    background-image: none;
+    padding: 0 2px 0 0;
+}
+/*vertical*/
+ul.topic_vertical li{
+    background-image: none;
+    display: block;
+    margin: 0 0 2px 5px;
+    padding: 0;
+}
+ul.topic_heading{
+    float: right;
+    margin-bottom: 0;
+    margin-top: -26px;
+    overflow: hidden;
+    width: auto;
+}
+ul.topic_heading li{
+    display: block;
+    float: left;
+}
+/*aligned right*/
+ul.topic_mirror{
+    text-align: right;
+}
+/*snug*/
+ul.topic_snug{
+    margin-bottom: 4px;
+}
+ul.topic_tight{
+    margin: 0;
+}
+ul.topic_inline{
+    display: inline;
+}
+
+/* CSS Document */
+
+
+/**********************
+Nav Contextual
+***********************/
+div.context{
+	margin-bottom: 10px;
+}
+ul.context{
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+ul.context li{
+	font-size: 11px;
+	font-weight: bold;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+ul.context li a{
+	border-top-style: solid;
+	border-top-width: 1px;
+	display: block;
+	height: 1%;
+	padding: 3px;
+    text-decoration : none;
+}
+ul.context ul{
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+/**/
+/************
+general portlet styles
+*************/
+div.portlet{
+	float: left;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	margin: 0 0 10px;
+	padding: 10px 4px 0px;
+	width: 100%;
+}
+.portlet h1,
+.portlet h2,
+.portlet h3{
+	font-size: 13px;
+	margin-top: 0px;
+}
+.portlet p.more{
+	text-align: right;
+}
+.portlet .aligncenter{
+	text-align: center;
+}
+.portlet .aligncenter img{
+	display: inline;
+}
+div.portlets .unpaddedPortlet{
+    margin: 0 0 10px;
+	padding: 0;
+}
+/**/
+/*****
+form portlet
+******/
+.loginPortlet .portlet{
+	border-width: 1px;
+	border-style: solid;
+	margin-bottom: 8px;
+}
+.loginPortlet .portlet input,
+.loginPortlet .portlet select{
+	font-size: 11px;
+}
+.Home .loginPortlet .authentication{
+	height: 200px; width: 200px;
+	overflow: hidden; position: absolute;
+	right: 8px; top: 8px;
+	z-index: 2000; padding-bottom: 24px;	
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	height: 167px;
+}
+html>body .Home .loginPortlet .authentication{
+   height: 167px;
+}
+.loginPortlet .authentication form{
+	margin: 4px; 
+	padding: 0;
+}
+.loginPortlet label{
+	font-size: 10px;
+}
+.loginPortlet .authentication h3{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	height: auto; 
+	margin: 0;  
+	padding: 4px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.loginPortlet .authentication .required{
+	float: left; 
+	position: relative; 
+	padding-bottom: 3px; 
+	padding-right: 4px
+}
+.loginPortlet .authentication .memory select, 
+.loginPortlet .authentication .branch select{
+	width : 180px;
+}
+.loginPortlet .authentication .sec{
+	display: block; 
+	clear: both; 
+	padding: 0 0 3px 0;
+}
+.loginPortlet .authentication .sec .checkbox{
+	margin: 0 4px 2px 0; 
+	padding:0; 
+	width: 13px; 
+	height: 13px;
+}
+.loginPortlet .authentication .submit{
+	float: left;
+	padding-left: 0;
+	margin: 3px 5px 3px 0;
+}
+.loginPortlet .authentication .control{
+	float: left;
+	position: relative;
+	width: 95px;
+	font-size: 10px;
+}
+/************
+increased authentication - login portlet reshuffle
+************/
+.loginPortlet .authentication .submit #Continue{
+	font-weight: bold;
+	padding: 0 3px;
+}
+.loginPortlet #loginAuth{
+	margin: 0;
+	overflow: hidden;
+	zoom: 1;
+}
+.loginPortlet .enhancedSecurity{
+	display: block;
+	clear: both;
+}
+.loginPortlet .authentication .enhancedSecurity p{
+	font-size: 10px;
+	margin: 8px 0 0 0;
+	padding: 0;
+}
+/******
+logout link: 
+.link = login; 
+.in = logout
+******/
+.loginPortlet .in, 
+.loginPortlet .link{
+	height: 84px;
+}
+html>body .loginPortlet .in, 
+html>body .loginPortlet .link{
+	height: auto; 
+	min-height: 84px;
+}
+.loginPortlet .in h3,
+.Home .loginPortlet .in h3{
+	margin: 0; 
+	padding: 10px 0 0 0; 
+	border: none; 
+	text-align: center; 
+	background-color: transparent; 
+	font-weight: normal;
+}
+.loginPortlet .link h3{
+	display : none;
+}
+.loginPortlet .link .submit, 
+.loginPortlet .in .submit{
+	float: none;
+	margin: 14px 0 15px 11px; 
+	width: 171px; 
+	height: 25px;
+	clear: none;
+}
+.loginPortlet .link .submit{
+	margin-top: 30px;
+}
+/*on 2 col decorator3*/
+.colOneTwoThree .loginPortlet .authentication,
+.colTwoThree .loginPortlet .authentication{
+	height: 25px; 
+	margin: 0;
+	border: none;
+}
+.colOneTwoThree .loginPortlet .link .submit, 
+.colOneTwoThree .loginPortlet .in .submit,
+.colTwoThree .loginPortlet .link .submit, 
+.colTwoThree .loginPortlet .in .submit{
+	width: 171px; 
+	height: 25px;
+	float: right;
+	margin: 0;
+}
+.colOneTwoThree .loginPortlet .in h3,
+.colTwoThree .loginPortlet .in h3{/*logged in name */
+	margin: 0; 
+	padding:0; 
+	border: none; 
+	text-align: left; 
+	width: 330px; 
+	float: left; 
+	background: transparent; 
+	font-weight: normal;
+}
+.colOneTwoThree .loginPortlet .in h3{
+	width: 760px;
+}
+.colOneTwoThree .loginPortlet .link h3,
+.colTwoThree .loginPortlet .link h3{
+	display : none;
+}
+.colOneTwoThree .loginPortlet .in, 
+.colOneTwoThree .loginPortlet .link,
+.colTwoThree .loginPortlet .in, 
+.colTwoThree .loginPortlet .link{
+	height: 25px;
+}
+html>body .colOneTwoThree .loginPortlet .in, 
+html>body .colOneTwoThree .loginPortlet .link,
+html>body .colTwoThree .loginPortlet .in, 
+html>body .colTwoThree .loginPortlet .link{
+	height: auto; 
+	min-height: 25px;
+}
+
+/******
+LOGGED out link with message
+******/
+.loginPortlet .authentication p{
+	margin: 10px;
+}
+
+/************
+2 column decorator Form and Online
+*************/
+.colOneTwoThree .loginPortlet .authentication,
+.colTwoThree .loginPortlet .authentication{
+	background: transparent;
+}
+.colOneTwoThree .loginPortlet h3,
+.colTwoThree .loginPortlet h3 {
+	background: transparent;
+	border: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	width: 405px;
+}
+.colOneTwoThree .loginPortlet .submit,
+.colTwoThree .loginPortlet .submit {
+	float:right;
+	height:25px;
+	width:171px;
+}
+
+/************
+3 column Form decorator
+*************/
+.Form .loginPortlet label,
+.Form .loginPortlet .required .input,
+.Form .loginPortlet .required {
+	font-weight: normal;
+	width: auto;
+}
+.Form .loginPortlet .required,
+.Form .loginPortlet .authentication .control{
+	clear: none;
+}
+.Form .loginPortlet label,
+.Form .loginPortlet .required .input{
+	float: none;
+}
+.Form .loginPortlet .submit{
+	clear: none;
+	padding: 0;
+}
+
+/**********
+Hide accounts dropdown by default. enable it by JS if there is more than 1 account
+*********/
+#loginAuth div.memory{
+	display: none;
+}
+
+/**********
+No JavaScript
+*********/
+div.jsDisabled{
+	display: none;
+}
+div.jsEnabled{
+	display:block;
+}
+
+/**/
+/* .online_details styles no longer used */
+.Online .portlets .online_details {
+	border-style: solid;
+	border-width: 1px 0;
+	margin-bottom: 15px;
+	padding: 0 0 8px 0;
+}
+.online_details h2 {
+	font-size: 13px;
+	margin: 7px 0 10px;
+}
+.online_details div.item {
+	clear: both;
+    line-height: 18px;
+	padding-bottom: 12px;
+}
+.online_details div.date {
+	float: left;
+}
+.online_details div.date .day {
+	font-weight: bold;
+}
+.online_details div.date .month {
+	font-weight: normal;
+}
+.online_details div.amount {
+	float: right;
+}
+.online_details div.secondParty {
+	margin-bottom: 10px;
+}
+.online_details ul.icons {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+.online_details p.listIntro {
+	margin: 0;
+	padding: 0;
+}
+.online_details ul.topic_separators li.linkN {
+	background-image: none;
+	border-left: 1px solid #333;
+}
+.online_details ul.topic_separators li.link0 {
+	border-left: 0 none;
+}
+.online_details ul.topic_vertical {
+	margin-bottom: 0;
+}
+.online_details ul.topic_vertical li {
+	margin-left: 0;
+}
+div.Widget .WidgetBody hr {
+	border-color: #ccc;
+	border-style: solid;
+	border-top: 0 none;
+}
+/**/
+
+
+/*************
+General
+**************/
+/*Form highlight - form with a background color and padding*/
+div.transactionSearch{
+	clear: both;
+	float: left;
+    padding: 10px 10px 0;
+    margin-bottom: 10px;
+    height: 1%;
+    position: relative;
+}
+/*general*/
+.sfHead{
+	clear: both;
+	margin: 0px 0px 7px;
+}
+.sf a img{/*fix calendar icon alignment*/
+	display: inline;
+	vertical-align: top;
+}
+.sf h2{/*conf screen mostly*/
+	font-size: 13px;
+	display: block;
+	margin: 0px;
+	padding: 3px 0px;
+}
+.sf h3{/*section headers*/	
+	display: block;
+	margin: 0px;
+	padding: 2px 4px;
+}
+.sf .sfData{/*section containers*/
+	text-align: left;
+	margin: 0; 
+	padding: 5px 0 0;
+}
+.sf s,
+.required label s,
+.requirederror label s{/*asterisk*/
+	color: #f00;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.javascript .sf .icon{
+	padding-left: 0;
+}
+.in textarea{/*textfield in right column*/
+	width: 225px;
+	height: 100px;
+}
+.md .hint,
+.md .sfGroupHint{/*hint text*/
+	display: block;
+	clear: both;
+	font-size: 11px;
+}
+.md .longHint {
+	width: 340px;
+}
+.md .hint p,
+.md .sfGroupHint p{
+	margin:0 0 4px 0;
+}
+.md .sfGroupHint{/*group hint text*/
+	padding:0 0 0 5px;
+	margin:0 0 5px;
+}
+.sfHead,
+.firstSect, 
+.editSect, 
+.lastSect,/*form only*/
+#sect-button,/*form and confirmation*/
+.firstStep,
+.dataStep,
+.lastStep{/*confirmation only*/
+	width: 598px;
+}
+.confirmStep{/*because of the border*/
+	width: 596px;
+}
+.Forms1024x768 .sfHead,
+.Forms1024x768 .firstSect, 
+.Forms1024x768 .editSect, 
+.Forms1024x768 .lastSect,
+.Forms1024x768 #sect-button,
+.Forms1024x768 .firstStep,
+.Forms1024x768 .dataStep,
+.Forms1024x768 .lastStep{ /*overwrite for 1024 form layout*/
+	width: 520px;
+}
+.Forms1024x768 .confirmStep{
+	width: 518px;
+}
+.Online .sfHead,
+.Online .firstSect, 
+.Online .editSect, 
+.Online .lastSect,/*form only*/
+.Online #sect-button,/*form and confirmation*/
+.Online .firstStep,
+.Online .dataStep,
+.Online .lastStep{/*confirmation*/
+	width: 520px;
+}
+.Online .confirmStep{/*because of the border*/
+	width: 518px;
+}
+input#refresh{
+	display: none;
+}
+.r .repeatBreak hr{
+	border: none;
+	width: 80%;
+	height: 1px;
+	text-align: center;
+}
+.sf table.signature{
+	width: 100%;
+	padding: 0;
+	margin: 50px 0 0 0;
+	border-top-width: 1px;
+	border-top-style: solid;
+	font-size: 1em;
+}
+.sf table.signature td{
+	background: transparent;
+}
+.md label, .md .label{
+	font-weight: bold;
+}
+.md fieldset{/*(Transfer Funds)*/
+	border: none;
+	clear: both;
+	padding: 0;
+	margin: 0;
+}
+div.cntxthelp{
+	display: block;
+	margin-bottom: 4px;
+}
+div.control{
+	display: block;
+	margin: 0px 0px 12px 0px;
+}
+input.checkbox{
+	position: relative;
+	top: 2px;
+	width: 13px;
+	height: 13px;
+}
+/*inside table remove the top*/
+.summarydata input.checkbox{
+	margin: 2px 0 2px 4px;
+	top: 0px;
+}
+/*************
+Required message
+*************/
+.note{
+	padding: 0 0 15px 0; 
+}
+div.reqNote,
+p.reqNote{
+	padding: 0;
+	margin: 5px 0;
+	position: relative;
+	color: #f00;
+}
+/******************
+Confirmation Screen
+******************/
+.sf h3 .edit, .sf h2 .edit{
+	float: right;
+	margin: 0;
+	border: 0;
+	background: transparent;
+	text-decoration: underline;
+	padding: 0;
+	display: inline;
+	font-weight: bold;
+	cursor: pointer;
+}
+form.sf .confirmStep{
+	border-style: none solid solid;
+	border-width: 0px 1px 1px;
+	margin: 0 0 10px;
+	display: block;
+}
+/**********
+Buttons
+***********/
+div.buttons,
+div.submit,
+div.confButtons{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	clear: both;
+	height: 1%;
+	margin: 0px;
+	overflow: hidden;
+	padding: 5px 0px 10px 165px;
+	position: relative;
+	width: 100%;
+}
+.javascript .submitAuto{ /*Hide buttons on forms submitted by JS*/
+	display: none;
+}
+/* ATM/Branch Locator portlet submit button */
+.locatorportlet .submit{
+	padding: 5px 0px 10px 0px;
+}
+/* MDSB Pending Transactions / Transaction Manager submit button */
+.transactionApprovals .submit {
+    float: right;
+    width: auto;
+}
+.sf div.buttons,
+.sf div.submit,
+.sf div.confButtons{
+	padding: 5px 0px 10px 170px;
+}
+/*actions form, primary, secondary*/
+div.submit .actionsAligned{/*always used by itself*/
+	float: left;
+	/*padding-left: 165px; remove comments after we update ALL submit buttons into this paradigm*/
+}
+div.submit .actionsPrimary{/*used in conjunction with actionScondary*/
+	float: right;
+}
+div.submit .actionsSecondary{/*used in conjunction with actionPrimary*/
+	float: left;
+}
+div.buttons .sfHalo, 
+div.confButtons .sfHalo{
+	padding: 5px 3px;
+}
+div.control, 
+div.instructions,
+div.conclusion{
+	display: block;
+	clear: both;
+	padding: 0;
+}
+input#Continue,
+input.continue{
+	font-weight: bold;
+}
+/**********
+Alerts
+***********/
+form.sf .r .buttons .alert {
+	padding: 3px;
+	position: relative;
+}
+/*****************
+Usability buttons
+*****************/
+.md div.formActions{
+	border-style: solid;
+	border-width: 1px;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	clear: both;
+	float: none;
+	text-align: left;
+	overflow: hidden;
+	width: 100%;	
+}
+div.formActions ul{
+	list-style-type: none;
+	margin: 0;	
+	padding: 0px;
+}
+.formActions ul li{
+	display: inline;
+	margin: 0 8px 0 0;
+	padding: 0 8px 0 0;
+}
+.formActions ul li input{
+	line-height: normal;
+    overflow: visible;
+    padding: 0 6px;    
+	vertical-align: middle;
+}
+.formActions ul li.formCancel,
+.formActions ul li.formEdit{
+	background-repeat: no-repeat;
+	background-position: 0 0;	
+	padding: 0 0 0 15px;
+}
+.formActions ul li.opposed{
+	float: right;
+	padding-top: 3px;
+}
+.formActions p{
+	padding: 5px 10px 0 10px;
+}
+/*****
+I Agree <label class="acceptanceToggle"><checkbox> text</label>
+******/
+.md label.acceptanceToggle {
+	width: auto;
+	font-weight: normal;
+}
+/**
+inlineFilter
+div.inlineFilter 
+	[div.required]?
+		[label]
+		[div.input]
+			[select]
+	[div.submit]?
+		[input.btn type='submit' || button.btn]
+***/
+.md .inlineFilter .required,
+.md .inlineFilter label,
+.md .inlineFilter .input,
+.md .inlineFilter select,
+.md .inlineFilter .submit,
+.md .inlineFilter .btn{
+	width: auto;
+}
+.md .inlineFilter label,
+.md .inlineFilter select,
+.md .inlineFilter input.btn{
+	margin-right: 5px;
+}
+
+/**/
+/*************
+row in SF
+*************/
+/*added relative on these 2 items because of NS7 didn't support it on labels then removed 
+it because couldn't find a way to bring the calendar to the front when above fields*/
+/*.r, .d{position: relative;}*/
+.md .r{/*width: 598px;*/
+	padding: 0 5px 8px 5px;
+	display: block;
+	clear: both;
+	width: 588px;
+}
+.md .r , .md .r{
+	\width: 598px;
+	w\idth: 588px;
+}
+.md .confCol .r , .md .confCol .r{/*confirmation 1px border*/
+	\width: 596px;
+	w\idth: 586px;
+}
+.Online .md .r , 
+.Online .md .r{/*standard form in online banking*/
+	\width: 520px;
+	w\idth: 510px;
+} 
+.Online .md .confCol .r , 
+.Online .md .confCol .r{/*confirmation 1px border*/
+	\width: 518px;
+	w\idth: 508px;
+}
+.r br{
+	clear: both;
+	font-size:1px;
+	line-height: 1px;
+	margin-bottom: -1px;
+}
+/*left column*/
+.r label, .r .label{
+	width: 160px;
+	float: left;
+	padding: 1px 5px 0px 0px;
+	text-align: right;
+	cursor: pointer;
+}
+.confCol .r label, 
+.confCol .r .label{
+	padding: 0px 5px 0px 0px;
+}
+.r label, .r .label{
+	\width: 165px;
+	w\idth: 160px;
+}
+.r span.in, 
+.r span.conf{/*right column (either inputs of text for confirmation)*/
+	display: block;
+	float: left;
+	width: 423px;
+}
+.r span.conf{/*right column (either inputs of text for confirmation)*/
+	width: 421px;
+}
+.Online .r span.in, 
+.Online .r span.conf{/*standard form in online banking*/
+	width: 345px;
+}
+.Online .r span.conf{
+	width: 343px;
+}
+.r .onlyLbl span.conf,
+.r .onlyLbl span.in,
+.Online .r .onlyLbl span.in,
+.Online .r .onlyLbl span.conf{/*added for consent test on confirmation screen*/
+	width: auto;
+}
+.r .in label{/*when label in right col it needs the full width... -4 pixel because of the error border and padding on .ctr*/
+	display: block;
+	clear: both;
+	width: auto;/*width:auto which is a bug in ie6 so remove float*/
+	float: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	font-weight: normal;
+	position: relative; /*to fix IE repeating character bug in Corporatesponsorship/Apply*/
+}
+
+.fullWidthInput input#type_mdi,
+.fullWidthInput input#type_mdsb,
+.fullWidthInput input#type_next_login,
+.fullWidthInput input#type_more_info {
+    float: left;
+    margin-right: 7px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+.r .il label{/*except when we want to display them inline*/
+	width: auto;
+	float: left;
+	display: inline;
+	clear: none;
+	padding-right: 2px;
+	white-space: no-wrap;
+}
+.r .onlyLbl .noLabel{/*just text*/
+	padding: 0;
+}
+.r .fullWidthInput span.in,
+.r .fullWidthInput span.conf {/*switch radio buttons for small bus - not std*/
+	width: auto;
+    float: none;
+}
+/*******
+Row 2 col
+********/
+/*2column example loan app step 3*/
+.r .d{
+	float: left;
+	width: 294px;
+}
+.r .d label, .r .d .label{
+	width: 140px;
+	float: left;
+	text-align: right;
+}
+.r .d label, .r .d .label{
+	\width: 144px;
+	w\idth: 140px;
+}
+.r .d span.in{
+	width: 140px;
+}
+/*******
+Row 3 col
+********/
+.col3 .r .d{
+	float: left;
+	width: 196px;
+}
+.col3 .r .d label, .col3 .r .d .label{
+	width: 191px;
+	float: left;
+	text-align: left;
+}
+.col3 .r .d label, .col3 .r .d .label{
+	\width: 196px;
+	w\idth: 191px;
+}
+.col3 .r .d span.in{
+	display: block;
+	clear: both;
+	float: none;
+	width: 191px;
+}
+/*************
+error handling in sf rows
+*************/
+.fielderror i{
+	float: left;
+	width: 15px;
+	margin-top: 2px;
+}
+.errBorder .ctr{
+	display:block;
+	float:left;
+	border-width: 1px;
+	border-style: solid;
+	padding:1px;
+}
+/**/
+/***********
+Row in MD
+************/
+/********************
+div.details (optional and can contain zero or more ofthe following)
+	div[.entry | .entryInline | .required | .error | .requirederror | div.string(*) | optiongroup(added for rtp)]
+		label | .label
+		div.input
+*********************/
+div.required,
+div.requirederror,
+div.string,
+div.entry{
+	margin-bottom: 0;
+	padding-bottom: 10px;
+	border-bottom: none;
+	display: block;
+	clear: both;
+	float: left;
+	width: 100%;
+}
+div.entryInline{
+	padding: 5px 0;
+}
+div.entryInline_snug{
+	padding: 0;
+}
+/*paybills pay from account variation*/
+.summarygroup div.required,
+.summarygroup div.requirederror{
+	padding: 3px 2px;
+}
+.summarygroup .required .input,
+.summarygroup .requirederror .input{
+	width: auto;
+}
+/*end - paybills pay from account variation*/
+/*inside tables div don't have width*/
+.summarydata div.required, 
+.summarydata div.requirederror, 
+.summarydata div.string,
+.summarydata div.entry{
+	padding: 0;
+}
+/*required is sometimes inside .entry so to avoid the duplicates*/
+.entry div.required{
+	margin: 0;
+	padding: 0;
+}
+.required label,
+.required .label,
+.string label,
+.string .label, 
+.entry label,
+.entry .label{
+	width: 160px;
+	float: left;
+	padding: 1px 5px 0px 0px;
+}
+.md .confirmCheckBoxText{
+	padding-left: 12px;
+	width: 90%;
+}
+.entryInline label{
+	width: auto;
+}
+label.memoText{
+	font-size: 11px;
+	margin-left: 8px;
+	margin-top: -6px;
+}
+/*Stacked label ontop of field*/
+.fieldsetBlock label{
+	display: block;
+	float: none;
+	padding-bottom: 5px;
+	width: auto;
+}
+.range label{
+	display: inline;
+	width: auto;
+    float: left;
+    height: 1%;
+	padding: 3px 5px 0 8px;
+}
+.required .input, 
+.requirederror .input, 
+div.string .input, 
+.entry .input, 
+div.string span.value{
+	display: block;
+	float: left;
+	width: auto;
+}
+.entryInline .input{
+	width: auto;
+}
+/*inputs are not as wide when inside a form group*/
+.formGroup .required .input, 
+.formGroup .requirederror .input, 
+.formGroup .string .input, 
+.formGroup .entry .input, 
+.formGroup .string span.value{
+	width: 345px;
+}
+.required span.value,
+.entry span.value{
+	display: block;
+    float: left;
+    width: 345px;
+}
+/*remove this once IE6 is not supported*/
+*html .formGroup .required .input, 
+*html .formGroup .requirederror .input, 
+*html .formGroup .string .input, 
+*html .formGroup .entry .input, 
+*html .formGroup .string span.value{
+	display: inline;
+	float: none;
+}
+/*full width inputs are not as wide when inside a form group*/
+.formGroup .fieldsetFullWidth .input{
+	width: 100%;
+}
+/*ensuring modals don't have unnecessary bottom margin*/
+.modalContent .formGroup:last-child{
+	margin-bottom: 0px;
+}
+
+/*Stacked label ontop of field*/
+.fieldsetBlock .input{
+	float: none;
+	width: auto;
+}
+.range .inputRangeStart,
+.range .inputRangeEnd{
+	float: left;
+	padding-right: 20px;
+}
+.optiongroup .range .inputRangeStart,
+.optiongroup .range .inputRangeEnd{
+	padding-top: 2px;
+	position: relative;
+}
+.range .inputRangeInput{
+	float: left;
+}
+/*full width inputs*/
+.formGroup .fieldsetFullWidth select{
+	width: 100%;
+}
+/*inside tables don't have width*/
+.summarydata .required .input, 
+.summarydata .requirederror .input, 
+.summarydata .string .input, 
+.summarydata .entry .input, 
+.summarydata .string span.value,
+.formData .required .input, 
+.formData .requirederror .input, 
+.formData .string .input, 
+.formData .entry .input, 
+.formData .string span.value{
+	float: none;
+	width: auto;
+}
+.summarydata th label, 
+.summarydata td label{
+	float: none;
+	width: auto;
+	padding: 0
+}
+div.sec input.checkbox{
+	border: none;
+	width: 13px;
+	height: 13px;
+	margin:0;
+}
+input.monetary{
+	width: 70px;
+}
+input.desc{
+	width: 200px;
+}
+input.descLarge{
+	width: 260px;
+}
+.formHighlight .fieldsetFullWidth input,
+.formHighlight .fieldsetFullWidth select{
+	width: 100%;
+}
+.required div.qualify{/*Account Activity request Extra field, qualifier for account activity*/
+	padding-left: 165px;
+	padding-top: 6px;
+	diaply: block;
+	clear: both;
+}
+.required .qualify .input{
+	float: none;
+}
+/*radio buttons*/
+div.input .option{
+	clear: both;
+	position: relative;
+	vertical-align: top;
+}
+div.input .option input[type="radio"],
+div.input .option input[type="checkbox"]{
+	float: left;
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 13px;
+	height: 13px;
+}
+.input .option .label, 
+.input .option label{
+	display: inline;
+	font-weight: normal;
+	text-align: left;
+	width: 329px;
+	margin-left: 0px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+.formGroup .input .option .label, 
+.formGroup .input .option label{
+	width: auto;
+	word-wrap: break-word;
+}
+.formData .input .option .label, 
+.formData .input .option label{
+	width: auto;
+}
+/*********
+ * Radio button labels - example: MDSB
+ * ******/
+div.required .fullWidthInput label{
+	width: 100%;
+	font-weight: normal;
+}
+
+/*********
+Optiongroups - example: RTP
+**********/
+.md .optiongroup{
+	border-bottom: none;
+	clear: both;
+	display: block;
+	margin-bottom: 0;
+	overflow: hidden;
+	width: 100%;
+}
+/*left col*/
+.optiongroup .label{
+	width: 148px;
+	float: left;
+	padding: 0px 5px 0px 0px;
+}
+.optiongroup .label{
+	\width: 148px;
+	w\idth: 143px;
+}
+/*right col*/
+.optiongroup .options{
+	display: block;
+	float: left;
+	width: 355px;
+}
+.optiongroup .option{
+	display: block;
+	clear: both;
+	float: left;
+	padding-left: 17px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+.optiongroup .optionlabel{
+	clear: both;
+	display: block;
+	width: 100%;
+}
+#EMTReceiveActions .optionlabel{
+	padding-bottom: 5px;
+}
+.optiongroup .optionlabel label{
+	display: inline;
+	float: left;
+	padding: 3px 3px 0 0;
+	width: auto;
+}
+.optiongroup .optionlabel span.input{
+	display: block;
+	float: left;
+}
+.optiongroup .optionlabel input.checkbox{
+	float: none;
+	margin: 0 4px 0 0;
+	padding: 0;
+	width: 14px;
+	height: 14px;
+	position:static;
+}
+.optiongroup .option .control{
+	clear: both;
+	display: block;
+	float: left;
+	width: auto;
+}
+.optiongroup .option .control label{
+	margin: 0;
+	padding: 0;
+	width: auto;
+	float: none;
+	display: inline;
+}
+#EMTReceiveActions .option .control label{
+	display: block;
+}
+.optiongroup .hint{
+    padding-left: 17px;
+}
+.optiongroup .range .hint{
+    padding-left: 0;
+}
+.optiongroup .errored {
+    background-position: 0 3px;
+    background-repeat: no-repeat;
+}
+.optiongroup .recurring .errored{
+	margin: 0 0 0 -9px;
+	padding: 0 0 0 17px;
+}
+html>body .optiongroup .recurring .errored{
+	margin: 0 0 0 -17px;
+}
+#EMTReceiveActions .errored {
+    background-position: 0 0;
+}
+#EMTReceiveActions .option .required,
+#EMTReceiveActions .option .requirederror{
+	width: 338px;
+}
+#EMTReceiveActions .errored .requirederror label{
+	background-image: none;
+}
+/*end - Optiongroups
+/*checkbox input option eg. VC edit future transfers */
+.inputOptionGroup .option label{
+	padding-left: 17px;
+	position: relative;
+}
+.inputOptionGroup .option input.checkbox{
+	left: 0;
+	margin-right: 4px;
+	position: absolute;
+}
+/****************
+Inline forms Not inline element
+ex. account statement drill down
+*****************/
+div.il,
+div.il label,
+div.il .input{
+	clear: none;
+	display: inline;
+	padding: 0px;
+    margin: 0px;
+	width: auto;
+	float:none;
+	font-weight:normal;
+}
+div.il label,
+div.il .input{
+	margin: 0px 4px 10px 0px;
+}
+/***********
+Error handling for md forms
+***********/
+.requirederror label, .requirederror .label{
+	background-repeat: no-repeat;
+	background-position: 4px 0px;
+	width: 137px;
+	float: left;
+	padding: 0px 5px 0px 23px;
+}
+.requirederror label, .requirederror .label{
+	\width: 165px;
+	w\idth: 137px;
+}
+.entryInline label,/*not enough hooks so we have to specify it again*/
+.entryInline .label{
+	width: auto;
+}
+.requirederror .input label,
+.requirederror .input .label{
+	background-image:none !important;
+}
+.requirederror .input .inputOptionGroup .option label{
+	background-image: none;
+}
+
+
+/**/
+/*********************
+Receipt
+*********************/
+.md .receipts{
+	clear: both;
+	display: block;
+	float: left;
+}
+/*receipt header*/
+.receipts .receiptHeader{
+	border-style: solid;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-top-width: 1px;
+	float: left;
+	margin: 0px;
+	padding: 5px;
+	width: 506px;
+}
+.receiptHeader .column{
+	margin: 0px;
+}
+.receiptHeader .twoColRow .column{
+	float: left;
+	width: 50%;
+}
+.receiptHeader label{
+	float: left;
+	padding-right: 10px;
+}
+.receiptHeader .value{
+	padding-right: 10px;
+}
+/*receipt*/
+.receipts .receipt{
+	background-position: 20px 10px;
+	background-repeat: no-repeat;
+	border-style: solid;
+	border-width: 1px;
+	border-bottom-width: 0px;
+	float: left;
+	margin-bottom: 0px;
+	padding: 10px 10px 0;
+	width: 496px;
+}
+.receipts .receiptN{
+	border-bottom-width: 1px;
+	margin-bottom: 12px;
+}
+.receipt dl{ 
+	clear: left;
+	float: left; /*floating because the dt is floating*/
+	margin: 0;
+	padding: 0 0 0 45px;
+	padding-bottom: 10px;
+	width: 400px;
+}
+.receipt dt,
+.receipt dd{
+	margin: 0 0 3px 0;
+}
+.receipt dt{
+	clear: left;
+	display: block;
+	float: left;
+	font-weight: bold;
+	padding-right: 5px;
+	width: 175px;
+}
+.receipt dd{
+	float: left;
+	width: 200px;
+}
+.receipt dd.status{
+    position: relative; /* needed for MDSB PST calculationHint (see below)*/
+}
+/* added for MDSB receipt embedded hr */
+.md div.receipt div.hr{
+    clear: both;
+    display: block;
+    font-size: 1px;
+    height: 1px;
+    line-height: 1px;
+    margin: 0 10px 8px 45px;
+}
+/*MDSB relative positioned hint*/
+.receipt dd.status .calculationHint {
+    display: block;
+    left: 120px;
+    top: 0;
+    position: absolute;
+    width: 100px;
+}
+.receiptFail dd.status{
+	font-weight: bold;
+}
+.receipt p{
+	clear: both;
+	padding-left: 45px;
+}
+.receipt p.note{
+	clear: left;
+	padding: 10px 5px;
+}
+.receipt p.noteN{
+	margin-bottom: 0px;
+}
+
+/**/
+/*********************
+Confirmations
+*********************/
+.md .confirmation{
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+.confirmation .confirmationHeader{
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+.confirmation .oneColRow{
+	clear: both;
+	display: block;
+	overflow: hidden;
+	padding-bottom: 10px;
+	width: 100%;
+}
+.confirmation .column label {
+	float: left;
+	padding: 0 10px 0 0;
+	width: 155px;
+}
+.confirmation .column .value {
+	display: block;
+	float: left;
+	width: 350px;
+    position: relative; /* needed for MDSB PST calculationHint (see below)*/
+}
+/*MDSB relative positioned hint*/
+.confirmation .column .value .calculationHint {
+    display: block;
+    left: 120px;
+    top: 0;
+    position: absolute;
+    width: 100px;
+}
+.confirmation .rowN{
+    margin-bottom: 14px;
+}
+.confirmation .termAccountDetails .rowN{
+    margin-bottom: 8px;
+}
+.confirmation .note {
+	display: block;
+	padding-right: 10px;
+	width: 140px;
+}
+.confirmation p{
+	clear: both;
+}
+/*pay bills confirmation*/
+.confirmation tfoot th{
+	font-weight: normal;
+}
+/**/
+/* Main Style Sheet for jQuery UI date picker */
+#datepicker_div, #ui-datepicker-div, .datepicker_inline {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    width: 185px;
+    cursor: default;
+}
+#datepicker_div,
+#ui-datepicker-div {
+    display: none;
+    border-width: 1px;
+    border-style: solid;
+    z-index: 9999; /*must have*/
+}
+.datepicker_inline {
+    float: left;
+    display: block;
+    border: 0;
+}
+.datepicker_rtl {
+    direction: rtl;
+}
+.datepicker_dialog {
+    padding: 5px !important;
+    border-width: 4px !important;
+    border-style:ridge !important;
+}
+.ui-datepicker-prev {
+    float: left;
+}
+.ui-datepicker-next {
+    float: right;
+}
+.ui-datepicker-title {
+    clear: both;
+}
+.ui-datepicker-prev span, .ui-datepicker-next span{
+    padding: 2px 5px;
+}
+button.ui-datepicker-close {
+    float: right;
+    border: none;
+}
+button.ui-datepicker-current {
+    display: none;
+}
+button.datepicker_trigger,
+button.ui-datepicker-trigger{
+    background-color: transparent;
+    border-style: none;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	position: absolute;
+}
+.md .datepicker_wrap{ 
+    display: block; 
+    padding-right: 20px;
+}
+.datepicker_centerButton .datepicker_wrap {
+    display: block;
+    position: relative;;
+}
+.datepicker_centerButton button.datepicker_trigger {
+    bottom: 4px;
+}
+.optiongroup button.datepicker_trigger{/*currently rtp specific*/
+	position: static;
+}
+.optiongroup .optionInline .range button.datepicker_trigger{
+	position: absolute;
+	right: 0;
+	top: 2px;
+}
+img.datepicker_trigger {
+    margin: 2px;
+    vertical-align: middle;
+}
+.datepicker_prompt {
+    float: left;
+    padding: 2px;
+}
+* html .datepicker_prompt {
+    width: 185px;
+}
+.datepicker_control, .datepicker_links, .datepicker_header, .datepicker, .ui-datepicker-title, .ui-datepicker-calendar, .ui-datepicker-buttonpane, .ui-datepicker-header {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.ui-datepicker-calendar{
+    border-spacing: 0;
+}
+.ui-datepicker-calendar thead th{
+    font-weight: normal;
+}
+.datepicker_control, .ui-datepicker-buttonpane {
+    padding: 2px 0px;
+}
+.datepicker_links {
+    padding: 2px 0px;
+}
+.datepicker_control, .datepicker_links, .ui-datepicker-buttonpane {
+    font-weight: bold;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+.datepicker_links label { /* disabled links */
+    padding: 2px 5px;
+}
+.datepicker_clear{
+    display:none;
+}
+.datepicker_clear, .datepicker_prev {
+    float: left;
+    width: 34%;
+}
+.datepicker_rtl .datepicker_clear, .datepicker_rtl .datepicker_prev {
+    float: right;
+    text-align: right;
+}
+.datepicker_current {
+    display:none;
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+.datepicker_close, .datepicker_next {
+    float: right;
+    width: 34%;
+    text-align: right;
+}
+.datepicker_rtl .datepicker_close, .datepicker_rtl .datepicker_next {
+    float: left;
+    text-align: left;
+}
+.datepicker_header, .ui-datepicker-title {
+    padding: 1px 0 3px;
+    text-align: center;
+    font-weight: bold;
+    height: 1.3em;
+}
+.datepicker_header select, .ui-datepicker-title select {
+    border: 0px;
+    font-weight: bold;
+    font-size:12px;
+}
+.datepicker, .ui-datepicker-calendar {
+    text-align: center;
+    font-size: 100%;
+}
+.datepicker a, .ui-datepicker-calendar a {
+    display: block;
+    width: 100%;
+}
+.datepicker_daysCell, .ui-datepicker-calendar tbody td{
+    border-width: 1px;
+    border-style: solid;
+    padding:0px;
+    cursor: pointer;
+}
+.datepicker_daysCell a, .ui-datepicker-calendar tbody td a{
+    display: block;
+}
+.datepicker_daysCellOver {
+    border-width: 1px;
+    border-style: solid;
+}
+.datepicker_status {
+    width: 100%;
+    font-size: 80%;
+    text-align: center;
+}
+/* ________ Datepicker Links _______
+
+** Reset link properties and then override them with !important */
+#datepicker_div a, .datepicker_inline a{
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+#ui-datepicker-div a {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+#ui-datepicker-div a {
+    text-decoration: none;
+}
+.datepicker_inline .datepicker_links a {
+    padding: 0 5px !important;
+}
+.datepicker_control a, .datepicker_links a, .ui-datepicker-buttonpane button {
+    padding: 2px 5px !important;
+}
+
+/* ___________ MULTIPLE MONTHS _________*/
+
+.datepicker_multi .datepicker {
+    border-width: 1px;
+    border-style: solid;
+}
+.datepicker_oneMonth {
+    float: left;
+    width: 185px;
+}
+.datepicker_newRow {
+    clear: left;
+}
+
+/* ___________ IE6 IFRAME FIX ________ */
+
+.datepicker_cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 200px; /*must have*/
+    height: 200px; /*must have*/
+}
+
+/**/
+/*************
+progress steps
+*************/
+.md .sfProg{
+	margin-bottom: 6px;
+	display: block;
+	clear: both;
+	padding: 5px;
+	border-width: 1px;
+	border-style: solid;
+	height: 1%;
+}
+.Online .md .sfProg h2,
+.Form .md .sfProg h2{
+	display: none;
+}
+.sfProg .skip{
+	display: none;
+}
+.sfProg .sfLeft, .sfProg .sfRight{
+	float: left;
+	width: 49%;
+	display: block;
+	position: relative;
+}
+.sfProg .step{
+	position: relative;
+	padding: 2px 0px; 
+}
+.sfProg .num{
+	float:left;
+	font-weight: bold;
+	margin-right:4px;
+	padding:0px 2px;
+	border-width: 1px;
+	border-style: solid;
+}
+/* textual progress steps */
+div.textualFormProgress.contentCallout.bottom-left {
+	padding: 15px;
+	font-size: 12pt;
+	margin: 0 0 20px 0;
+	width: 100%;
+}
+.textualFormProgress.contentCallout.bottom-left::before{
+	bottom: -22px;
+	left: 10px;
+}
+
+/**/
+/**********
+Error Messages in both forms
+***********/
+.sf .sfErrorBlock,
+div.errors{
+	border-width: 1px;
+	border-style: solid;
+	clear: both;
+	margin: 7px 0px 15px;
+	padding: 6px 6px 0px 6px;
+	background-repeat: no-repeat;
+	background-position: 5px 6px;
+}
+.sfErrorBlock i{
+	display: none;
+}
+.sf .sfErrorBlock label,
+div.errors label{
+	cursor: pointer;
+	font-weight: normal;
+	text-decoration: none;
+}
+span.sfErrorHeader, 
+div.errors p{
+	display: block;
+	padding-left: 20px;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+.sfErrorBlock ol, 
+div.errors ol{
+	font-weight: normal;
+	list-style-position: outside;/*ie7 needs this*/
+	margin: 0;
+	padding: 0 0 0 23px;
+}
+.sfErrorBlock ol li, 
+div.errors ol li{
+	margin-bottom: 3px;
+	padding: 0 0 4px 0px;
+}
+div.errors ol li p{
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+}
+/*errors inline*/
+span.error{
+	color: red;
+	display: none;
+}
+span.error_stacked{
+	clear: both;
+	display: none;
+}
+.entryerror .error,
+.requirederror .error{
+	display: inline;
+}
+.entryerror .error_stacked,
+.requirederror .error_stacked{
+	display: block;
+}
+/*OAO-889*/
+
+div.entryError .nonErrorState label {
+    color: inherit;
+}
+/*************
+FformGroup used in online banking to group froms into a filter style form
+*************/
+/********************
+div[.formGroup || .formGroup .formGroupHighlight]
+	h2
+	div[.entry .entryInline .entryNoIndent .required .requirederror]
+	div[.submit]
+*********************/
+.md .formGroup{/*table container*/
+	border-width: 1px;
+	border-style: solid;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	clear: both;
+	float: left;
+	margin-bottom: 12px;
+	padding: 8px 4px 0;
+	width: 100%;
+}
+.md .formGroup_plain{
+	background-color: transparent;
+	border-style: none;
+	float: none;
+}
+.formGroup h2,
+.formGroup h3{
+	clear: left;
+	margin-top: 0;
+}
+html body.Online .md .formGroup table.formData{
+	border: none;
+	clear: both;
+	margin: -10px -4px 0;
+	width: 518px; /*width is needed because of the negative margins*/
+}
+.md .formGroup table.formData,
+.md .formData td,
+.md .formData th{
+	border: none;
+}
+.formData td,
+.formData th{
+	padding: 3px 4px;
+}
+/*remove this once IE6 is not supported*/
+*html div.formGroup .entry,
+*html div.formGroup .required,
+*html div.formGroup .requirederror{
+	float: none;
+	height: 1%;
+}
+/*add borders on the bottom of fields in form highlight*/
+div.formGroupHighlight .entry,
+div.formGroupHighlight .required,
+div.formGroupHighlight .requirederror{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding: 5px 0;
+}
+/*when javascript is enabled don't display the border on the bottom of this particular form*/
+.javascript .mobileAlertsStepAdmin .formGroupHighlight .entry,
+.javascript .mobileAlertsStepAdmin .formGroupHighlight .required,
+.javascript .mobileAlertsStepAdmin .formGroupHighlight .requirederror{
+	border-bottom-width: 0;
+}
+/*full width labels*/
+.formGroup .fieldsetFullWidth label{
+	padding-right: 0;
+	width: 100%;
+}
+.formGroup .range{/*aligning the fields with the labels a bit better*/
+	padding: 3px 0 0;
+}
+.formGroup .entryInline .inputRangeStart label,
+.formGroup .entryInline .inputRangeEnd label{
+	padding: 3px 5px 0 8px;
+}
+.formGroup .entryInline .input{
+	width: auto;
+}
+.formGroup table.formData .requirederror label{
+	width: auto;
+}
+.formGroup .requirederror label{
+    padding-bottom: 5px;
+    width: 487px;
+}
+.md .formGroup div.hr{
+	margin-top: 0;
+}
+div.formGroupHighlight .requirederror label{
+	width: 137px;
+}
+div.formGroupHighlight fieldset .entry,
+div.formGroupHighlight fieldset .required,
+div.formGroupHighlight fieldset .requirederror{
+	border: none;
+}
+div.formGroupHighlight fieldset{
+	padding-top: 10px;
+}
+*html div.formGroup fieldset .required .input{ /* EDOCS-27: fix for IE6 radio button alignment */
+	float: left;
+}
+fieldset .range .dateRangeStartLabel,
+div.formGroupHighlight .requirederror label.dateRangeStartLabel{
+	padding: 3px 5px 0 0;
+    width: auto;
+}
+fieldset .range .dateRangeEndLabel,
+div.formGroupHighlight .requirederror label.dateRangeEndLabel{
+	padding: 3px 5px 0 5px;
+    width: auto;
+}
+/* CSS Document */
+
+
+span.helpHintTrigger{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+div.helpHint{
+	border-style: solid;
+	border-width: 1px;
+	margin: 0 0 12px 0;
+	padding: 5px;
+}
+div.labelWithInfo{
+	margin: 0;
+	padding: 0;
+}
+div.labelWithInfo label{
+	display: inline-block;
+}
+span.helpHintTrigger{
+	cursor: pointer;
+	display: inline-block;
+	height: 18px;
+	margin: 0 0 3px 3px;
+	text-indent: -9999px;
+	vertical-align: 2px;
+	width: 18px;
+}
+div.helpHint{
+	display: none;
+	margin: 0 0 0 3px;
+	position: absolute;	
+	width: 300px;
+	z-index: 9999;
+}
+/**/
+
+/************************
+  Override wicket modal
+************************/
+div.wicket-modal div.w_blue .w_topLeft,
+div.wicket-modal div.w_blue .w_topRight,
+div.wicket-modal div.w_blue .w_top,
+div.wicket-modal div.w_blue .w_left,
+div.wicket-modal div.w_blue .w_right,
+div.wicket-modal div.w_blue .w_bottom,
+div.wicket-modal div.w_blue .w_bottomLeft,
+div.wicket-modal div.w_blue .w_bottomRight{
+	background-image: none !important;
+}
+div.wicket-modal div.w_bottom,
+div.wicket-modal div.w_bottomRight,
+div.wicket-modal div.w_bottomLeft,
+div.wicket-modal div.w_top,
+div.wicket-modal .w_topLeft,
+div.wicket-modal div.w_topRight{
+	height: 1px !important;
+}
+div.wicket-modal div.w_content_1,
+div.wicket-modal div.w_right_1{
+	margin: 0 !important;
+}
+div.wicket-modal{
+	border-width: 1px;
+	border-style: solid;
+	padding: 3px;
+	background:white;
+	font-family: inherit;
+}
+div.wicket-modal div.w_content_3{
+	border: none;
+}
+div.wicket-modal div.w_content_container{
+	font-size: 12px;
+	padding: 10px;
+	text-align: left;
+}
+div.wicket-modal div.w_blue div.w_caption{
+	font-weight: bold;
+	font-size: 14px;
+	padding: 5px !important;
+}
+div.wicket-modal div.w_blue span.w_captionText{
+	margin-left: 5px !important;
+}
+div.wicket-modal div.w_blue div.actionButtons{	
+	border-top-width: 1px;
+	border-top-style: solid;
+	bottom: 10px;
+	padding: 10px 10px 0 0;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	width: 100%;
+}
+div.wicket-modal div.w_blue div.actionButtons a{
+	border-width: 1px;
+	border-style: solid;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 12px;
+	margin: 0 0 0 10px;
+	padding: 5px;
+	text-decoration: none;
+}
+div.wicket-modal div.w_blue a.w_close{
+	background-repeat: no-repeat !important;
+	background-position: -80px 2px !important;
+}
+div.wicket-modal div.w_blue a.w_close:hover{
+	background-repeat: no-repeat !important;
+	background-position: -80px 2px !important;
+}
+div.wicket-modal div.w_blue div.required, 
+div.wicket-modal div.w_blue div.requirederror, 
+div.wicket-modal div.w_blue div.string, 
+div.wicket-modal div.w_blue div.entry{
+	width: 100%;
+}
+/*Modal Close New Button*/
+div.wicket-modal .mdi span.w_captionText{
+	height: auto;
+	width: 400px;
+	position: inherit;
+	margin-left: 0;
+}
+div.wicket-modal .mdi div.w_caption{
+	overflow: visible;
+	margin-left: 3px;
+	width: 480px;
+	height: auto;
+}
+div.wicket-modal .mdi a.w_close:hover {
+    background-position: 0 -609px;
+    float: none;
+    height: 31px;
+    overflow: visible;
+    width: 31px;
+}
+
+div.wicket-modal .mdi a.w_close{
+    background-image: url("../png/icons_matrix.png");
+	background-position: 0 -609px;
+	background-repeat: no-repeat;
+    display: block;
+    height: 31px;
+    position: absolute;
+    right: -36px;
+    top: -16px;
+    width: 31px;
+}
+
+div.wicket-modal a.w_close
+/*Modal Close New Button End*/
+/*Modal Buttons*/
+div.wicket-modal .btn_group{
+	position: relative;
+}
+div.wicket-modal .btn_group_opposed{
+	text-align: right;
+}
+
+
+
+
+	/**********
+Form Elements
+***********/
+.formRow{
+	clear: both;
+}
+.md .formCol{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	padding-right: 8px;
+	width: 100%;
+}
+.md .formCol5{
+	width: 5%;
+}
+.md .formCol10{
+	width: 10%;
+}
+.md .formCol15{
+	width: 15%;
+}
+.md .formCol20{
+	width: 20%;
+}
+.md .formCol25{
+	width: 25%;
+}
+.md .formCol30{
+	width: 30%;
+}
+.md .formCol33{
+	width: 33%;
+}
+.md .formCol35{
+	width: 35%;
+}
+.md .formCol40{
+	width: 40%;
+}
+.md .formCol45{
+	width: 45%;
+}
+.md .formCol50{
+	width: 50%;
+}
+.md .formCol55{
+	width: 55%;
+}
+.md .formCol60{
+	width: 60%;
+}
+.md .formCol65{
+	width: 65%;
+}
+.md .formCol67{
+	width: 67%;
+}
+.md .formCol70{
+	width: 70%;
+}
+.md .formCol75{
+	width: 75%;
+}
+.md .formCol80{
+	width: 80%;
+}
+.md .formCol85{
+	width: 85%;
+}
+.md .formCol90{
+	width: 90%;
+}
+.md .formCol95{
+	width: 95%;
+}
+.md .formColN{
+	padding: 0;
+}
+div.formGroupHighlight .formCol .entry,
+div.formGroupHighlight .formCol .required,
+div.formGroupHighlight .formCol .requirederror{
+	border-bottom-style: none;
+	border-bottom-width: 0;
+}
+.md .input_stacked{
+	clear: both;
+	width: 100%;
+}
+select.small,input.small{
+	width: 125px;
+}
+select.medium, input.medium{
+	width: 175px;
+}
+select.large,input.large{
+	width: 300px;
+}
+.option_list.input_stacked{
+	padding-top: 5px;
+}
+.option_list .option label{
+	width: auto;
+	word-wrap: break-word;
+}
+.option .input_secondary{
+	padding-bottom: 10px;
+	padding-left: 18px;
+}
+	/**/
+	/* begin CHOSEN CSS */
+
+/* @group Base */
+.chzn-container {
+  font-size: 13px;
+  position: relative;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.chzn-container .chzn-drop {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-top: 0;
+  position: absolute;
+  top: 29px;
+  left: 0;
+  -webkit-box-shadow: 0 4px 5px rgba(0,0,0,.15);
+  -moz-box-shadow   : 0 4px 5px rgba(0,0,0,.15);
+  -o-box-shadow     : 0 4px 5px rgba(0,0,0,.15);
+  box-shadow        : 0 4px 5px rgba(0,0,0,.15);
+  z-index: 1010;
+}
+/* @end */
+
+/* @group Single Chosen */
+.chzn-container-single .chzn-single {
+  background-color: #ffffff;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0 );   
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #ffffff), color-stop(50%, #f6f6f6), color-stop(52%, #eeeeee), color-stop(100%, #f4f4f4));
+  background-image: -webkit-linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+  background-image: -o-linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+  background-image: -ms-linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+  background-image: linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%); 
+  -webkit-border-radius: 5px;
+  -moz-border-radius   : 5px;
+  border-radius        : 5px;
+  -moz-background-clip   : padding;
+  -webkit-background-clip: padding-box;
+  background-clip        : padding-box;
+  border: 1px solid #aaaaaa;
+  -webkit-box-shadow: 0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1);
+  -moz-box-shadow   : 0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow        : 0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1);
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  height: 23px;
+  line-height: 24px;
+  padding: 0 0 0 8px;
+  color: #444444;
+  text-decoration: none;
+}
+.chzn-container-single .chzn-default {
+  color: #999;
+}
+.chzn-container-single .chzn-single span {
+  margin-right: 26px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.chzn-container-single .chzn-single abbr {
+  display: block;
+  position: absolute;
+  right: 26px;
+  top: 6px;
+  width: 12px;
+  height: 13px;
+  font-size: 1px;
+  background: url('../png/chosen-sprite.png') right top no-repeat;
+}
+.chzn-container-single .chzn-single abbr:hover {
+  background-position: right -11px;
+}
+.chzn-container-single.chzn-disabled .chzn-single abbr:hover {
+  background-position: right top;
+}
+.chzn-container-single .chzn-single div {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: 18px;
+}
+.chzn-container-single .chzn-single div b {
+  background: url('../png/chosen-sprite.png') no-repeat 0 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.chzn-container-single .chzn-search {
+  padding: 3px 4px;
+  position: relative;
+  margin: 0;
+  white-space: nowrap;
+  z-index: 1010;
+}
+.chzn-container-single .chzn-search input {
+  background: #fff url('../png/chosen-sprite.png') no-repeat 100% -22px;
+  background: url('../png/chosen-sprite.png') no-repeat 100% -22px, -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
+  background: url('../png/chosen-sprite.png') no-repeat 100% -22px, -webkit-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+  background: url('../png/chosen-sprite.png') no-repeat 100% -22px, -moz-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+  background: url('../png/chosen-sprite.png') no-repeat 100% -22px, -o-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+  background: url('../png/chosen-sprite.png') no-repeat 100% -22px, -ms-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+  background: url('../png/chosen-sprite.png') no-repeat 100% -22px, linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+  margin: 1px 0;
+  padding: 4px 20px 4px 5px;
+  outline: 0;
+  border: 1px solid #aaa;
+  font-family: sans-serif;
+  font-size: 1em;
+}
+.chzn-container-single .chzn-drop {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius   : 0 0 4px 4px;
+  border-radius        : 0 0 4px 4px;
+  -moz-background-clip   : padding;
+  -webkit-background-clip: padding-box;
+  background-clip        : padding-box;
+}
+/* @end */
+
+.chzn-container-single-nosearch .chzn-search input {
+  position: absolute;
+  left: -9000px;
+}
+
+/* @group Multi Chosen */
+.chzn-container-multi .chzn-choices {
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
+  background-image: -webkit-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+  background-image: -moz-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+  background-image: -o-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+  background-image: -ms-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+  background-image: linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+  border: 1px solid #aaa;
+  margin: 0;
+  padding: 0;
+  cursor: text;
+  overflow: hidden;
+  height: auto !important;
+  height: 1%;
+  position: relative;
+}
+.chzn-container-multi .chzn-choices li {
+  float: left;
+  list-style: none;
+}
+.chzn-container-multi .chzn-choices .search-field {
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+.chzn-container-multi .chzn-choices .search-field input {
+  color: #666;
+  background: transparent !important;
+  border: 0 !important;
+  font-family: sans-serif;
+  font-size: 100%;
+  height: 15px;
+  padding: 5px;
+  margin: 1px 0;
+  outline: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow   : none;
+  -o-box-shadow     : none;
+  box-shadow        : none;
+}
+.chzn-container-multi .chzn-choices .search-field .default {
+  color: #999;
+}
+.chzn-container-multi .chzn-choices .search-choice {
+  -webkit-border-radius: 3px;
+  -moz-border-radius   : 3px;
+  border-radius        : 3px;
+  -moz-background-clip   : padding;
+  -webkit-background-clip: padding-box;
+  background-clip        : padding-box;
+  background-color: #e4e4e4;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#eeeeee', GradientType=0 ); 
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee));
+  background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: -moz-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: -o-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: -ms-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%); 
+  -webkit-box-shadow: 0 0 2px #ffffff inset, 0 1px 0 rgba(0,0,0,0.05);
+  -moz-box-shadow   : 0 0 2px #ffffff inset, 0 1px 0 rgba(0,0,0,0.05);
+  box-shadow        : 0 0 2px #ffffff inset, 0 1px 0 rgba(0,0,0,0.05);
+  color: #333;
+  border: 1px solid #aaaaaa;
+  line-height: 13px;
+  padding: 3px 20px 3px 5px;
+  margin: 3px 0 3px 5px;
+  position: relative;
+  cursor: default;
+}
+.chzn-container-multi .chzn-choices .search-choice-focus {
+  background: #d4d4d4;
+}
+.chzn-container-multi .chzn-choices .search-choice .search-choice-close {
+  display: block;
+  position: absolute;
+  right: 3px;
+  top: 4px;
+  width: 12px;
+  height: 13px;
+  font-size: 1px;
+  background: url('../png/chosen-sprite.png') right top no-repeat;
+}
+.chzn-container-multi .chzn-choices .search-choice .search-choice-close:hover {
+  background-position: right -11px;
+}
+.chzn-container-multi .chzn-choices .search-choice-focus .search-choice-close {
+  background-position: right -11px;
+}
+/* @end */
+
+/* @group Results */
+.chzn-container .chzn-results {
+  margin: 0 4px 4px 0;
+  max-height: 240px;
+  padding: 0 0 0 4px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.chzn-container-multi .chzn-results {
+  margin: -1px 0 0;
+  padding: 0;
+}
+.chzn-container .chzn-results li {
+  display: none;
+  line-height: 15px;
+  padding: 5px 6px;
+  margin: 0;
+  list-style: none;
+}
+.chzn-container .chzn-results .active-result {
+  cursor: pointer;
+  display: list-item;
+}
+.chzn-container .chzn-results .highlighted {
+  background-color: #3875d7;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3875d7', endColorstr='#2a62bc', GradientType=0 );  
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #3875d7), color-stop(90%, #2a62bc));
+  background-image: -webkit-linear-gradient(top, #3875d7 20%, #2a62bc 90%);
+  background-image: -moz-linear-gradient(top, #3875d7 20%, #2a62bc 90%);
+  background-image: -o-linear-gradient(top, #3875d7 20%, #2a62bc 90%);
+  background-image: -ms-linear-gradient(top, #3875d7 20%, #2a62bc 90%);
+  background-image: linear-gradient(top, #3875d7 20%, #2a62bc 90%);
+  color: #fff;
+}
+.chzn-container .chzn-results li em {
+  background: #feffde;
+  font-style: normal;
+}
+.chzn-container .chzn-results .highlighted em {
+  background: transparent;
+}
+.chzn-container .chzn-results .no-results {
+  background: #f4f4f4;
+  display: list-item;
+}
+.chzn-container .chzn-results .group-result {
+  cursor: default;
+  color: #999;
+  font-weight: bold;
+}
+.chzn-container .chzn-results .group-option {
+  padding-left: 15px;
+}
+.chzn-container-multi .chzn-drop .result-selected {
+  display: none;
+}
+.chzn-container .chzn-results-scroll {
+  background: white;
+  margin: 0 4px;
+  position: absolute;
+  text-align: center;
+  width: 321px; /* This should by dynamic with js */
+  z-index: 1;
+}
+.chzn-container .chzn-results-scroll span {
+  display: inline-block;
+  height: 17px;
+  text-indent: -5000px;
+  width: 9px;
+}
+.chzn-container .chzn-results-scroll-down {
+  bottom: 0;
+}
+.chzn-container .chzn-results-scroll-down span {
+  background: url('../png/chosen-sprite.png') no-repeat -4px -3px;
+}
+.chzn-container .chzn-results-scroll-up span {
+  background: url('../png/chosen-sprite.png') no-repeat -22px -3px;
+}
+/* @end */
+
+/* @group Active  */
+.chzn-container-active .chzn-single {
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
+  -moz-box-shadow   : 0 0 5px rgba(0,0,0,.3);
+  -o-box-shadow     : 0 0 5px rgba(0,0,0,.3);
+  box-shadow        : 0 0 5px rgba(0,0,0,.3);
+  border: 1px solid #5897fb;
+}
+.chzn-container-active .chzn-single-with-drop {
+  border: 1px solid #aaa;
+  -webkit-box-shadow: 0 1px 0 #fff inset;
+  -moz-box-shadow   : 0 1px 0 #fff inset;
+  -o-box-shadow     : 0 1px 0 #fff inset;
+  box-shadow        : 0 1px 0 #fff inset;
+  background-color: #eee;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0 );
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #eeeeee), color-stop(80%, #ffffff));
+  background-image: -webkit-linear-gradient(top, #eeeeee 20%, #ffffff 80%);
+  background-image: -moz-linear-gradient(top, #eeeeee 20%, #ffffff 80%);
+  background-image: -o-linear-gradient(top, #eeeeee 20%, #ffffff 80%);
+  background-image: -ms-linear-gradient(top, #eeeeee 20%, #ffffff 80%);
+  background-image: linear-gradient(top, #eeeeee 20%, #ffffff 80%);
+  -webkit-border-bottom-left-radius : 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius-bottomleft : 0;
+  -moz-border-radius-bottomright: 0;
+  border-bottom-left-radius : 0;
+  border-bottom-right-radius: 0;
+}
+.chzn-container-active .chzn-single-with-drop div {
+  background: transparent;
+  border-left: none;
+}
+.chzn-container-active .chzn-single-with-drop div b {
+  background-position: -18px 1px;
+}
+.chzn-container-active .chzn-choices {
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
+  -moz-box-shadow   : 0 0 5px rgba(0,0,0,.3);
+  -o-box-shadow     : 0 0 5px rgba(0,0,0,.3);
+  box-shadow        : 0 0 5px rgba(0,0,0,.3);
+  border: 1px solid #5897fb;
+}
+.chzn-container-active .chzn-choices .search-field input {
+  color: #111 !important;
+}
+/* @end */
+
+/* @group Disabled Support */
+.chzn-disabled {
+  cursor: default;
+  opacity:0.5 !important;
+}
+.chzn-disabled .chzn-single {
+  cursor: default;
+}
+.chzn-disabled .chzn-choices .search-choice .search-choice-close {
+  cursor: default;
+}
+
+/* @group Right to Left */
+.chzn-rtl { text-align: right; }
+.chzn-rtl .chzn-single { padding: 0 8px 0 0; overflow: visible; }
+.chzn-rtl .chzn-single span { margin-left: 26px; margin-right: 0; direction: rtl; }
+
+.chzn-rtl .chzn-single div { left: 3px; right: auto; }
+.chzn-rtl .chzn-single abbr {
+  left: 26px;
+  right: auto;
+}
+.chzn-rtl .chzn-choices .search-field input { direction: rtl; }
+.chzn-rtl .chzn-choices li { float: right; }
+.chzn-rtl .chzn-choices .search-choice { padding: 3px 5px 3px 19px; margin: 3px 5px 3px 0; }
+.chzn-rtl .chzn-choices .search-choice .search-choice-close { left: 4px; right: auto; background-position: right top;}
+.chzn-rtl.chzn-container-single .chzn-results { margin: 0 0 4px 4px; padding: 0 4px 0 0; }
+.chzn-rtl .chzn-results .group-option { padding-left: 0; padding-right: 15px; }
+.chzn-rtl.chzn-container-active .chzn-single-with-drop div { border-right: none; }
+.chzn-rtl .chzn-search input {
+  background: #fff url('../png/chosen-sprite.png') no-repeat -38px -22px;
+  background: url('../png/chosen-sprite.png') no-repeat -38px -22px, -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
+  background: url('../png/chosen-sprite.png') no-repeat -38px -22px, -webkit-linear-gradient(top, #eeeeee 1%, #ffffff 15%);  
+  background: url('../png/chosen-sprite.png') no-repeat -38px -22px, -moz-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+  background: url('../png/chosen-sprite.png') no-repeat -38px -22px, -o-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+  background: url('../png/chosen-sprite.png') no-repeat -38px -22px, -ms-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+  background: url('../png/chosen-sprite.png') no-repeat -38px -22px, linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+  padding: 4px 5px 4px 20px;
+  direction: rtl;
+}
+/* @end */
+
+/* for hiding OPTGROUP text */
+.chzn-container.hideGroupLabel .chzn-drop .chzn-results .group-result{
+  height: 1px;
+  padding: 0;
+  text-indent: -9999px;
+}
+
+/* end CHOSEN CSS */
+	/**/
+
+
+
+
+
+
+
+
+
+div.control{
+	margin: 3px 0px 12px 0px;
+}
+/**/
+/*some of the increased auth is in online decorator and some in login*/
+div.agreement{
+	border-width: 1px; 
+	border-style: solid;
+	clear: both;
+	margin: 12px 0;
+	padding: 4px;
+}
+.agreement .prose h2{
+	margin-top: 0;
+}
+.agreement .prose .note{
+	padding: 0 18px;
+}
+div.securitySeal{
+	clear: both;
+	display: block;
+	float: left;
+	padding-bottom: 10px;
+	width: 520px;
+}
+.securitySeal .prose{
+	float: left;
+	margin-right: 16px;
+	width: 210px;
+}
+.securitySeal .prose p.warning{
+    font-weight: bold;
+}
+.securitySeal .captionedImage{
+	border-style: solid;
+	border-width: 1px;
+	float: left;
+	padding: 8px;
+	text-align: center;
+}
+.securitySeal .captionedImage .caption{
+    display: block;
+    font-size: 11px;
+    width: 116px;
+    overflow: hidden;
+}
+.securitySeal .captionedImage img{
+	margin: 0;
+    padding: 8px 8px 4px;
+    width: 100px;
+}
+/*form field layout change*/
+.mdIALogonSecurityImage .required label{
+	width: 176px;
+}
+.mdIALogonSecurityImage .required label{
+	\width: 181px;
+	w\idth: 176px;
+}
+.mdIALogonSecurityImage .required .input{
+	width: 213px;
+}
+.mdIALogonSecurityImage div.submit{
+	padding-left: 181px;
+}
+
+
+/**/
+/*some of the increased auth is in online decorator and some in login*/
+.Enrollment label.securityInstructions{/*label found in a few places*/
+	margin: 0 12px 0 0;
+	width: 100px;
+}
+.Enrollment div.submit{
+	padding-left: 117px;
+}
+.imageselector .securityInstructions,
+.required .securityInstructions{
+	margin: 0 12px 0 0;
+	width: 100px;
+}
+.imageselector .input{/*entire right column*/
+	margin: 0;
+	padding: 0;
+	width: 390px;
+}
+.imageselector label.currentImage{/*selected image at top*/
+	border-style: solid;
+    border-width: 1px;
+	float: left;
+    margin: 0 0 15px 6px;
+	padding: 6px;
+    width: auto;
+}
+.imageselector .options{/*div containing the thumbnails*/
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+    clear: both;
+    margin: 0 0 15px 0;
+    padding: 15px 0 15px 0;
+}
+.imageselector .input .category select{/*select an image category*/
+	margin: 4px 0 0;
+	width: 220px;
+}
+.imageselector .input ul{/*thumbnail ul*/
+	clear: both;
+	height: 256px;
+	margin: 4px 0 18px;
+	padding: 0;
+}
+.imageselector .input ul li{
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+body.javascript .imageselector ul input, 
+body.javascript .imageselector .currentImage input{
+    position: absolute;
+    visibility: hidden; /* For JAWS, the JS hides this field using 'opacity' and sets 'visibility:visible' */
+}
+.imageselector .input ul li label{ /*around thumbail*/
+	background-color: transparent;
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+	margin: 14px 7px 0;
+	padding: 6px;
+	width: auto;
+}
+/********
+Online Banking pages - Question selection
+********/
+.multicategoryselect .input{
+	padding: 0;
+	width: 520px;
+}
+.multicategoryselect .input dl{
+	margin: 0;
+	padding: 0;
+}
+.multicategoryselect .input dt{
+	font-size: 13px;
+	font-weight: bold;
+	padding: 5px 0 0;
+}
+.multicategoryselect .input dd{
+	margin: 0 0 8px 0;
+	padding: 0 0 7px;
+}
+.multicategoryselect dd ul{
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 520px;
+}
+.multicategoryselect dd li{
+	display: block;
+	margin: 4px 0;
+	padding: 7px 0 7px 5px;
+}
+.multicategoryselect dd li label{/*both question and answer*/
+	clear: both;
+	display: block;
+	float: none;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+.multicategoryselect dd li label.question input{
+	margin: 0;
+}
+.multicategoryselect dd li label.answer{/*without js*/
+	display: block;
+	padding: 7px 0 3px 22px;
+}
+body.javascript .multicategoryselect dd li label.answer{/*with js not checked*/
+	display: none;
+}
+body.javascript .multicategoryselect dd li.checked label.answer{/*with js checked*/
+	display: block;
+}
+/*Confirmation*/
+.confirm .imageSelect .label, 
+.confirm .challengeQuestions .label, 
+.confirm .permRegister .label{/*label found in a few places*/
+	margin: 0 12px 0 0;
+	padding: 0;
+	width: 118px;
+}
+.confirm .imageSelect .description{/*text*/
+	float: right;
+	width: 234px;
+}
+.confirm .imageSelect .input{/*only image container on confirm screen*/
+	float: left;
+	width: auto;
+}
+.confirm .imageSelect .captionedImage{/*thumbnail*/
+	border-style: solid;
+	border-width: 1px; 
+	float: left;
+	padding: 8px;
+	text-align: center;
+}
+.confirm .imageSelect .captionedImage img{
+    margin: 0;
+    padding: 8px 8px 4px 8px;
+    width: 100px;
+}
+.confirm .imageSelect .captionedImage .caption{
+    display: block;
+	font-size: 11px;
+    overflow: hidden;
+    width: 116px;
+}
+.confirm .submit {/*submit button*/
+	padding: 15px 0 10px 130px;
+}
+.confirm .submit a, .confirm .submit a:hover{
+	background-color: #F0F0F0;
+	border: 2px outset #FFFFFF;
+	font-size: 11px;
+	padding: 2px 8px;
+	text-decoration :none;
+	width: auto;
+}
+.confirm .challengeQuestions{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	height: 1%;
+	margin: 15px 0;
+	padding: 15px 0;
+}
+.confirm .challengeQuestions .description,
+.confirm .challengeQuestions .input{/*description = text; input=questions*/
+	float: right;
+	width: 390px;
+}
+.confirm .challengeQuestions ul{/*list of questions*/
+    margin: 0;
+    padding: 0;
+}
+.confirm .challengeQuestions ul li{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+    display: block;
+    float: none;
+	list-style-type: none;
+    margin: 0 0 5px 0;
+    padding: 0 0 15px 0;
+}
+.confirm .challengeQuestions ul .label{/*question headers ie "question 1, 2..."*/
+	font-weight: normal;
+    margin: 10px 0 3px 0;
+    padding: 0;
+	width: 390px;
+}
+.confirm .challengeQuestions ul dl{/*dl = question holder*/
+    margin: 0;
+    padding: 0;
+}
+.confirm .challengeQuestions ul dt{
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    padding:0;
+}
+.confirm .challengeQuestions ul dd{
+	display: inline;
+	font-weight: normal;
+    margin: 5px 0;
+    padding: 3px 5px;
+}
+.confirm .warning{
+	border-style: solid;
+	border-width: 1px;
+	clear: both;
+	padding: 6px;
+}
+form.confirm .warning p{
+	margin: 0;
+}
+.confirm .permRegister{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	height: 1%;
+	margin: 0 0 15px;
+	padding: 0 0 15px;
+}
+.confirm .permRegister .description,
+.confirm .permRegister .input{/*description = text; input=questions*/
+	float: right;
+	width: 390px;
+}
+/**/
+.dummyrule{margin: 0}
+ 
+
+/*Extra css*/
+#mainContent h1#PageTitle {
+    color: #fff;
+    font-size: 20px;
+    background-color: #0b2a73;
+    padding: 10px 0 5px;
+}
+.header h1{
+    padding:35px 0;
+}
+ul.nav.topic.topic_vertical li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+ul.nav.topic.topic_vertical li {
+    margin-bottom: 10px;
+}
+.instructions p {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+}
+.Login .md div.colTwo{
+    width:75% !important;
+}
+.input input {
+    width: 300px !important;
+    height: 20px;
+    margin-bottom: 5px;
+    padding: 10px 20px !important;
+    border-radius: 25px !important;
+    border: 2px solid #cecece !important;
+    background-color: #f6f6f6 !important;
+}
+.input input:focus{
+    outline:unset;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.required.account label, .required.pac label {
+        line-height: 40px;
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    margin: 0 0 0 42px;
+}
+.required.pac label {
+    line-height: 20px !important;
+    width: 100%;
+    padding: 10px 0;
+}
+input#Signon {
+        background-color: #0B2A73;
+    color: #fff;
+    border: unset;
+    height: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 350px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-left: 7%;
+    border-radius: 25px;
+}
+.conclusion p {
+    font-size: 15px;
+    margin: 0;
+}
+.conclusion a {
+    color: red;
+    text-decoration: none;
+}
+.copyright p {
+    font-weight: bold;
+    color: #0B2A73;
+    font-size: 14px !IMPORTANT;
+}
+#mainContent h1#PageTitle:after {
+    content: "";
+    border-bottom: 3px solid #0B2A73;
+    display: block;
+    width: 40px;
+    margin: 5px 0 0 0;
+}
+.md div.formActions {
+    border-color: #fff !important;
+}
+.asd_boxed label, .asd_boxed .input {
+    float: none !important;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.asd_boxed {
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 23%;
+}
+.conclusion p {
+    margin: 30px 0 0;
+}

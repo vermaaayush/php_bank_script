@@ -1,0 +1,45 @@
+#flicker_mini 
+{
+  	position: relative;
+  	width:  5.4cm;
+  	height: 2.2cm;
+}
+
+#flicker_mini img 
+{
+  	position:absolute;
+  	top:0px;
+  	left:0px;
+}
+
+#flicker_mini #bg_image 
+{
+  	z-index:0;
+  	width:  5.4cm;
+  	height: 2.13cm;
+}
+
+#flicker_mini .flickersize
+{
+  	width:  4.5cm;
+  	height: 1.5cm;
+}
+
+#flicker_mini #flicker_app_mini 
+{
+  	position:relative;
+  	top:0.31cm; 
+  	left: 0.45cm;
+  	z-index:1;
+}
+
+#flicker_actions img 
+{
+  	margin: 2px 2px 2px 3px;
+  	border: 1px solid #000;
+}
+
+#flicker table td.flicker_titlebar
+{
+  	padding: 0px;
+}

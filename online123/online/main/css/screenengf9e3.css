@@ -1,0 +1,8 @@
+#showAllFunctions { position:absolute; left:23px; bottom:-46px; display:block; width:129px; height:40px; background:url(../png/allfunctions.png); text-indent:-9999px }
+#subNav li a { display:block; height:43px; background:url(../png/subnav.png); text-indent:-9999px }
+.openFavorites { position:absolute; right:0; width:141px; height:41px; background:url(../png/favorites.png); text-indent:-9999px }
+#subNav li #specialOccasionsMenu span { position:absolute; right:0; top:-7px; width:27px; height:33px; background:url(../specialoccasions.html) no-repeat; font:bold 14px/20px Georgia, "Palatino Linotype", "Times New Roman", serif; color:#fff; text-align:center; text-indent:-2px }
+#subNav li .specialOccasionsMenu-active { bottom:-7px !important; margin-right:34px !important; width:86px !important; height:36px !important; background:url(../png/specialoccasionsmenu-active.png) }
+#showMainMenu { display:none; position:absolute; left:0; top:0; width:35px; height:125px; background:url(../png/showmainmenu.png); text-indent:-9999px }
+.backToMenu { display:block; margin:0 0 5px 45px; width:105px; height:25px; background:url(../png/backtomenu.png) no-repeat right center; text-indent:-9999px  }
+.stick { z-index:99999; bottom:-48px !important; width:129px !important; height:50px !important; background:url(../png/allfunctionsactive.png) !important }

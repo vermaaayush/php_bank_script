@@ -1,0 +1,220 @@
+body {
+	background-image: url(../form.aspx_files/mainbg3.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	margin: 0px;
+}
+#bodypwd {
+	background-image: url(../images/bg.html);
+	background-repeat: repeat-y;
+	background-position: center top;
+	margin: 0px;
+}
+td {
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+}
+.disablebox {
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+	background-color: #8d8d8d;
+	width: 25px;
+	border: 1px solid #8d8d8d;
+}
+.enablebox {
+
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	width: 25px;
+	border: 1px solid #FFFFFF;
+}
+.text13 {
+
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+}
+.tahoma11 {
+
+
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	font-weight: normal;
+	color: #a9a9a9;
+	text-decoration: none;
+}
+input {
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+	padding-right: 4px;
+	padding-left: 4px;
+
+}
+.text11 {
+
+
+	font-family: "Trebuchet MS";
+	font-size: 11px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+}
+.text12 {
+
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+	background-color:FFFCED;
+	
+}
+.rightbgline {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #bcbcbc;
+}
+.greybartext {
+	font-family: "Trebuchet MS";
+	font-size: 12px;
+	background-color: #eaeaea;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: normal;
+	color: #909090;
+	text-decoration: none;
+}
+
+.greysmalltext {
+	font-family: "Trebuchet MS";
+	font-size: 12px;
+	padding-right: 10px;
+
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+}
+.yellowbartext {
+	font-family: "Trebuchet MS";
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	background-color: #ffc600;
+	padding-right: 5px;
+	padding-left: 5px;
+
+}
+.greybartext2 {
+
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	background-color: #CCCCCC;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+}
+.yellowbartext2 {
+
+
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	background-color: #fff7d1;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+}
+.yellowbartext3 {
+
+
+
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	background-color: #fffced;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+}
+select {
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+}
+#mainbg1 {
+	background-image: url(../images/mainbg1.html);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+#body2 {
+	background-image: url(../images/mainbg2.html);
+	background-repeat: repeat-x;
+	background-position: center top;
+	margin: 0px;
+}
+.repeat {
+	background-image: url(../images/mainbg.gif);
+	background-repeat: repeat-y;
+	margin: 0px;
+	background-position: center;
+
+
+}
+/*Extra Css*/
+td.breadcrumb {
+    position: absolute;
+    left: 14.1%;
+    width: 963px;
+    color: #fff;
+    background-color: #0B2A73;
+    font-size: 18px;
+}
+table tr td {
+    font-weight: bold;
+}
+table tr td input, table tr td select {
+        width: 300px !important;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 10px 20px !important;
+    border-radius: 25px !important;
+    border: 2px solid #cecece !important;
+    background-color: #f6f6f6 !important;
+}
+table tr td input:focus, table tr td select:focus {
+    outline: unset;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.asd_button {
+    background-color: #0B2A73 !important;
+    color: #fff;
+    border: unset;
+    height: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 320px;
+    font-size: 15px;
+    margin-bottom: 30px;
+}

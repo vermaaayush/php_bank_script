@@ -1,0 +1,233 @@
+body {
+	background-image: url(../images/mainbg3.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	margin: 0px;
+}
+#bodypwd {
+	background-image: url(../images/bg.html);
+	background-repeat: repeat-y;
+	background-position: center top;
+	margin: 0px;
+}
+td {
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+}
+.disablebox {
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+	background-color: #8d8d8d;
+	width: 25px;
+	border: 1px solid #8d8d8d;
+}
+.enablebox {
+
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	width: 25px;
+	border: 1px solid #FFFFFF;
+}
+.text13 {
+
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+}
+.tahoma11 {
+
+
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	font-weight: normal;
+	color: #a9a9a9;
+	text-decoration: none;
+}
+input {
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+	padding-right: 4px;
+	padding-left: 4px;
+
+}
+.text11 {
+
+
+	font-family: "Trebuchet MS";
+	font-size: 11px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+}
+.text12 {
+
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+	background-color:FFFCED;
+	
+}
+.rightbgline {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #bcbcbc;
+}
+.greybartext {
+	font-family: "Trebuchet MS";
+	font-size: 12px;
+	background-color: #eaeaea;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: normal;
+	color: #909090;
+	text-decoration: none;
+}
+
+.greysmalltext {
+	font-family: "Trebuchet MS";
+	font-size: 12px;
+	padding-right: 10px;
+
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+}
+.yellowbartext {
+	font-family: "Trebuchet MS";
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	background-color: #ffc600;
+	padding-right: 5px;
+	padding-left: 5px;
+
+}
+.greybartext2 {
+
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	background-color: #CCCCCC;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+}
+
+#nav {
+  background: url(images/nav_left.html) no-repeat;
+}
+#nav ul {
+  margin-left: 9px;
+  padding-left: 1px;
+  padding-bottom: 29px;
+  background: #FFFFFF bottom left url(images/nav_bot.html) no-repeat;
+}
+#nav li {
+  list-style: none;
+  font: 14px "arial narrow", arial, sans-serif;
+  border-top: 1px solid #FC0;
+  background: 188px 10px url(images/arr_white.html) no-repeat;
+  padding: 7px 0 0 1px;
+}
+#nav a {
+  color: #2A2A2A;
+  text-decoration: none;
+  
+  padding-left: 10px;
+  display: block;
+  width: 90%;
+  padding: 2px 0 6px 8px;
+}
+#nav a:hover {
+  text-decoration: underline;
+}
+#nav .important {
+  border: none;
+  background: 188px 10px url(images/arr_orange.html) no-repeat;
+}
+#nav .important555 {
+  background: 188px 10px url(images/arr_orange.html) no-repeat;
+}
+#nav .important555 a {
+  color: #E9C379;
+}
+#nav .important5556 {
+  background: 188px 10px url(images/arr_orange.html) no-repeat;
+}
+#nav .important5556 a {
+  color: #E9C379;
+}
+#nav .important a {
+  color: #E9C379;
+}
+
+.yellowbartext2 {
+
+
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	background-color: #fff7d1;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+}
+.yellowbartext3 {
+
+
+
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	background-color: #fffced;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+}
+select {
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	font-weight: normal;
+	color: #444444;
+	text-decoration: none;
+}
+#mainbg1 {
+	background-image: url(../images/mainbg1.html);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+#body2 {
+	background-image: url(../images/mainbg2.html);
+	background-repeat: repeat-x;
+	background-position: center top;
+	margin: 0px;
+}
+.repeat {
+	background-image: url(../images/mainbg.gif);
+	background-repeat: repeat-y;
+	margin: 0px;
+	background-position: center;
+
+
+}

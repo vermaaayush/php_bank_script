@@ -1,0 +1,102 @@
+
+body{
+	 background:#fff;
+	 margin:0 auto;}
+.txt_bold_blue {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	color: #0E238E;
+}
+.txt_bold_blue2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	color: #fff;
+}
+.txt_bold_red {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	color:#333;
+	text-decoration: none;
+	padding:5px;
+}
+.txt_bold_red2{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	color:#fff;
+	text-decoration: none;
+}
+.txt_blue {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #333;
+	font-style: normal;
+}
+.txt_blue1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #fff;
+	font-style: normal;
+}
+.out_border_ash {
+	border: .5pt solid #CCCCCC;
+}
+.login_box_bord {
+	border: 0.5pt 
+	solid #91BFE6;	
+}
+.login_box_bord2 {
+	border: 0.5pt 
+	solid #91BFE6;
+	font-size: 18px;
+	color: #8A0028;
+}
+.login_box_bord1 {
+	border: 0.5pt solid #91BFE6;
+	font-weight: bold;
+	color: #8A0028;
+	TEXT-ALIGN: center;
+}
+.txt_ash {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: normal;
+	color: #666666;
+}
+.txt_grey {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	color: #736F6E;
+}
+.txt_bold_grey {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	color:#333;
+}
+.txt_red {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: normal;
+	color: #870231;
+	text-decoration: none;
+}
+.bot_bord {
+	border-bottom-width: .5pt;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
+}

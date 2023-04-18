@@ -1,0 +1,351 @@
+/* hyperlinks ---------------------------------------------------------------------*/
+A:link {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #990033;
+	text-decoration: none
+}
+
+A.hyperlinkInternal:link{
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #0000FF;
+	text-decoration: underline
+}
+
+A.hyperlinkExternal:link{
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #990033;
+	text-decoration: none
+}
+
+A:visited {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #990033;
+	text-decoration: none
+}
+
+A.hyperlinkInternal:visited{
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #0000FF;
+	text-decoration: underline
+}
+
+A.hyperlinkExternal:visited{
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #990033;
+	text-decoration: none
+}
+
+A:hover {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #990033;
+	text-decoration: underline
+}
+
+A.hyperlinkInternal:hover {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #0000FF;
+	text-decoration: underline
+}
+
+A.hyperlinkExternal:hover {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #990033;
+	text-decoration: underline
+}
+
+A:active {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #990033;
+	text-decoration: none
+}
+
+A.hyperlinkInternal:active{
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #0000FF;
+	text-decoration: underline
+}
+
+A.hyperlinkExternal:active{
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #990033;
+	text-decoration: none
+}
+
+
+/* text styles based on design principles v1.2 -------------------------------------------*/
+/* the equiv styles represent the styles used in the prototype  --------------------------*/
+
+/* equiv style - fontsmall */
+.textSmall {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: #000000;
+}
+
+/* equiv style - none */
+.textMedium {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000 ;
+}
+
+/* equiv style - fontNormal */
+.textNormal {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+}
+
+/* equiv style - fontBold */
+.textBold {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+}
+
+/* equiv style -  */
+.textItalic {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: italic;
+	color: #000000;
+}
+
+/* equiv style -  */
+.textBoldItalic {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	font-style: italic;
+	color: #000000;
+}
+
+/* equiv style -  */
+.textHeading {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+}
+
+/* equiv style - fontHeading */
+.functionTitle {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #666666;
+}
+
+/* equiv style - none */
+.navExtrasNormal {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+/* equiv style - none */
+.navExtrasBold {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* equiv style - fontLeftNavBold */
+.navSideNonActive {
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #990033;
+}
+
+/* equiv style - fontLeftNav */
+.navSideActive {
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #990033;
+}
+
+/* equiv style - fontTopSelectedNav */
+.navTopNonActive {
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* equiv style - fontTopNav */
+.navTopActive {
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #990033;
+}
+
+/* table text styles ---------------------------------------------------------------------*/
+/* these styles are the same as their counterparts above but without background-color ----*/
+
+/* equiv style - fontsmall */
+TD.tableTextSmall {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: #000000;
+}
+
+/* equiv style - none */
+TD.tableTextMedium {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+}
+
+/* equiv style - fontNormal */
+TD.tableTextNormal {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+}
+
+/* equiv style - fontBold */
+TD.tableTextBold {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+}
+
+/* equiv style - fontboldwhite */
+TH.tableHeading {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* equiv style - fontTopSelectedNav */
+TD.tableNavTopNonActive {
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* equiv style - fontTopNav */
+TD.tableNavTopActive {
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #990033;
+}
+
+TR.row0 {
+	background-color: #FFFFFF;
+}
+
+TR.row1 {
+	background-color: #EBEBEB;
+}
+
+/* these styles are used when a table is within a tablecell. They are similar to the other styles but with padding and borders  -----*/
+TD.miniTableHeadingMedium
+{
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #ffffff;
+	border-right: 1px solid #ffffff;
+	padding: 0px 4px 4px 4px
+}
+
+TD.miniTableHeading
+{
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	padding: 0px 4px 4px 4px
+}
+
+TD.miniTableTextMedium
+{
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 10px;
+	border-right: 1px solid #cccccc;
+	padding: 0px 4px 4px 4px
+}
+
+TD.miniTableText
+{
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	padding: 0px 4px 4px 4px
+}
+
+/* button text styles ---------------------------------------------------------------------*/
+
+/* equiv style - fontsmall */
+.buttonTextSmall {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: #000000;
+}
+
+/* equiv style - none */
+.buttonTextMedium {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+}
+
+/* equiv style - fontNormal */
+.buttonTextNormal, .buttonTextNormalNonPrint
+{
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+}
+
+@media print
+{
+	.buttonTextNormalNonPrint
+	{
+		display: none;
+	}
+}

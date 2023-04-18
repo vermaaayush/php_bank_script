@@ -1,0 +1,159 @@
+/**********************************************************
+ *                                                        *
+ *  Copyright ©2005  Corillian Corporation                *
+ *                                                        *
+ *  All rights reserved.                                  *
+ *                                                        *
+ *  Highly Confidential.                                  *
+ *                                                        *
+ *  No portion of this code may be reproduced,            *
+ *  transmitted or distributed without the express        *
+ *  written permission of Corillian Corporation.          *
+ *                                                        *
+ **********************************************************/
+
+/**********************************************************
+ *                                                        *
+ *  HTML ENTITIES                                         *
+ *                                                        *
+ **********************************************************/
+
+body,
+input,
+input *,
+select,
+select *,
+table.radioButtonList,
+table.radioButtonList * {
+	font-size: small;
+}
+
+h1{
+	font-size:16px;
+}
+
+h2{
+	font-size: medium;
+}
+
+h3{
+	font-size: medium;
+}
+
+/**********************************************************
+ *                                                        *
+ *  GENERAL                                               *
+ *                                                        *
+ **********************************************************/
+
+
+/**********************************************************
+ *                                                        *
+ *  HEADER                                                *
+ *                                                        *
+ **********************************************************/
+
+div.logo{
+	width: 170px;
+	height: 39px;
+	padding: 5px 10px 5px 10px;
+}
+
+/**********************************************************
+ *                                                        *
+ *  FOOTER                                                *
+ *                                                        *
+ **********************************************************/
+
+
+/**********************************************************
+ *                                                        *
+ *  ERRORS/VALIDATION                                     *
+ *                                                        *
+ **********************************************************/
+
+
+/**********************************************************
+ *                                                        *
+ *  NAVIGATION                                            *
+ *                                                        *
+ **********************************************************/
+
+
+/**********************************************************
+ *                                                        *
+ *  TABLES                                                *
+ *                                                        *
+ **********************************************************/
+
+
+/**********************************************************
+ *                                                        *
+ *  WORKSPACE                                             *
+ *                                                        *
+ **********************************************************/
+ 
+
+/**********************************************************
+ *                                                        *
+ *  HELP PAGE SPECIFIC                                    *
+ *                                                        *
+ **********************************************************/
+div.indent{
+	text-indent: 25px;
+}
+
+table.helpTable{
+	width: 100%;
+	border: none;
+}
+
+table.helpTable .helpTitle{
+	font-size: large;
+	font-weight: bold;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+table.helpTable td.helpAnswerColumn{
+	width: 99%;
+}
+
+table.helpTable td.helpQuestionColumn{
+	width: 1%;
+	vertical-align:top;
+}
+
+table.helpTable td.helpQuestionColumn li.helpSelectedParent a{
+	font-weight: bold;
+}
+
+table.helpTable td.helpQuestionColumn li.helpSelectedParent li a{
+	font-weight: normal;
+}
+
+table.helpTable td.helpQuestionColumn li.helpSelectedQuestion a{
+	font-weight: bold !important;
+}
+
+table.helpTable td.helpQuestionColumn li.helpSelectedQuestion li a{
+	font-weight: normal !important;
+}
+
+table.helpTable td.helpQuestionColumn ul{
+	list-style: none outside none;
+	padding: 4px;
+	margin: 0px;
+	white-space: nowrap;
+}
+
+table.helpTable td.helpQuestionColumn ul ul{
+	margin: 0px 0px 0px 10px;
+}
+
+table.helpTable td.helpQuestionColumn ul li{
+	padding: 0px;
+	margin: 0px;
+}
+
+
